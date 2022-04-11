@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>IDL4 to C# Language Mapping | OpenDDSharp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="IDL4 to C# Language Mapping | OpenDDSharp Documentation ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4366666401981011" crossorigin="anonymous"></script>
+                <!-- openddsharp_ads -->
+                <ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-4366666401981011" data-ad-slot="6527324727" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+<h1 id="idl4-to-c-language-mapping">IDL4 to C# Language Mapping</h1>
+
+<p>This document describes the OpenDDSharp current implementation of the <a href="https://www.omg.org/spec/IDL4-CSHARP/">IDL4 to C# Language Mapping Specification</a>.</p>
+<p>Some sections of the specification are not included in this documentation because are not directly related with DDS, therefore won't be implemented.</p>
+<p>The following legend is used to define the current version status:</p>
+<p>✅ Fully implemented</p>
+<p>☑️ Partially implemented</p>
+<p>❌ Not implemented</p>
+<h2 id="core-data-types">Core Data Types</h2>
+<h3 id="modules">Modules</h3>
+<p>✅ IDL modules are mapped to C# namespaces of the same name.</p>
+<p>✅ All IDL type declarations within the IDL module shall be mapped to corresponding C# declarations within the generated namespace.</p>
+<p>✅ IDL declarations not enclosed in any module shall be mapped into the global scope.</p>
+<h3 id="constants">Constants</h3>
+<p>☑️ IDL constants shall be mapped to <code>public sealed class</code>es of the same name within the equivalent scope and namespace where they are defined.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>OpenDDSharp makes the class <code>static</code> instead of <code>sealed</code>. It makes no sense to create instances of the class.
+With the current proposal, the following code snippet is possible:</p>
+<pre><code class="lang-csharp">var myUglyCode = new PI();
+double myPi = myUglyCode.Value;
+</code></pre>
+</div>
+<p>☑️ The mapped <code>class</code> shall contain a <code>public const</code> called <code>Value</code> assigned to the value of the IDL constant.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The use of <code>const</code> could be problematic because when using <code>const</code> it does not access to the field but
+the value is copied on build-time with the same constant value, therefore you need to recompile all your software
+and dependencies to ensure you are using the same value of the constant everywhere.
+OpenDDSharp uses a <code>public static readonly</code> field instead, in order to only require compilation of your IDL library and
+the value will be changed to all software that reference that library without need to recompile it again.</p>
+</div>
+<h2 id="data-types">Data Types</h2>
+<h3 id="basic-types">Basic Types</h3>
+<h4 id="integer-types">Integer Types</h4>
+<p>☑️ IDL integer types shall be mapped as shown in the following table:</p>
+<table>
+<thead>
+<tr>
+<th>IDL Type</th>
+<th>C# Type</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int8</td>
+<td>sbyte</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>uint8</td>
+<td>byte</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>short</td>
+<td>short</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>int16</td>
+<td>short</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>unsigned short</td>
+<td>ushort</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>uint16</td>
+<td>ushort</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>long</td>
+<td>int</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>int32</td>
+<td>int</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>unsigned long</td>
+<td>ushort</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>uint32</td>
+<td>ushort</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>long long</td>
+<td>int</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>int64</td>
+<td>int</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>unsigned long long</td>
+<td>ushort</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>uint64</td>
+<td>ushort</td>
+<td>✔️</td>
+</tr>
+</tbody>
+</table>
+<h4 id="floating-point-types">Floating-Point Types</h4>
+<p>☑️ IDL floating-point types shall be mapped as shown in the following table:</p>
+<table>
+<thead>
+<tr>
+<th>IDL Type</th>
+<th>C# Type</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float</td>
+<td>float</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>double</td>
+<td>double</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>long double</td>
+<td>decimal</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<h4 id="char-types">Char Types</h4>
+<p>✅ The IDL <code>char</code> type shall be mapped to the C# type <code>char</code>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>IDL characters are 8-bit quantities representing elements of a character set, while C# characters are
+16-bit unsigned quantities representing Unicode characters in UTF-16 encoding.</p>
+</div>
+<h4 id="wide-char-types">Wide Char Types</h4>
+<p>✅ The IDL <code>wchar</code> type shall be mapped to the C# type <code>char</code>.</p>
+<h4 id="boolean">Boolean</h4>
+<p>✅ The IDL boolean type shall be mapped to the C# <code>bool</code>, and the IDL constants <code>TRUE</code> and <code>FALSE</code> shall be mapped to
+the corresponding C# boolean literals <code>true</code> and <code>false</code>.</p>
+<h3 id="template-types">Template Types</h3>
+<h4 id="sequences">Sequences</h4>
+<p>✅ IDL sequences shall be mapped to the C# System.Collections.Generic.IList<t> interface, instantiated with the mapped type T of the sequence elements.<p>
+<p>✅ In the mapping, everywhere the sequence type is needed, a System.Collections.Generic.IList<t> shall be used.<p>
+<p>✅ Implementations of System.Collections.Generic.IList<t> shall be writable.<p>
+<p>❌ Bounds checking on bounded sequences may raise an exception if necessary.</p>
+<p>☑️ The following table shows the mapping for sequences of basic types:</p>
+<table>
+<thead>
+<tr>
+<th>IDL Type</th>
+<th>C# Type</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sequence&lt;boolean&gt;</td>
+<td>System.Collections.Generic.IList&lt;bool&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;char&gt;</td>
+<td>System.Collections.Generic.IList&lt;char&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;char&gt;</td>
+<td>System.Collections.Generic.IList&lt;char&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;int8&gt;</td>
+<td>System.Collections.Generic.IList&lt;sbyte&gt;</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>sequence&lt;uint8&gt;</td>
+<td>System.Collections.Generic.IList&lt;byte&gt;</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>sequence&lt;octet&gt;</td>
+<td>System.Collections.Generic.IList&lt;byte&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;short&gt;</td>
+<td>System.Collections.Generic.IList&lt;short&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;int16&gt;</td>
+<td>System.Collections.Generic.IList&lt;short&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;unsigned short&gt;</td>
+<td>System.Collections.Generic.IList&lt;ushort&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;uint16&gt;</td>
+<td>System.Collections.Generic.IList&lt;ushort&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;long&gt;</td>
+<td>System.Collections.Generic.IList&lt;int&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;int32&gt;</td>
+<td>System.Collections.Generic.IList&lt;int&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;unsigned long&gt;</td>
+<td>System.Collections.Generic.IList&lt;uint&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;uint32&gt;</td>
+<td>System.Collections.Generic.IList&lt;uint&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;long long&gt;</td>
+<td>System.Collections.Generic.IList&lt;long&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;int64&gt;</td>
+<td>System.Collections.Generic.IList&lt;long&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;unsigned long long&gt;</td>
+<td>System.Collections.Generic.IList&lt;ulong&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;uint64&gt;</td>
+<td>System.Collections.Generic.IList&lt;ulong&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;float&gt;</td>
+<td>System.Collections.Generic.IList&lt;float&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;double&gt;</td>
+<td>System.Collections.Generic.IList&lt;double&gt;</td>
+<td>✔️</td>
+</tr>
+<tr>
+<td>sequence&lt;long double&gt;</td>
+<td>System.Collections.Generic.IList&lt;decimal&gt;</td>
+<td>✔️</td>
+</tr>
+</tbody>
+</table>
+<h4 id="strings">Strings</h4>
+<p>✅ IDL <code>string</code>s, both bounded and unbounded variants, shall be mapped to C# <code>string</code>s.</p>
+<p>✅ The resulting strings shall be encoded in UTF-16 format.</p>
+<h4 id="wstrings">Wstrings</h4>
+<p>✅ IDL <code>wstring</code>s, both bounded and unbounded variants, shall be mapped to C# <code>string</code>s.</p>
+<p>✅ The resulting strings shall be encoded in UTF-16 format.</p>
+<h4 id="fixed-type">Fixed Type</h4>
+<p>❌ The IDL fixed type shall be mapped to the C# decimal type.</p>
+<p>❌ Range checking may raise a System.ArithmeticException exception if necessary.</p>
+<h3 id="constructed-types">Constructed Types</h3>
+<h4 id="structures">Structures</h4>
+<p>✅ An IDL struct shall be mapped to a C# <code>public class</code> with the same name.</p>
+<p>☑️ The <code>class</code> shall provide the following:</p>
+<ul>
+<li>✅ A public property of the equivalent type for each member of the structure, including both a getter and a setter.
+<ul>
+<li>❌ In general, properties representing IDL sequences and maps shall include only a getter.</li>
+<li>❌ As an exception, properties representing sequences and maps that are marked with the <code>@external</code>
+annotation (see the Standardized Annotations building block) shall include both a getter and a setter.</li>
+</ul>
+</li>
+<li>☑️ Property setters shall perform shallow assignments of reference types and deep copies of value types.</li>
+<li>✅ A public default constructor that takes no parameters</li>
+<li>❌ A public copy constructor that takes as a parameter an object of the mapped class.
+<ul>
+<li>❌ The copy constructor shall perform a deep copy of every member of the structure.</li>
+<li>❌ Implementations supporting the Standardized Annotations building block shall perform a shallow assignment for members annotated with <code>@external</code></li>
+</ul>
+</li>
+<li>❌ A public constructor that accepts parameters for each member (i.e., the all values constructor). The
+constructor shall perform shallow assignments of reference types and deep copies of value types.</li>
+</ul>
+<p>✅ The default constructor shall initialize member fields as follows:</p>
+<ul>
+<li>✅ All primitive members shall be left as initialized by the C# default initialization.</li>
+<li>✅ All string members in the struct shall be initialized to string.Empty.</li>
+<li>✅ All array members shall be initialized to an array of the declared size whose elements are initialized with their default constructor.</li>
+<li>✅ All sequence members shall be initialized to zero-length sequences of the corresponding type.</li>
+<li>✅ All other members shall be initialized to an object created with their respective default constructor.</li>
+</ul>
+<p>❌ The class shall implement the <code>IEquatable&lt;T&gt;</code> interface, where <code>T</code> is the corresponding class name.</p>
+<h4 id="unions">Unions</h4>
+<p>❌ An IDL union shall be mapped to a C# <code>public class</code> with the same name.</p>
+<p>❌ The class shall provide the following:</p>
+<ul>
+<li>❌ A public default constructor.</li>
+<li>❌ A public copy constructor that takes as a parameter an object of the mapped class. The copy constructor shall perform a deep copy of the member selected by the discriminator, if any.
+<ul>
+<li>❌ Implementations supporting the Standardized Annotations shall perform a shallow assignment if the selected member is annotated with <code>@external</code></li>
+</ul>
+</li>
+<li>❌ A public read-only property named <code>Discriminator</code>.</li>
+<li>❌ A public property with getters and setters for each member. Property setters shall perform shallow assignments of reference types and deep copies of value types.
+<ul>
+<li>❌ In general, properties representing IDL sequences and maps, shall include only a getter. In such cases:
+<ul>
+<li>❌ For every sequence member, the union shall define two modifier methods. The first modifier
+method shall have the following prototype: void Set<sequencemembername>(). The method
+shall clear the sequence and update the discriminator value. The second modifier method shall have
+the following prototype: <code>void Set&lt;SequenceMemberName&gt;(System.Collections.IEnumerable&lt;T&gt; elements)</code>, where <code>T</code>
+is the equivalent type of the IDL sequence elements. The method shall clear the sequence, populate
+it with the elements received as an input, and update the discriminator value.</sequencemembername></li>
+<li>❌ For every map member, the union shall define two modifier methods. The first modifier method
+shall have the following prototype: <code>void Set&lt;MapMemberName&gt;()</code>. The method shall remove all
+the elements in the property representing the map and update the discriminator value. The second
+modifier method shall have the following prototype:
+<code>void Set&lt;MapMemberName&gt;(System.Collections.IEnumerable&lt;Generic.KeyValuePair&lt;TKey,Tvalue&gt;&gt; elements)</code>,
+where <code>TKey</code> is the equivalent key type, and <code>TValue</code> is the equivalent value type.
+The method shall remove all elements in the equivalent map, populate it with the
+elements received as an input, and update the discriminator value.</li>
+</ul>
+</li>
+<li>❌ As an exception, properties representing sequences and maps that are marked with the <code>@external</code>
+annotation (see the Standardized Annotations building block) shall include both a getter and a setter.</li>
+</ul>
+</li>
+<li>❌ A public property with getters and setters for the member corresponding to the default label, if present.</li>
+</ul>
+<p>❌ The normal name conflict resolution rule shall apply (i.e., prepend an &quot;_&quot;) to the discriminator property name if
+there is a name clash with the mapped union type name or any of the field names.</p>
+<p>❌ Property getters shall raise a System.InvalidOperationException if the expected member has not been set.</p>
+<p>❌ If there is more than one case label corresponding to a member, the setter of the property representing such member
+shall set Discriminator to the first possible case label. If the member corresponds to the default case label, then
+<code>Discriminator</code> shall be set to the first available default value starting from the zero-index of the discriminant type.
+For all such members, the union shall provide a modifier method void <code>Set&lt;MemberName&gt;(&lt;MemberType&gt; value, &lt;DiscriminatorType&gt; discriminator)</code> to set
+the corresponding property value and the discriminator value of choice.</p>
+<p>❌ The modifier method shall throw a System.ArgumentException exception when a value is passed for the discriminator that is not among the case labels for the member.4</p>
+<p>❌ The class representing the IDL union shall implement the <code>IEquatable&lt;T&gt;</code> interface, where <code>T</code> is the corresponding class name.</p>
+<h4 id="enumerations">Enumerations</h4>
+<p>✅ An IDL <code>enum</code> shall be mapped to a C# <code>public enum</code> with the same name as the IDL enum type.</p>
+<p>❌ If the IDL enumeration declaration is preceded by a <code>@bit_bound</code> annotation; the corresponding C# enum type shall
+be <code>sbyte</code> for bit bound values between 1 and 8; <code>short</code>, for bit bound values between 9 and 16; <code>int</code>, for bit bound
+values between 17 and 32; and <code>long</code>, for bit bound values between 33 and 64.</p>
+<h3 id="arrays">Arrays</h3>
+<p>✅ An IDL array shall be mapped to a C# array of the mapped element type or to a C# <code>class</code> offering an interface
+compatible with that of a C# native array of the mapped element type.</p>
+<p>✅ In the mapping, everywhere the array type is needed, an array or an equivalent class of the mapped element type shall be used.</p>
+<p>❌ The bounds for the array shall be checked by the setter of the corresponding property and a <code>System.ArgumentOutOfRangeException</code> shall be
+raised if a bounds violation occurs.</p>
+<h3 id="naming-data-types">Naming Data Types</h3>
+<p>✅ C# does not have a <code>typedef</code> construct; therefore, the declaration of types using <code>typedef</code> in IDL shall not result in
+the creation of any C# type. Instead, the use of an IDL <code>typedef</code> type shall be replaced with the type referenced by
+the <code>typedef</code> statement. For nested <code>typedef</code>s, the <code>typedef</code>ed type shall be replaced with the original type in the
+sequence of <code>typedef</code> statements.</p>
+<h2 id="any">Any</h2>
+<p>❌ The IDL any type shall be mapped to <code>Omg.Types.Any</code> type. The implementation of the <code>Omg.Types.Any</code> is
+platform-specific, and should include operations that allow programmers to insert and access the value contained in
+an any instance as well as the actual type of that value.</p>
+<h2 id="extended-data-types">Extended Data Types</h2>
+<h3 id="structures-with-single-inheritance">Structures with Single Inheritance</h3>
+<p>✅ An IDL <code>struct</code> that inherits from a base IDL <code>struct</code>, shall be declared as a
+C# <code>public class</code> that extends the <code>class</code> resulting from mapping the base IDL <code>struct</code>.</p>
+<p>☑️ The resulting C# <code>public class</code> shall be mapped according to the general mapping rules for IDL <code>struct</code>s with the following additions:</p>
+<ul>
+<li>❌ The public copy constructor shall call the &quot;all values constructor&quot; of the base class with the value of the
+members in the new instance that are derived from the base IDL <code>struct</code>.</li>
+<li>❌ The public &quot;all values constructor&quot; shall take as parameters an object of the base class, followed parameters
+for each member of the IDL struct. The &quot;all values constructor&quot; shall call the copy constructor of the base
+class using the object of the base class provided as a parameter.</li>
+</ul>
+<h3 id="union-discriminators">Union Discriminators</h3>
+<p>❌ This building block adds the <code>int8</code>, <code>uint8</code>, <code>wchar</code>, and <code>octet</code> IDL types to the set of valid types for a discriminator.</p>
+<h3 id="additional-template-types">Additional Template Types</h3>
+<h4 id="maps">Maps</h4>
+<p>❌ An IDL <code>map</code> shall be mapped to a C# generic <code>System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;</code>
+instantiated with the equivalent C# key type and value type. In the mapping, everywhere the <code>map</code> type is needed, a
+property of type <code>IDictionary</code> with the equivalent C# key type and value type shall be used.</p>
+<p>❌ Bounds checking shall raise an exception if necessary.</p>
+<h4 id="bitsets">Bitsets</h4>
+<p>❌ An IDL <code>bitset</code> shall map to a C# <code>struct</code> with public properties for each named <code>bitfield</code> in the set. The IDL type
+of each <code>bitfield</code> member, if not specified in the IDL, shall take the smallest unsigned integer type able to store the
+bit field with no loss; that is, <code>byte</code> if it is between 1 and 8, <code>ushort</code> if it is between 9 and 16, <code>uint</code> if it is between 17
+and 32 and <code>ulong</code> if it is between 33 and 64.</p>
+<p>❌ The mapped C# struct shall implement the <code>IEquatable&lt;T&gt;</code> interface, where <code>T</code> is the corresponding <code>bitset</code> name.</p>
+<h4 id="bitmask-type">Bitmask Type</h4>
+<p>❌ The IDL <code>bitmask</code> type shall map to a C# <code>public enum</code> with the same name, followed by the <code>Flags</code> suffix.</p>
+<p>❌ In the mapping, everywhere the <code>bitmask</code> type is needed, a <code>System.Collections.BitArray</code> shall be used.</p>
+<p>❌ The C# <code>enum</code> shall have the <code>System.FlagsAttribute</code>, and shall contain a literal for each named member of the IDL <code>bitmask</code>.</p>
+<p>❌ The value of each C# <code>enum</code> literal is dictated by the <code>@position</code> annotation of the corresponding IDL <code>bitmask</code> member.</p>
+<p>❌ If no position is specified, the C# <code>enum</code> literals shall be set to the value of the next power of two.</p>
+<p>❌ The corresponding <code>enum</code> literals can be used to set, clear, and test individual bits in the corresponding <code>System.Collections.BitArray</code> instance.</p>
+<p>❌ The size (number of bits) held in the <code>bitmask</code> determines the corresponding C# <code>enum</code> type. In particular, the <code>enum</code>
+type shall be <code>byte</code>, for bit bound values between 1 and 8; <code>ushort</code>, for bit bound values between 9 and 16; <code>uint</code>, for
+values between 17 and 32; and <code>ulong</code> for bit bound values between 33 and 64.</p>
+<h2 id="annotations">Annotations</h2>
+<h3 id="defining-annotations">Defining Annotations</h3>
+<p>❌ User-defined annotations are propagated to the generated code as C# attributes inheriting from the
+<code>System.Attribute</code> class. The name of the corresponding attributes shall be that of the original IDL annotation,
+appending the <code>Attribute</code> suffix when applying the .NET Framework Design Guidelines Naming Scheme.</p>
+<p>❌ Each annotation member shall be mapped to a property with public getters and setters. Moreover, the mapped
+attribute shall have a public constructor with default values (default constructor) and shall be annotated with the
+following attribute: <code>[AttributeUsage(AttributeTargets.All, AllowMultiple = true)]</code>.</p>
+<p>❌ If the IDL annotation definition provides a default value for a given member, it shall be reflected in the C# definition
+accordingly; otherwise, the equivalent C# definition shall have no default value.</p>
+<h3 id="applying-annotations">Applying Annotations</h3>
+<p>❌ IDL elements annotated with user-defined annotations shall map to equivalent C# elements annotated with the
+corresponding attribute following the mappings defined in this specification.</p>
+<h4 id="applying-annotations-in-naming-data-types">Applying Annotations in Naming Data Types</h4>
+<p>❌ Annotations on an IDL <code>typedef</code> shall be applied to uses of the <code>typedef</code> in other type declarations.</p>
+<h2 id="standardized-annotations">Standardized Annotations</h2>
+<p>OMG-IDL4 defines some annotations and assigns them to logical groups. These annotations may be applied to
+various constructs throughout an IDL document, and their impact on the language mapping is dependent on the
+context in which they are applied. The following table summarize the annotations that have an impact in the
+C# language mapping and the current OpenDDSharp implementation status.</p>
+<table>
+<thead>
+<tr>
+<th>General Purpose Annotation</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@optional</code></td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>@position</code></td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>@value</code></td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>@key</code></td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>@default_literal</code></td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>@default</code></td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>@range</code></td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>@min</code></td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>@max</code></td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>@unit</code></td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>@bit_bound</code></td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>@external</code></td>
+<td>❌</td>
+</tr>
+<tr>
+<td><code>@verbatim</code></td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<h1 id="idl-to-c-language-mapping-annotations">IDL to C# Language Mapping Annotations</h1>
+<p>This chapter defines specialized annotations that extend the standard set defined in OMG-IDL4 to control the C# code generation.</p>
+<h2 id="annotation-csharp_mapping">Annotation <code>@csharp_mapping</code></h2>
+<p>❌ This annotation provides the means to customize the way a number of IDL constructs are mapped to the C# programming language.</p>
+<p>The <code>@csharp_mapping</code> annotation provides three parameters described in the following sections.</p>
+<h3 id="parameter-apply_naming_convention">Parameter <code>apply_naming_convention</code></h3>
+<p>❌ <code>apply_naming_convention</code> specifies whether the IDL to C# language mapping shall apply the IDL Naming
+Scheme or the .NET Framework Design Guidelines Naming Scheme when mapping IDL names to C#. In particular:</p>
+<ul>
+<li>❌ If <code>apply_naming_convention</code> is <code>IDL_NAMING_CONVENTION</code>, the code generator shall generate type
+identifiers and names according to the IDL Naming Scheme, leaving the name of the corresponding IDL
+construct unchanged.</li>
+<li>❌ If <code>apply_naming_convention</code> is <code>DOTNET_NAMING_CONVENTION</code>, the code generator shall generate type
+identifiers and names according to the .NET Framework Design Guidelines Naming Scheme.</li>
+</ul>
+<h3 id="parameter-constants_container">Parameter <code>constants_container</code></h3>
+<p>❌ <code>constants_container</code> activates the different options for mapping constants. To enable the
+Standalone Constants Mapping, <code>constants_container</code> shall be set to an empty string.
+To enable the Constants Container Mapping , <code>constants_container</code> shall bet set to a
+valid string. The default name for the containing class is <code>Constants</code>.</p>
+<h3 id="parameter-struct_type">Parameter <code>struct_type</code></h3>
+<p>❌ <code>struct_type</code> defines the C# type the IDL <code>struct</code> type map to. By default, IDL
+<code>struct</code>s are mapped to a C# <code>class</code>. This parameter allows changing the default behavior to map an IDL <code>struct</code>
+to a C# <code>struct</code>. When mapping an IDL <code>struct</code> to C# <code>struct</code> as a result of this annotation, every setter and constructors shall
+perform a deep copy, regardless of annotations modifying the copy behavior, such as <code>@external</code>.</p>
+</t></t></t></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Documentation/OpenDDSharp.Standard.Doc/articles/idl.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018-2021 Jose Morat&oacute;</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

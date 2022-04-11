@@ -1,0 +1,525 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SubscriberListener
+   | OpenDDSharp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SubscriberListener
+   | OpenDDSharp Documentation ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenDDSharp.DDS.SubscriberListener">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4366666401981011" crossorigin="anonymous"></script>
+                <!-- openddsharp_ads -->
+                <ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-4366666401981011" data-ad-slot="6527324727" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+  
+  
+  <h1 id="OpenDDSharp_DDS_SubscriberListener" data-uid="OpenDDSharp.DDS.SubscriberListener" class="text-break">Class SubscriberListener
+  </h1>
+  <div class="markdown level0 summary"><p>Abstract class that can be implemented by an application-provided class and then registered with the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>
+such that the application can be notified of relevant status changes.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SubscriberListener</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenDDSharp.DDS.html">OpenDDSharp.DDS</a></h6>
+  <h6><strong>Assembly</strong>: OpenDDSharp.Standard.dll</h6>
+  <h5 id="OpenDDSharp_DDS_SubscriberListener_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SubscriberListener</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/feature/opendds_3_18_1/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener__ctor.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/feature/opendds_3_18_1/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L93">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriberListener__ctor_" data-uid="OpenDDSharp.DDS.SubscriberListener.#ctor*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriberListener__ctor" data-uid="OpenDDSharp.DDS.SubscriberListener.#ctor">SubscriberListener()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenDDSharp.DDS.SubscriberListener.html">SubscriberListener</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SubscriberListener()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/feature/opendds_3_18_1/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_Finalize.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/feature/opendds_3_18_1/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L132">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriberListener_Finalize_" data-uid="OpenDDSharp.DDS.SubscriberListener.Finalize*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriberListener_Finalize" data-uid="OpenDDSharp.DDS.SubscriberListener.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Finalizes an instance of the <a class="xref" href="OpenDDSharp.DDS.SubscriberListener.html">SubscriberListener</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/feature/opendds_3_18_1/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnDataAvailable_OpenDDSharp_DDS_DataReader_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnDataAvailable(OpenDDSharp.DDS.DataReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/feature/opendds_3_18_1/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L194">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriberListener_OnDataAvailable_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnDataAvailable*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriberListener_OnDataAvailable_OpenDDSharp_DDS_DataReader_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnDataAvailable(OpenDDSharp.DDS.DataReader)">OnDataAvailable(DataReader)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_DataAvailableStatus">DataAvailableStatus</a> communication status.</p>
+<p>The <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_DataAvailableStatus">DataAvailableStatus</a> indicates that samples are available on the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.
+Applications receiving this status can use the various take and read operations on the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> to retrieve the data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnDataAvailable(DataReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> that triggered the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/feature/opendds_3_18_1/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnDataOnReaders_OpenDDSharp_DDS_Subscriber_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnDataOnReaders(OpenDDSharp.DDS.Subscriber)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/feature/opendds_3_18_1/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L186">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriberListener_OnDataOnReaders_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnDataOnReaders*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriberListener_OnDataOnReaders_OpenDDSharp_DDS_Subscriber_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnDataOnReaders(OpenDDSharp.DDS.Subscriber)">OnDataOnReaders(Subscriber)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_DataOnReadersStatus">DataOnReadersStatus</a> communication status.</p>
+<p>The <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_DataOnReadersStatus">DataOnReadersStatus</a> indicates that new data is available on some of the data
+readers associated with the subscriber. Applications receiving this status can call GetDataReaders on
+the subscriber to get the set of data readers with data available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnDataOnReaders(Subscriber subscriber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a></td>
+        <td><span class="parametername">subscriber</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a> that triggered the event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/feature/opendds_3_18_1/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnLivelinessChanged_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_LivelinessChangedStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnLivelinessChanged(OpenDDSharp.DDS.DataReader%2COpenDDSharp.DDS.LivelinessChangedStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/feature/opendds_3_18_1/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L230">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriberListener_OnLivelinessChanged_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnLivelinessChanged*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriberListener_OnLivelinessChanged_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_LivelinessChangedStatus_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnLivelinessChanged(OpenDDSharp.DDS.DataReader,OpenDDSharp.DDS.LivelinessChangedStatus)">OnLivelinessChanged(DataReader, LivelinessChangedStatus)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_LivelinessChangedStatus">LivelinessChangedStatus</a> communication status.</p>
+<p>The <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_LivelinessChangedStatus">LivelinessChangedStatus</a> indicates that there have been liveliness changes for one or
+more <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>s that are publishing instances for this <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnLivelinessChanged(DataReader reader, LivelinessChangedStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> that triggered the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.LivelinessChangedStatus.html">LivelinessChangedStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The current <a class="xref" href="OpenDDSharp.DDS.LivelinessChangedStatus.html">LivelinessChangedStatus</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/feature/opendds_3_18_1/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnRequestedDeadlineMissed_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_RequestedDeadlineMissedStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnRequestedDeadlineMissed(OpenDDSharp.DDS.DataReader%2COpenDDSharp.DDS.RequestedDeadlineMissedStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/feature/opendds_3_18_1/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L203">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriberListener_OnRequestedDeadlineMissed_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnRequestedDeadlineMissed*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriberListener_OnRequestedDeadlineMissed_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_RequestedDeadlineMissedStatus_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnRequestedDeadlineMissed(OpenDDSharp.DDS.DataReader,OpenDDSharp.DDS.RequestedDeadlineMissedStatus)">OnRequestedDeadlineMissed(DataReader, RequestedDeadlineMissedStatus)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_RequestedDeadlineMissedStatus">RequestedDeadlineMissedStatus</a> communication status.</p>
+<p>The <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_RequestedDeadlineMissedStatus">RequestedDeadlineMissedStatus</a> indicates that the deadline requested via the
+<a class="xref" href="OpenDDSharp.DDS.DeadlineQosPolicy.html">DeadlineQosPolicy</a> was not respected for a specific instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnRequestedDeadlineMissed(DataReader reader, RequestedDeadlineMissedStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> that triggered the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.RequestedDeadlineMissedStatus.html">RequestedDeadlineMissedStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The current <a class="xref" href="OpenDDSharp.DDS.RequestedDeadlineMissedStatus.html">RequestedDeadlineMissedStatus</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/feature/opendds_3_18_1/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnRequestedIncompatibleQos_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_RequestedIncompatibleQosStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnRequestedIncompatibleQos(OpenDDSharp.DDS.DataReader%2COpenDDSharp.DDS.RequestedIncompatibleQosStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/feature/opendds_3_18_1/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L212">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriberListener_OnRequestedIncompatibleQos_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnRequestedIncompatibleQos*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriberListener_OnRequestedIncompatibleQos_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_RequestedIncompatibleQosStatus_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnRequestedIncompatibleQos(OpenDDSharp.DDS.DataReader,OpenDDSharp.DDS.RequestedIncompatibleQosStatus)">OnRequestedIncompatibleQos(DataReader, RequestedIncompatibleQosStatus)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_RequestedIncompatibleQosStatus">RequestedIncompatibleQosStatus</a> communication status.</p>
+<p>The <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_RequestedIncompatibleQosStatus">RequestedIncompatibleQosStatus</a> indicates that one or more QoS policy values that
+were requested were incompatible with what was offered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnRequestedIncompatibleQos(DataReader reader, RequestedIncompatibleQosStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> that triggered the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.RequestedIncompatibleQosStatus.html">RequestedIncompatibleQosStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The current <a class="xref" href="OpenDDSharp.DDS.RequestedIncompatibleQosStatus.html">RequestedIncompatibleQosStatus</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/feature/opendds_3_18_1/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnSampleLost_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_SampleLostStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnSampleLost(OpenDDSharp.DDS.DataReader%2COpenDDSharp.DDS.SampleLostStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/feature/opendds_3_18_1/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L248">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriberListener_OnSampleLost_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnSampleLost*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriberListener_OnSampleLost_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_SampleLostStatus_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnSampleLost(OpenDDSharp.DDS.DataReader,OpenDDSharp.DDS.SampleLostStatus)">OnSampleLost(DataReader, SampleLostStatus)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_SampleLostStatus">SampleLostStatus</a> communication status.</p>
+<p>The <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_SampleLostStatus">SampleLostStatus</a> indicates that a sample has been lost and 
+never received by the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnSampleLost(DataReader reader, SampleLostStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> that triggered the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleLostStatus.html">SampleLostStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The current <a class="xref" href="OpenDDSharp.DDS.SampleLostStatus.html">SampleLostStatus</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/feature/opendds_3_18_1/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnSampleRejected_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_SampleRejectedStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnSampleRejected(OpenDDSharp.DDS.DataReader%2COpenDDSharp.DDS.SampleRejectedStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/feature/opendds_3_18_1/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L221">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriberListener_OnSampleRejected_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnSampleRejected*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriberListener_OnSampleRejected_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_SampleRejectedStatus_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnSampleRejected(OpenDDSharp.DDS.DataReader,OpenDDSharp.DDS.SampleRejectedStatus)">OnSampleRejected(DataReader, SampleRejectedStatus)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_SampleRejectedStatus">SampleRejectedStatus</a> communication status.</p>
+<p>The <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_SampleRejectedStatus">SampleRejectedStatus</a> indicates that a sample received by the
+<a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> has been rejected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnSampleRejected(DataReader reader, SampleRejectedStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> that triggered the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleRejectedStatus.html">SampleRejectedStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The current <a class="xref" href="OpenDDSharp.DDS.SampleRejectedStatus.html">SampleRejectedStatus</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/feature/opendds_3_18_1/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnSubscriptionMatched_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_SubscriptionMatchedStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnSubscriptionMatched(OpenDDSharp.DDS.DataReader%2COpenDDSharp.DDS.SubscriptionMatchedStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/feature/opendds_3_18_1/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L239">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriberListener_OnSubscriptionMatched_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnSubscriptionMatched*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriberListener_OnSubscriptionMatched_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_SubscriptionMatchedStatus_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnSubscriptionMatched(OpenDDSharp.DDS.DataReader,OpenDDSharp.DDS.SubscriptionMatchedStatus)">OnSubscriptionMatched(DataReader, SubscriptionMatchedStatus)</h4>
+  <div class="markdown level1 summary"><p>Handles the <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_SubscriptionMatchedStatus">SubscriptionMatchedStatus</a> communication status.</p>
+<p>The <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDSharp_DDS_StatusKind_SubscriptionMatchedStatus">SubscriptionMatchedStatus</a> indicates that either a compatible <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> has been
+matched or a previously matched <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> has ceased to be matched.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnSubscriptionMatched(DataReader reader, SubscriptionMatchedStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> that triggered the event.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SubscriptionMatchedStatus.html">SubscriptionMatchedStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The current <a class="xref" href="OpenDDSharp.DDS.SubscriptionMatchedStatus.html">SubscriptionMatchedStatus</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/new/feature/opendds_3_18_1/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/feature/opendds_3_18_1/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018-2021 Jose Morat&oacute;</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

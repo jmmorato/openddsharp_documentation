@@ -1,0 +1,1439 @@
+{
+  "homepages": [],
+  "source_base_path": "E:/PROJECTS/OPENDDSHARP/Documentation/OpenDDSharp.Standard.Doc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.Ace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.Ace.html",
+          "hash": "RO0ir33qZMIh94vo8YRqb1c6eQuYjuX6zTLqhLMCL3Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.BuiltinTopicKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.BuiltinTopicKey.html",
+          "hash": "p1Ht/Oo4/PBETatZaw7FRNhZtW3VdvuP1ZB9itLU5K4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.Condition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.Condition.html",
+          "hash": "G1WVkByi97/HDn3Rl7U6bc4vVpJfkZTFr6Tr0K7SxP8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.ContentFilteredTopic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.ContentFilteredTopic.html",
+          "hash": "Aro5y1VFtIvaIPBO45Jmp7z272jsEx8gMxyTUlv+bvs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DataReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DataReader.html",
+          "hash": "7wHbT6iyd52PptmIdm9C12zsooURsjdyup9+g3gkm1g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DataReaderListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DataReaderListener.html",
+          "hash": "2Sz6EJICk6c9Gp8QtbDMaLXyzD0WPqava+WDcJ9rnF4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DataReaderQos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DataReaderQos.html",
+          "hash": "a1FIyWTEYRp7IDrFTscFX78avwYKUJo7pok7cVcdy8s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DataWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DataWriter.html",
+          "hash": "X+lbBDjOO2goXgsVbCl14szT/3nvk0wlK6+QY17dXbc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DataWriterListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DataWriterListener.html",
+          "hash": "DBB34EUNRbbqiXezr5JkCOylHSQsni50DRK9wzozdQE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DataWriterQos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DataWriterQos.html",
+          "hash": "l03K24SvmUcWGD/0rqrGepqQugLVfAoEHt8ZQmEPla0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DeadlineQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DeadlineQosPolicy.html",
+          "hash": "8yV+CngpJOOk78DA3VuM6tAet3W/9S5/B6l2H1LL5AQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DestinationOrderQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DestinationOrderQosPolicy.html",
+          "hash": "FPl9OaA7lcuSS4GlljlqGx0aFHXnNczznGsEcuT6UXs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DestinationOrderQosPolicyKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DestinationOrderQosPolicyKind.html",
+          "hash": "c3X2/71dXAKYTH5y6d2eGuEG3yvB3GgJdpqWcNAXheY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DomainParticipant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DomainParticipant.html",
+          "hash": "qLMqxOqpXqb/VzGjAH+83rzjtWdPqY+KOEwQDMzo9i0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DomainParticipantFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DomainParticipantFactory.html",
+          "hash": "8xNW7vyeuBQjyBWICGoKCTKsAZ8qHQzBUUeTJlF1WyY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DomainParticipantListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DomainParticipantListener.html",
+          "hash": "MA4Jn3BaIWVH37dTma7+WVOL9nHLKetLNDSNSgVctU4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DomainParticipantQos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DomainParticipantQos.html",
+          "hash": "L/1DHnSYWJyAJA6+N5zbzfHulU2Mct1CoootTP1TaEU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DurabilityQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DurabilityQosPolicy.html",
+          "hash": "FYQ9uexdu6QvaPGitIeY01dzDDiOkq8CU3pY94Bz9Y0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DurabilityQosPolicyKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DurabilityQosPolicyKind.html",
+          "hash": "ki/hp87Le5FU9Scr0SLQoSk/B+YY/Ws4CtjPvq2ziAA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.DurabilityServiceQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.DurabilityServiceQosPolicy.html",
+          "hash": "GPKxUgptjG00PDL6/C0HkbT0f5u910lyXlpxCA5tW0A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.Duration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.Duration.html",
+          "hash": "DXTMRGIdAyJsW5vka7F2vHvXkdp9+inSM/FpXagiNJs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.Entity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.Entity.html",
+          "hash": "rhlZAHbUuGZLjXmDym77x5Yzvz81AeVoRWh5ZJz7tkY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.EntityFactoryQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.EntityFactoryQosPolicy.html",
+          "hash": "Q+EtSHRoKq8d78aVigVf2MTemmr2xNNdhe3p2DbfODw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.GroupDataQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.GroupDataQosPolicy.html",
+          "hash": "mw+b7DrcV29m9ri08EsNRDc6E05otw5VXm1sfwJbTiY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.GuardCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.GuardCondition.html",
+          "hash": "w+Kpsb4mBGAYoG61z5sycNVlE/aTeqmsulelZQHlKac="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.HistoryQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.HistoryQosPolicy.html",
+          "hash": "NIG4T1dK0ojjH89MR9W6ucTjDVKtIHDZtQDblCvRr8g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.HistoryQosPolicyKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.HistoryQosPolicyKind.html",
+          "hash": "0AHdi8rsBEbvqAjx4xj8P0PeTSSukbiXW5R8ri2ga1c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.ITopicDescription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.ITopicDescription.html",
+          "hash": "rRB0OMQfYsT58BQV36C0oSz1AnY5U2EISRacMKTL/Xo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.InconsistentTopicStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.InconsistentTopicStatus.html",
+          "hash": "fYRLVHH17BXuxg3R/6juIV5oHA+oLSOIJ4HvdrIDsL4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.InstanceHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.InstanceHandle.html",
+          "hash": "bchHjrwT7ElPXWA1VQ0wza8N7ns//anmX6xD90vAcww="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.InstanceStateKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.InstanceStateKind.html",
+          "hash": "LHBVe059jkKXHUYq5mTsgJW2AxjkiUsr0cgGQDynta8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.InstanceStateMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.InstanceStateMask.html",
+          "hash": "aSk91FFrrDOIMfssJvMd4KDiKnYWEaBbta0N5wr9xF0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.LatencyBudgetQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.LatencyBudgetQosPolicy.html",
+          "hash": "ScoY3Ka6V4Q1NyFj0MCEV+PBZ9IRGcNS8z7v22zuWB8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.LifespanQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.LifespanQosPolicy.html",
+          "hash": "8q3HgDj1NOBeU9D1rQ75mXxT/r5IXz78WwWAEA5IqC8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.LivelinessChangedStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.LivelinessChangedStatus.html",
+          "hash": "O6PbUso62d68rjyeFqA5TCy7oMG+aB8bi6XckY+TVNQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.LivelinessLostStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.LivelinessLostStatus.html",
+          "hash": "4L3BDVHbxNVeoO/fLdhH8upUtltJE9rfJJeCb+zQYRw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.LivelinessQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.LivelinessQosPolicy.html",
+          "hash": "kYm1w/7B024GhzLym3zwIHNMMDRm9kczglzap80e2yM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.LivelinessQosPolicyKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.LivelinessQosPolicyKind.html",
+          "hash": "yzvAoCx8z2nX7d93wtPWCnFtIII76vfth8zUOX/NO5s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.MultiTopic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.MultiTopic.html",
+          "hash": "dm5z9jXA0Wb0G/k8KXuc+8o5T/VwqgbfvaqNeT7qA9k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.OfferedDeadlineMissedStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.OfferedDeadlineMissedStatus.html",
+          "hash": "IWwneuwe+9xlfsvdKR5XikzshyKGKqo25FEiNj4lVhg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.OfferedIncompatibleQosStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.OfferedIncompatibleQosStatus.html",
+          "hash": "CkmouNnW0YHUEooUs04SsVl7Ug8RQifzKbeBsT8z4OA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.OwnershipQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.OwnershipQosPolicy.html",
+          "hash": "1eRGR+iBF4FrgfqyG7vFKAPHqhbvQlqu/nANXzlqS7M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.OwnershipQosPolicyKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.OwnershipQosPolicyKind.html",
+          "hash": "/r8H23SynW9V9ydmP+pG9cHtzagDUvB+v61FQnDchiY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.OwnershipStrengthQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.OwnershipStrengthQosPolicy.html",
+          "hash": "SuyJ9cK599dFx4grbWO0D22Wf/FIzuaqY+nW1IADe6Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.ParticipantBuiltinTopicData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.ParticipantBuiltinTopicData.html",
+          "hash": "c9Kv8C8IVNGE3SK5aSiM7/d+Dihh7O/4vXVfIJns1DE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.PartitionQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.PartitionQosPolicy.html",
+          "hash": "ArGHPCc0ikgCST3JgncLTPdZ2qJu5n8ubw3Pqw1Lb+g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.PresentationQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.PresentationQosPolicy.html",
+          "hash": "0p4BkcLliqjkrRZOq7qrH86AisFQIi6umMZiPRxeSNk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.PresentationQosPolicyAccessScopeKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.PresentationQosPolicyAccessScopeKind.html",
+          "hash": "Q/vZiNhuppz91OPZiEHVuP5bMXqIk6jNvmym6mmngfI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.PublicationBuiltinTopicData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.PublicationBuiltinTopicData.html",
+          "hash": "XGnyNb7gAi5lUI39ygSNkzDY8gWWiRByiCOL03AjLf0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.PublicationMatchedStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.PublicationMatchedStatus.html",
+          "hash": "anKW8zdXbWKjz/X6LlUojg5aBtbG1zNJNGYS4/0C4jc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.Publisher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.Publisher.html",
+          "hash": "j00WGFROFBTL/1XugFiYqcNFfkANI1oQ3kj2I3lGpvY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.PublisherListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.PublisherListener.html",
+          "hash": "/uL++UJJ2trECqUekY12AaVMcx1XkVFk7k1/ms8KG+4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.PublisherQos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.PublisherQos.html",
+          "hash": "nkSl8SL3AbZZg50H5NacKBb3Kzt9RkDlMzLKQ6Bc9pI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.QosPolicyCount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.QosPolicyCount.html",
+          "hash": "9DtLqo55kgDd6ifNHBXWor9+Ox8fjgizLVMWbLTrEvc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.QueryCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.QueryCondition.html",
+          "hash": "aeDrVm2VP8d2J3CtdsXcDtgmTH68uztonzg0eKzQngU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.ReadCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.ReadCondition.html",
+          "hash": "bijT6JB3FPsOnLvSeLrJWoj5N7bn5sZ+kSd++dMKw3w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.ReaderDataLifecycleQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.ReaderDataLifecycleQosPolicy.html",
+          "hash": "6WSvTqCeNXua5gXXwLsSG6sI4kxBHh1+3HItKMdxdqQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.ReliabilityQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.ReliabilityQosPolicy.html",
+          "hash": "D7XgzhnKW+pKqgfUtx+cC6B8uDqDvPm4N4/HtFtLyF4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.ReliabilityQosPolicyKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.ReliabilityQosPolicyKind.html",
+          "hash": "UIXLa/w9bEcoA4WIvyW3tWowG5xMGKn6IDomYsPEKeM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.RequestedDeadlineMissedStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.RequestedDeadlineMissedStatus.html",
+          "hash": "jZu1R0Z+1qyRPHpSGtLzWlpUEwSFrA1/ZsxzW0dSdFc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.RequestedIncompatibleQosStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.RequestedIncompatibleQosStatus.html",
+          "hash": "+FRtks0+Ao+G5JkFqvQzzaJxIhp3H6t9USxZp7LTm3Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.ResourceLimitsQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.ResourceLimitsQosPolicy.html",
+          "hash": "SXGIqKRhdYg7zXmlLUFEzK3nfz54ZxWxdMPlF+Wv3wY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.ReturnCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.ReturnCode.html",
+          "hash": "IBuvXyVLQyGoU+O1ub+NYrgFrkUC/lT/D7UV+zEMsLk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.SampleInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.SampleInfo.html",
+          "hash": "RowAKb79jgggIt/33F8UsuenEZBP25Lm2Ckce5j/OAM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.SampleLostStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.SampleLostStatus.html",
+          "hash": "nNmJza6//pULbR00NUEzjxxPoCeLRNr2UHs7ESBdrbs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.SampleRejectedStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.SampleRejectedStatus.html",
+          "hash": "yaruQ/4rDsQ4Ab9LSwiler8G3rrCgqVzBuYxTp8Kb2U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.SampleRejectedStatusKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.SampleRejectedStatusKind.html",
+          "hash": "Kb4O/0fKwW8l3wNkO/rVhjaV7rf/vzwAY7Fd8DSW/9Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.SampleStateKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.SampleStateKind.html",
+          "hash": "k8wAMCdJxhWnYHRDvduL/8HaeqFIsitb62XXOumb13w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.SampleStateMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.SampleStateMask.html",
+          "hash": "7GW/lMJEesHt9/7uxiqcXyxBpoJ85pWMzFooKZj/mkc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.StatusCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.StatusCondition.html",
+          "hash": "euqH6OCStUeIc2aXuwRxVOy0Solxe5qXzH+jFekGF60="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.StatusKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.StatusKind.html",
+          "hash": "sG/w4rdvgWl39tvCl0aXtBHm3rfCWpTAkRj7CeRehQY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.StatusMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.StatusMask.html",
+          "hash": "Lma/invWupSVqOKJmt6iceP6wKCTrwKPlf1XAZ/XXFU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.Subscriber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.Subscriber.html",
+          "hash": "yV2hvL1ygjkp/9Hz53aZ3whWJ0RIcqXf9yo0mKnGHMs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.SubscriberListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.SubscriberListener.html",
+          "hash": "ZSo0xFYgNfr1Koj/OO86O6My9XSzhO7SNd7EIhBSsqg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.SubscriberQos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.SubscriberQos.html",
+          "hash": "tGBFd5Mc5pVly3Mw+6UnH8tncY9UuWJBQ9gRJy5+XZE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.SubscriptionBuiltinTopicData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html",
+          "hash": "128JfbQsHpiXznFq58hNObfsOB6K0ZMwknxeobLQ3xQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.SubscriptionMatchedStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.SubscriptionMatchedStatus.html",
+          "hash": "3EBmfVPY6m7Pv5B7qW/y0otDZ1gsSKFauxb0i26ONLA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.TimeBasedFilterQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.TimeBasedFilterQosPolicy.html",
+          "hash": "Fi9LD8WOJHJjhi4M8Zm6uLHi/SZX/yhe/2hRSJmKRDw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.Topic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.Topic.html",
+          "hash": "eJVxVYo8l8GA0urqYT02Z2oIJySU5SFJv//i+ceHyg4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.TopicBuiltinTopicData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.TopicBuiltinTopicData.html",
+          "hash": "KAB2YCwnmBLqk51x5kTwhC+bLxEW3t1k1Zmiv0H9m4g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.TopicDataQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.TopicDataQosPolicy.html",
+          "hash": "rl8m2bFVOfqO9gtvLIt9nsi8GEeMvrYk2TBaV5ULTA4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.TopicDescription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.TopicDescription.html",
+          "hash": "vrHPNUH4d8cyZOi1Ly+3/WKsMcA2AXLAfLFR75/YYXc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.TopicListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.TopicListener.html",
+          "hash": "K2FkU/hT/jv6tk44ko6z/cHiFhCICHoc9NZ1eyoYj20="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.TopicQos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.TopicQos.html",
+          "hash": "0oBeJRWy1Ouj+ZTADC6iPY/oujAORWl0TKOPvM6gWsY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.TransportPriorityQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.TransportPriorityQosPolicy.html",
+          "hash": "XYavaquIaxYIM3t+jGZ+3GSVswukHJJgh0EAVhE9Sw8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.UserDataQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.UserDataQosPolicy.html",
+          "hash": "EZ1cI66M3dcu9fkVo2JJR6jk8SygSoqslW2dVSEw8qI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.ViewStateKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.ViewStateKind.html",
+          "hash": "GcQlQYivvT5AaX3f8SLH/pEOXOrtwLbEWWMgoJWmiDs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.ViewStateMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.ViewStateMask.html",
+          "hash": "VdSo7OJnGt3AaIZTVn2M0JeNQPVk/zWF4Opl6LCuZW0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.WaitSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.WaitSet.html",
+          "hash": "GZpEgke3yuicJwVqKGbfVuUyO9dB0W3HSHt2GBMr/Xo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.html",
+          "hash": "JeIAmN37oK/cn+2MGLiEyYkYWsGypQ/w6mXQx34gfOI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.DDS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.DDS.html",
+          "hash": "xCOEVqKsaFpfCgtDLkg78L4ihq3cEPg637qqPw5EfJM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.OpenDDS.DCPS.BudgetExceededStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.OpenDDS.DCPS.BudgetExceededStatus.html",
+          "hash": "mWbJWJVJZ8cKOHv18exK3IMOFOiGGi9h4qPqAaL203c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.OpenDDS.DCPS.Discovery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.OpenDDS.DCPS.Discovery.html",
+          "hash": "xkY9TFXLGi/spQERagbBPiyVph7RVvogxs4ttXXi5J8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.OpenDDS.DCPS.InfoRepoDiscovery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.OpenDDS.DCPS.InfoRepoDiscovery.html",
+          "hash": "QOXiWI711WnFPJn7oiM7HR86kigxhBHMJVVM4eDK2iU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.OpenDDS.DCPS.ParticipantService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.OpenDDS.DCPS.ParticipantService.html",
+          "hash": "Dp/CHqpGiQP0YqKAXT6VDuEEnlTP4sxIHPs9McN90ug="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.html",
+          "hash": "SLGxtqnPGRLgVKBQyZbuBJbcCthXdtY5bGngKGvigg8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.OpenDDS.DCPS.TcpInst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.OpenDDS.DCPS.TcpInst.html",
+          "hash": "vKxGx62RvF0BBC9IA2dgmNO5FZJ5Pa3jhvoEIUSX4ZI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.OpenDDS.DCPS.TransportConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.OpenDDS.DCPS.TransportConfig.html",
+          "hash": "z7qMBRpOi4Au5yNxkL8pXoAZf2cBbG/Yws6zYOZGu6U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.OpenDDS.DCPS.TransportInst.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.OpenDDS.DCPS.TransportInst.html",
+          "hash": "FAAWpS6+xweUE62ekiMsIt7bKeMfB+BH/ryLZFyDUIA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.OpenDDS.DCPS.TransportRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.OpenDDS.DCPS.TransportRegistry.html",
+          "hash": "H4fN9xkJt8iZgfYjJQjizqBXoBRGg21p5CIPSjPlEmY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.OpenDDS.DCPS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.OpenDDS.DCPS.html",
+          "hash": "rqMzCAinxaO7jq+i8Mdj18cOsQH5J1CJgJEVfzeQt7I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.html",
+          "hash": "jVL9at12KNUtnLPKJ/CMbnTvAeiQwnRnT1lK7pZD9CY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.OpenDDS.RTPS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.OpenDDS.RTPS.html",
+          "hash": "bP/xDeLI1qLq7WWoPymIQMabfQnuCFv9zXA49v6wYUk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.TimeValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.TimeValue.html",
+          "hash": "n1MLjoguxgO7AvZe+655D3M4F5WcPLVXtHZSvnlL/Ak="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.Timestamp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.Timestamp.html",
+          "hash": "EZW5xyozFmuQ5iugt1I5fe8F76GXtb6pIrJGYXpWWLs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenDDSharp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenDDSharp.html",
+          "hash": "fqLgD+/T6E+lF22OeB0WCIdS0N7qkJNDvlx/6Ph+Kjc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "SMu+P3qWi0Ip7yuXmVKKMhUC5x3sEiChWm1QM5vpBGA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "xWqLSTik8/drcY8cJkioDruNDZ/3dV+INK/ALvpSHxo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting_started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting_started.html",
+          "hash": "qg7C3YIsAbvaW3vbuASR9fA2FwLu4UG2jAVTcWVIVo0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/idl.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/idl.html",
+          "hash": "DMT62eB2lxPc/O+lOmRcizXaMKm4Iq19XdD6TKom2Iw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "jvQCTElhjtmQtmtjJ+039QmTl/xMWDpLTMyga8AdMZY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "hJQdaBr7JpWT+twGZWwk3SJKpZYORqgH0M1ZCaVD5L0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "CD0oAOhM2QikWc82AcK6w7lfj5nVlKiwzvChotIEjvM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 4
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 106,
+          "skipped_file_count": 106
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
