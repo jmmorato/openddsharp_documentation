@@ -1,0 +1,2256 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SubscriptionBuiltinTopicDataDataReader
+   | OpenDDSharp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SubscriptionBuiltinTopicDataDataReader
+   | OpenDDSharp Documentation ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4366666401981011" crossorigin="anonymous"></script>
+                <!-- openddsharp_ads -->
+                <ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-4366666401981011" data-ad-slot="6527324727" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+  
+  
+  <h1 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader" class="text-break">Class SubscriptionBuiltinTopicDataDataReader
+  </h1>
+  <div class="markdown level0 summary"><p><a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a> <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="OpenDDSharp.DDS.Entity.html">Entity</a></div>
+    <div class="level2"><a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a></div>
+    <div class="level3"><span class="xref">SubscriptionBuiltinTopicDataDataReader</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_Subscriber">DataReader.Subscriber</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_TopicDescription">DataReader.TopicDescription</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_Listener">DataReader.Listener</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_CreateReadCondition">DataReader.CreateReadCondition()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_CreateReadCondition_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_">DataReader.CreateReadCondition(SampleStateMask, ViewStateMask, InstanceStateMask)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_CreateQueryCondition_System_String_System_String___">DataReader.CreateQueryCondition(String, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_CreateQueryCondition_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_System_String_System_String___">DataReader.CreateQueryCondition(SampleStateMask, ViewStateMask, InstanceStateMask, String, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_DeleteReadCondition_OpenDDSharp_DDS_ReadCondition_">DataReader.DeleteReadCondition(ReadCondition)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_DeleteContainedEntities">DataReader.DeleteContainedEntities()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_GetQos_OpenDDSharp_DDS_DataReaderQos_">DataReader.GetQos(DataReaderQos)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_SetQos_OpenDDSharp_DDS_DataReaderQos_">DataReader.SetQos(DataReaderQos)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_GetListener">DataReader.GetListener()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_SetListener_OpenDDSharp_DDS_DataReaderListener_">DataReader.SetListener(DataReaderListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_SetListener_OpenDDSharp_DDS_DataReaderListener_OpenDDSharp_DDS_StatusMask_">DataReader.SetListener(DataReaderListener, StatusMask)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_GetSampleRejectedStatus_OpenDDSharp_DDS_SampleRejectedStatus__">DataReader.GetSampleRejectedStatus(SampleRejectedStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_GetLivelinessChangedStatus_OpenDDSharp_DDS_LivelinessChangedStatus__">DataReader.GetLivelinessChangedStatus(LivelinessChangedStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_GetRequestedDeadlineMissedStatus_OpenDDSharp_DDS_RequestedDeadlineMissedStatus__">DataReader.GetRequestedDeadlineMissedStatus(RequestedDeadlineMissedStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_GetRequestedIncompatibleQosStatus_OpenDDSharp_DDS_RequestedIncompatibleQosStatus__">DataReader.GetRequestedIncompatibleQosStatus(RequestedIncompatibleQosStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_GetSubscriptionMatchedStatus_OpenDDSharp_DDS_SubscriptionMatchedStatus__">DataReader.GetSubscriptionMatchedStatus(SubscriptionMatchedStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_GetSampleLostStatus_OpenDDSharp_DDS_SampleLostStatus__">DataReader.GetSampleLostStatus(SampleLostStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_WaitForHistoricalData_OpenDDSharp_DDS_Duration_">DataReader.WaitForHistoricalData(Duration)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_GetMatchedPublications_System_Collections_Generic_ICollection_OpenDDSharp_DDS_InstanceHandle__">DataReader.GetMatchedPublications(ICollection&lt;InstanceHandle&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_GetMatchedPublicationData_OpenDDSharp_DDS_InstanceHandle_OpenDDSharp_DDS_PublicationBuiltinTopicData__">DataReader.GetMatchedPublicationData(InstanceHandle, PublicationBuiltinTopicData)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.Entity.html#OpenDDSharp_DDS_Entity_StatusCondition">Entity.StatusCondition</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.Entity.html#OpenDDSharp_DDS_Entity_StatusChanges">Entity.StatusChanges</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.Entity.html#OpenDDSharp_DDS_Entity_InstanceHandle">Entity.InstanceHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.Entity.html#OpenDDSharp_DDS_Entity_Enable">Entity.Enable()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenDDSharp.DDS.html">OpenDDSharp.DDS</a></h6>
+  <h6><strong>Assembly</strong>: OpenDDSharp.Standard.dll</h6>
+  <h5 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SubscriptionBuiltinTopicDataDataReader : DataReader</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader__ctor_OpenDDSharp_DDS_DataReader_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.%23ctor(OpenDDSharp.DDS.DataReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L54">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader__ctor_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.#ctor*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader__ctor_OpenDDSharp_DDS_DataReader_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.#ctor(OpenDDSharp.DDS.DataReader)">SubscriptionBuiltinTopicDataDataReader(DataReader)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.html">SubscriptionBuiltinTopicDataDataReader</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubscriptionBuiltinTopicDataDataReader(DataReader dataReader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a></td>
+        <td><span class="parametername">dataReader</span></td>
+        <td><p>The built-in <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_BUILT_IN_SUBSCRIPTION_TOPIC.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.BUILT_IN_SUBSCRIPTION_TOPIC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L37">View Source</a>
+  </span>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_BUILT_IN_SUBSCRIPTION_TOPIC" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.BUILT_IN_SUBSCRIPTION_TOPIC">BUILT_IN_SUBSCRIPTION_TOPIC</h4>
+  <div class="markdown level1 summary"><p>The built-in participant topic name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string BUILT_IN_SUBSCRIPTION_TOPIC = &quot;DCPSSubscription&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_BUILT_IN_SUBSCRIPTION_TOPIC_TYPE.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.BUILT_IN_SUBSCRIPTION_TOPIC_TYPE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L42">View Source</a>
+  </span>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_BUILT_IN_SUBSCRIPTION_TOPIC_TYPE" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.BUILT_IN_SUBSCRIPTION_TOPIC_TYPE">BUILT_IN_SUBSCRIPTION_TOPIC_TYPE</h4>
+  <div class="markdown level1 summary"><p>The built-in participant topic type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string BUILT_IN_SUBSCRIPTION_TOPIC_TYPE = &quot;SUBSCRIPTION_BUILT_IN_TOPIC_TYPE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_GetKeyValue_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__OpenDDSharp_DDS_InstanceHandle_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.GetKeyValue(OpenDDSharp.DDS.SubscriptionBuiltinTopicData%40%2COpenDDSharp.DDS.InstanceHandle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L1184">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_GetKeyValue_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.GetKeyValue*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_GetKeyValue_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__OpenDDSharp_DDS_InstanceHandle_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.GetKeyValue(OpenDDSharp.DDS.SubscriptionBuiltinTopicData@,OpenDDSharp.DDS.InstanceHandle)">GetKeyValue(ref SubscriptionBuiltinTopicData, InstanceHandle)</h4>
+  <div class="markdown level1 summary"><p>Retrieve the instance key that corresponds to an instance handle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode GetKeyValue(ref SubscriptionBuiltinTopicData data, InstanceHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>A user data type specific key holder of type T whose key fields are filled by this operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> whose key is to be retrieved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_LookupInstance_OpenDDSharp_DDS_SubscriptionBuiltinTopicData_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.LookupInstance(OpenDDSharp.DDS.SubscriptionBuiltinTopicData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L1208">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_LookupInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.LookupInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_LookupInstance_OpenDDSharp_DDS_SubscriptionBuiltinTopicData_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.LookupInstance(OpenDDSharp.DDS.SubscriptionBuiltinTopicData)">LookupInstance(SubscriptionBuiltinTopicData)</h4>
+  <div class="markdown level1 summary"><p>Retrieve the <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> that corresponds to an instance key holder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InstanceHandle LookupInstance(SubscriptionBuiltinTopicData instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The key holder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> retrieved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Read_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Read(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L68">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Read_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Read*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Read_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Read(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo})">Read(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode Read(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Read_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__System_Int32_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Read(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L85">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Read_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Read*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Read_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__System_Int32_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Read(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},System.Int32)">Read(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples with a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode Read(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, int maxSamples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum allowed samples to be read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Read_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__System_Int32_OpenDDSharp_DDS_ReadCondition_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Read(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2CSystem.Int32%2COpenDDSharp.DDS.ReadCondition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L103">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Read_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Read*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Read_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__System_Int32_OpenDDSharp_DDS_ReadCondition_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Read(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},System.Int32,OpenDDSharp.DDS.ReadCondition)">Read(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, Int32, ReadCondition)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples based in the condition provided and a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode Read(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, int maxSamples, ReadCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum allowed samples to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Read_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__System_Int32_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Read(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2CSystem.Int32%2COpenDDSharp.DDS.SampleStateMask%2COpenDDSharp.DDS.ViewStateMask%2COpenDDSharp.DDS.InstanceStateMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L172">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Read_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Read*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Read_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__System_Int32_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Read(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},System.Int32,OpenDDSharp.DDS.SampleStateMask,OpenDDSharp.DDS.ViewStateMask,OpenDDSharp.DDS.InstanceStateMask)">Read(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, Int32, SampleStateMask, ViewStateMask, InstanceStateMask)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples based in the state parameters provided and a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode Read(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, int maxSamples, SampleStateMask sampleStates, ViewStateMask viewStates, InstanceStateMask instanceStates)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum allowed samples to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a></td>
+        <td><span class="parametername">sampleStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a> state to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a></td>
+        <td><span class="parametername">viewStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a> state to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a></td>
+        <td><span class="parametername">instanceStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a> state to be read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L406">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle)">ReadInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples for the specific instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode ReadInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The provided <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> that indicates the instance to be read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L425">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle,System.Int32)">ReadInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle, Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples for the specific instance with a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode ReadInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle handle, int maxSamples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The provided <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> that indicates the instance to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum retrieved samples allowed per call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_ReadCondition_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle%2CSystem.Int32%2COpenDDSharp.DDS.ReadCondition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L448">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_ReadCondition_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle,System.Int32,OpenDDSharp.DDS.ReadCondition)">ReadInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle, Int32, ReadCondition)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples for the specific instance based in the condition provided and with a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode ReadInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle handle, int maxSamples, ReadCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The provided <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> that indicates the instance to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum retrieved samples allowed per call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle%2CSystem.Int32%2COpenDDSharp.DDS.SampleStateMask%2COpenDDSharp.DDS.ViewStateMask%2COpenDDSharp.DDS.InstanceStateMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L520">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle,System.Int32,OpenDDSharp.DDS.SampleStateMask,OpenDDSharp.DDS.ViewStateMask,OpenDDSharp.DDS.InstanceStateMask)">ReadInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle, Int32, SampleStateMask, ViewStateMask, InstanceStateMask)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples for the specific instance based in the state parameters provided and a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode ReadInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle handle, int maxSamples, SampleStateMask sampleStates, ViewStateMask viewStates, InstanceStateMask instanceStates)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The provided <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> that indicates the instance to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum allowed samples to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a></td>
+        <td><span class="parametername">sampleStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a> state to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a></td>
+        <td><span class="parametername">viewStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a> state to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a></td>
+        <td><span class="parametername">instanceStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a> state to be read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L768">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle)">ReadNextInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples for the next instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode ReadNextInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle previousHandle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">previousHandle</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> of the previous instance read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L789">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle,System.Int32)">ReadNextInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle, Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples for the next instance with a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode ReadNextInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle previousHandle, int maxSamples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">previousHandle</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> of the previous instance read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum retrieved samples allowed per call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_ReadCondition_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle%2CSystem.Int32%2COpenDDSharp.DDS.ReadCondition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L812">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_ReadCondition_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle,System.Int32,OpenDDSharp.DDS.ReadCondition)">ReadNextInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle, Int32, ReadCondition)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples for the next instance based in the condition provided and with a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode ReadNextInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle previousHandle, int maxSamples, ReadCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">previousHandle</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> of the previous instance read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum retrieved samples allowed per call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle%2CSystem.Int32%2COpenDDSharp.DDS.SampleStateMask%2COpenDDSharp.DDS.ViewStateMask%2COpenDDSharp.DDS.InstanceStateMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L884">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle,System.Int32,OpenDDSharp.DDS.SampleStateMask,OpenDDSharp.DDS.ViewStateMask,OpenDDSharp.DDS.InstanceStateMask)">ReadNextInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle, Int32, SampleStateMask, ViewStateMask, InstanceStateMask)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples for the next instance based in the state parameters provided and a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode ReadNextInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle previousHandle, int maxSamples, SampleStateMask sampleStates, ViewStateMask viewStates, InstanceStateMask instanceStates)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">previousHandle</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> of the previous instance read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum allowed samples to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a></td>
+        <td><span class="parametername">sampleStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a> state to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a></td>
+        <td><span class="parametername">viewStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a> state to be read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a></td>
+        <td><span class="parametername">instanceStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a> state to be read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextSample_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__OpenDDSharp_DDS_SampleInfo_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextSample(OpenDDSharp.DDS.SubscriptionBuiltinTopicData%40%2COpenDDSharp.DDS.SampleInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L1131">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextSample_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextSample*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_ReadNextSample_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__OpenDDSharp_DDS_SampleInfo_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.ReadNextSample(OpenDDSharp.DDS.SubscriptionBuiltinTopicData@,OpenDDSharp.DDS.SampleInfo)">ReadNextSample(ref SubscriptionBuiltinTopicData, SampleInfo)</h4>
+  <div class="markdown level1 summary"><p>Reads next sample in the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode ReadNextSample(ref SubscriptionBuiltinTopicData data, SampleInfo sampleInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data sample received.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a></td>
+        <td><span class="parametername">sampleInfo</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> received.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Take_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Take(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L236">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Take_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Take*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Take_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Take(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo})">Take(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;)</h4>
+  <div class="markdown level1 summary"><p>Takes all samples.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode Take(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Take_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__System_Int32_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Take(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L253">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Take_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Take*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Take_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__System_Int32_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Take(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},System.Int32)">Take(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads all samples with a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode Take(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, int maxSamples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum allowed samples to be read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Take_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__System_Int32_OpenDDSharp_DDS_ReadCondition_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Take(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2CSystem.Int32%2COpenDDSharp.DDS.ReadCondition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L273">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Take_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Take*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Take_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__System_Int32_OpenDDSharp_DDS_ReadCondition_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Take(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},System.Int32,OpenDDSharp.DDS.ReadCondition)">Take(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, Int32, ReadCondition)</h4>
+  <div class="markdown level1 summary"><p>Takes all samples based in the condition provided and a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode Take(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, int maxSamples, ReadCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum allowed samples to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Take_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__System_Int32_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Take(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2CSystem.Int32%2COpenDDSharp.DDS.SampleStateMask%2COpenDDSharp.DDS.ViewStateMask%2COpenDDSharp.DDS.InstanceStateMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L342">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Take_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Take*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_Take_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__System_Int32_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.Take(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},System.Int32,OpenDDSharp.DDS.SampleStateMask,OpenDDSharp.DDS.ViewStateMask,OpenDDSharp.DDS.InstanceStateMask)">Take(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, Int32, SampleStateMask, ViewStateMask, InstanceStateMask)</h4>
+  <div class="markdown level1 summary"><p>Takes all samples based in the state parameters provided and a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode Take(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, int maxSamples, SampleStateMask sampleStates, ViewStateMask viewStates, InstanceStateMask instanceStates)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum allowed samples to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a></td>
+        <td><span class="parametername">sampleStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a> state to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a></td>
+        <td><span class="parametername">viewStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a> state to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a></td>
+        <td><span class="parametername">instanceStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a> state to be taken.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L587">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle)">TakeInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle)</h4>
+  <div class="markdown level1 summary"><p>Takes all samples for the specific instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode TakeInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The provided <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> that indicates the instance to be read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L606">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle,System.Int32)">TakeInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle, Int32)</h4>
+  <div class="markdown level1 summary"><p>Takes all samples for the specific instance with a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode TakeInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle handle, int maxSamples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The provided <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> that indicates the instance to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum retrieved samples allowed per call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_ReadCondition_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle%2CSystem.Int32%2COpenDDSharp.DDS.ReadCondition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L629">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_ReadCondition_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle,System.Int32,OpenDDSharp.DDS.ReadCondition)">TakeInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle, Int32, ReadCondition)</h4>
+  <div class="markdown level1 summary"><p>Takes all samples for the specific instance based in the condition provided and with a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode TakeInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle handle, int maxSamples, ReadCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The provided <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> that indicates the instance to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum retrieved samples allowed per call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle%2CSystem.Int32%2COpenDDSharp.DDS.SampleStateMask%2COpenDDSharp.DDS.ViewStateMask%2COpenDDSharp.DDS.InstanceStateMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L701">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle,System.Int32,OpenDDSharp.DDS.SampleStateMask,OpenDDSharp.DDS.ViewStateMask,OpenDDSharp.DDS.InstanceStateMask)">TakeInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle, Int32, SampleStateMask, ViewStateMask, InstanceStateMask)</h4>
+  <div class="markdown level1 summary"><p>Takes all samples for the specific instance based in the state parameters provided and a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode TakeInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle handle, int maxSamples, SampleStateMask sampleStates, ViewStateMask viewStates, InstanceStateMask instanceStates)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The provided <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> that indicates the instance to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum allowed samples to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a></td>
+        <td><span class="parametername">sampleStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a> state to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a></td>
+        <td><span class="parametername">viewStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a> state to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a></td>
+        <td><span class="parametername">instanceStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a> state to be taken.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L951">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle)">TakeNextInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle)</h4>
+  <div class="markdown level1 summary"><p>Takes all samples for the next instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode TakeNextInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle previousHandle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">previousHandle</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> of the previous instance taken.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L970">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle,System.Int32)">TakeNextInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle, Int32)</h4>
+  <div class="markdown level1 summary"><p>Takes all samples for the next instance with a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode TakeNextInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle previousHandle, int maxSamples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">previousHandle</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> of the previous instance taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum retrieved samples allowed per call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_ReadCondition_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle%2CSystem.Int32%2COpenDDSharp.DDS.ReadCondition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L993">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_ReadCondition_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle,System.Int32,OpenDDSharp.DDS.ReadCondition)">TakeNextInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle, Int32, ReadCondition)</h4>
+  <div class="markdown level1 summary"><p>Takes all samples for the next instance based in the condition provided and with a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode TakeNextInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle previousHandle, int maxSamples, ReadCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">previousHandle</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> of the previous instance taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum retrieved samples allowed per call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> applied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextInstance(System.Collections.Generic.List%7BOpenDDSharp.DDS.SubscriptionBuiltinTopicData%7D%2CSystem.Collections.Generic.List%7BOpenDDSharp.DDS.SampleInfo%7D%2COpenDDSharp.DDS.InstanceHandle%2CSystem.Int32%2COpenDDSharp.DDS.SampleStateMask%2COpenDDSharp.DDS.ViewStateMask%2COpenDDSharp.DDS.InstanceStateMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L1065">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextInstance_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextInstance*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextInstance_System_Collections_Generic_List_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__System_Collections_Generic_List_OpenDDSharp_DDS_SampleInfo__OpenDDSharp_DDS_InstanceHandle_System_Int32_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextInstance(System.Collections.Generic.List{OpenDDSharp.DDS.SubscriptionBuiltinTopicData},System.Collections.Generic.List{OpenDDSharp.DDS.SampleInfo},OpenDDSharp.DDS.InstanceHandle,System.Int32,OpenDDSharp.DDS.SampleStateMask,OpenDDSharp.DDS.ViewStateMask,OpenDDSharp.DDS.InstanceStateMask)">TakeNextInstance(List&lt;SubscriptionBuiltinTopicData&gt;, List&lt;SampleInfo&gt;, InstanceHandle, Int32, SampleStateMask, ViewStateMask, InstanceStateMask)</h4>
+  <div class="markdown level1 summary"><p>Takes all samples for the next instance based in the state parameters provided and a maximum allowed samples to be retrieved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode TakeNextInstance(List&lt;SubscriptionBuiltinTopicData&gt; receivedData, List&lt;SampleInfo&gt; receivedInfo, InstanceHandle previousHandle, int maxSamples, SampleStateMask sampleStates, ViewStateMask viewStates, InstanceStateMask instanceStates)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a>&gt;</td>
+        <td><span class="parametername">receivedData</span></td>
+        <td><p>The list of data samples taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a>&gt;</td>
+        <td><span class="parametername">receivedInfo</span></td>
+        <td><p>The list of <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">previousHandle</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> of the previous instance taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxSamples</span></td>
+        <td><p>The maximum allowed samples to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a></td>
+        <td><span class="parametername">sampleStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a> state to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a></td>
+        <td><span class="parametername">viewStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a> state to be taken.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a></td>
+        <td><span class="parametername">instanceStates</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a> state to be taken.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextSample_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__OpenDDSharp_DDS_SampleInfo_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextSample(OpenDDSharp.DDS.SubscriptionBuiltinTopicData%40%2COpenDDSharp.DDS.SampleInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L1158">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextSample_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextSample*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader_TakeNextSample_OpenDDSharp_DDS_SubscriptionBuiltinTopicData__OpenDDSharp_DDS_SampleInfo_" data-uid="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.TakeNextSample(OpenDDSharp.DDS.SubscriptionBuiltinTopicData@,OpenDDSharp.DDS.SampleInfo)">TakeNextSample(ref SubscriptionBuiltinTopicData, SampleInfo)</h4>
+  <div class="markdown level1 summary"><p>Takes next sample in the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode TakeNextSample(ref SubscriptionBuiltinTopicData data, SampleInfo sampleInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data sample received.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a></td>
+        <td><span class="parametername">sampleInfo</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> received.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriptionBuiltinTopicDataDataReader.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriptionBuiltinTopicDataDataReader.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018-2022 Jose Morat&oacute;</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

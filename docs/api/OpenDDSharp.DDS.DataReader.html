@@ -1,0 +1,1363 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataReader
+   | OpenDDSharp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataReader
+   | OpenDDSharp Documentation ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenDDSharp.DDS.DataReader">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4366666401981011" crossorigin="anonymous"></script>
+                <!-- openddsharp_ads -->
+                <ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-4366666401981011" data-ad-slot="6527324727" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+  
+  
+  <h1 id="OpenDDSharp_DDS_DataReader" data-uid="OpenDDSharp.DDS.DataReader" class="text-break">Class DataReader
+  </h1>
+  <div class="markdown level0 summary"><p>A DataReader allows the application to declare the data it wishes to receive (i.e., make a subscription) and to access the
+data received by the attached <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_Subscriber">Subscriber</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="OpenDDSharp.DDS.Entity.html">Entity</a></div>
+    <div class="level2"><span class="xref">DataReader</span></div>
+      <div class="level3"><a class="xref" href="OpenDDSharp.DDS.ParticipantBuiltinTopicDataDataReader.html">ParticipantBuiltinTopicDataDataReader</a></div>
+      <div class="level3"><a class="xref" href="OpenDDSharp.DDS.PublicationBuiltinTopicDataDataReader.html">PublicationBuiltinTopicDataDataReader</a></div>
+      <div class="level3"><a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.html">SubscriptionBuiltinTopicDataDataReader</a></div>
+      <div class="level3"><a class="xref" href="OpenDDSharp.DDS.TopicBuiltinTopicDataDataReader.html">TopicBuiltinTopicDataDataReader</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.Entity.html#OpenDDSharp_DDS_Entity_StatusCondition">Entity.StatusCondition</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.Entity.html#OpenDDSharp_DDS_Entity_StatusChanges">Entity.StatusChanges</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.Entity.html#OpenDDSharp_DDS_Entity_InstanceHandle">Entity.InstanceHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.Entity.html#OpenDDSharp_DDS_Entity_Enable">Entity.Enable()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenDDSharp.DDS.html">OpenDDSharp.DDS</a></h6>
+  <h6><strong>Assembly</strong>: OpenDDSharp.Standard.dll</h6>
+  <h5 id="OpenDDSharp_DDS_DataReader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DataReader : Entity</code></pre>
+  </div>
+  <h5 id="OpenDDSharp_DDS_DataReader_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>A DataReader refers to exactly one <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> (either a <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>, a <a class="xref" href="OpenDDSharp.DDS.ContentFilteredTopic.html">ContentFilteredTopic</a>, or a <a class="xref" href="OpenDDSharp.DDS.MultiTopic.html">MultiTopic</a>)
+that identifies the data to be read. The subscription has a unique resulting type. The data-reader may give access to several instances of the
+resulting type, which can be distinguished from each other by their key.</p>
+<p>All operations except for the operations <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_SetQos_OpenDDSharp_DDS_DataReaderQos_">SetQos(DataReaderQos)</a>, <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_GetQos_OpenDDSharp_DDS_DataReaderQos_">GetQos(DataReaderQos)</a>, SetListener,
+<a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_GetListener">GetListener()</a>, <a class="xref" href="OpenDDSharp.DDS.Entity.html#OpenDDSharp_DDS_Entity_Enable">Enable()</a>, and <a class="xref" href="OpenDDSharp.DDS.Entity.html#OpenDDSharp_DDS_Entity_StatusCondition">StatusCondition</a>
+return the value <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_NotEnabled">NotEnabled</a> if the DataReader has not been enabled yet.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L75">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader__ctor_" data-uid="OpenDDSharp.DDS.DataReader.#ctor*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader__ctor_System_IntPtr_" data-uid="OpenDDSharp.DDS.DataReader.#ctor(System.IntPtr)">DataReader(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DataReader(IntPtr native)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">native</span></td>
+        <td><p>The native pointer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_Listener.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.Listener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L66">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_Listener_" data-uid="OpenDDSharp.DDS.DataReader.Listener*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_Listener" data-uid="OpenDDSharp.DDS.DataReader.Listener">Listener</h4>
+  <div class="markdown level1 summary"><p>Gets the attached <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataReaderListener Listener { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_Subscriber.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.Subscriber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L55">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_Subscriber_" data-uid="OpenDDSharp.DDS.DataReader.Subscriber*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_Subscriber" data-uid="OpenDDSharp.DDS.DataReader.Subscriber">Subscriber</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_Subscriber">Subscriber</a> to which the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> belongs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Subscriber Subscriber { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_TopicDescription.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.TopicDescription%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L61">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_TopicDescription_" data-uid="OpenDDSharp.DDS.DataReader.TopicDescription*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_TopicDescription" data-uid="OpenDDSharp.DDS.DataReader.TopicDescription">TopicDescription</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> associated with the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.
+This is the same <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> that was used to create the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITopicDescription TopicDescription { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_CreateQueryCondition_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_System_String_System_String___.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.CreateQueryCondition(OpenDDSharp.DDS.SampleStateMask%2COpenDDSharp.DDS.ViewStateMask%2COpenDDSharp.DDS.InstanceStateMask%2CSystem.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L142">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_CreateQueryCondition_" data-uid="OpenDDSharp.DDS.DataReader.CreateQueryCondition*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_CreateQueryCondition_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_System_String_System_String___" data-uid="OpenDDSharp.DDS.DataReader.CreateQueryCondition(OpenDDSharp.DDS.SampleStateMask,OpenDDSharp.DDS.ViewStateMask,OpenDDSharp.DDS.InstanceStateMask,System.String,System.String[])">CreateQueryCondition(SampleStateMask, ViewStateMask, InstanceStateMask, String, String[])</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> with the desired sample states, view states and instance states.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryCondition CreateQueryCondition(SampleStateMask sampleStates, ViewStateMask viewStates, InstanceStateMask instanceStates, string queryExpression, params string[] queryParameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a></td>
+        <td><span class="parametername">sampleStates</span></td>
+        <td><p>The desired sample states mask.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a></td>
+        <td><span class="parametername">viewStates</span></td>
+        <td><p>The desired view states mask.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a></td>
+        <td><span class="parametername">instanceStates</span></td>
+        <td><p>The desired instance states mask.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">queryExpression</span></td>
+        <td><p>The query string, which must be a subset of the SQL query language.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">queryParameters</span></td>
+        <td><p>A sequence of strings which are the parameter values used in the SQL query string. The number of values in queryParameters must be equal or greater than the highest referenced n token in the queryExpression.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a></td>
+        <td><p>The newly created <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> on success, otherwise <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_DDS_DataReader_CreateQueryCondition_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_System_String_System_String____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The returned <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> will be attached and belong to the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_CreateQueryCondition_System_String_System_String___.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.CreateQueryCondition(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L125">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_CreateQueryCondition_" data-uid="OpenDDSharp.DDS.DataReader.CreateQueryCondition*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_CreateQueryCondition_System_String_System_String___" data-uid="OpenDDSharp.DDS.DataReader.CreateQueryCondition(System.String,System.String[])">CreateQueryCondition(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> to read samples with any sample states, any view states and any instance states.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryCondition CreateQueryCondition(string queryExpression, params string[] queryParameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">queryExpression</span></td>
+        <td><p>The query string, which must be a subset of the SQL query language.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">queryParameters</span></td>
+        <td><p>A sequence of strings which are the parameter values used in the SQL query string. The number of values in queryParameters must be equal or greater than the highest referenced n token in the queryExpression.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a></td>
+        <td><p>The newly created <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> on success, otherwise <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_DDS_DataReader_CreateQueryCondition_System_String_System_String____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The returned <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> will be attached and belong to the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_CreateReadCondition.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.CreateReadCondition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L90">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_CreateReadCondition_" data-uid="OpenDDSharp.DDS.DataReader.CreateReadCondition*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_CreateReadCondition" data-uid="OpenDDSharp.DDS.DataReader.CreateReadCondition">CreateReadCondition()</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> to read samples with any sample states, any view states and any instance states.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadCondition CreateReadCondition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a></td>
+        <td><p>The newly created <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> on success, otherwise <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_DDS_DataReader_CreateReadCondition_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The returned <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> will be attached and belong to the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_CreateReadCondition_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.CreateReadCondition(OpenDDSharp.DDS.SampleStateMask%2COpenDDSharp.DDS.ViewStateMask%2COpenDDSharp.DDS.InstanceStateMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L102">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_CreateReadCondition_" data-uid="OpenDDSharp.DDS.DataReader.CreateReadCondition*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_CreateReadCondition_OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_" data-uid="OpenDDSharp.DDS.DataReader.CreateReadCondition(OpenDDSharp.DDS.SampleStateMask,OpenDDSharp.DDS.ViewStateMask,OpenDDSharp.DDS.InstanceStateMask)">CreateReadCondition(SampleStateMask, ViewStateMask, InstanceStateMask)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> to read samples with the desired sample states, view states and instance states.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadCondition CreateReadCondition(SampleStateMask sampleStates, ViewStateMask viewStates, InstanceStateMask instanceStates)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a></td>
+        <td><span class="parametername">sampleStates</span></td>
+        <td><p>The desired sample states mask.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a></td>
+        <td><span class="parametername">viewStates</span></td>
+        <td><p>The desired view states mask.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a></td>
+        <td><span class="parametername">instanceStates</span></td>
+        <td><p>The desired instance states mask.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a></td>
+        <td><p>The newly created <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> on success, otherwise <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_DeleteContainedEntities.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.DeleteContainedEntities%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L196">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_DeleteContainedEntities_" data-uid="OpenDDSharp.DDS.DataReader.DeleteContainedEntities*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_DeleteContainedEntities" data-uid="OpenDDSharp.DDS.DataReader.DeleteContainedEntities">DeleteContainedEntities()</h4>
+  <div class="markdown level1 summary"><p>Deletes all the entities that were created by means of the &quot;create&quot; operations on the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>. That is, it
+deletes all contained <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> and <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode DeleteContainedEntities()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_DDS_DataReader_DeleteContainedEntities_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The operation will return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_PreconditionNotMet">PreconditionNotMet</a> if the any of the contained entities is in a state where it cannot be deleted.</p>
+<p>Once DeleteContainedEntities returns successfully, the application may delete the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> knowing that it has no
+contained <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> and <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> objects.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_DeleteReadCondition_OpenDDSharp_DDS_ReadCondition_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.DeleteReadCondition(OpenDDSharp.DDS.ReadCondition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L169">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_DeleteReadCondition_" data-uid="OpenDDSharp.DDS.DataReader.DeleteReadCondition*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_DeleteReadCondition_OpenDDSharp_DDS_ReadCondition_" data-uid="OpenDDSharp.DDS.DataReader.DeleteReadCondition(OpenDDSharp.DDS.ReadCondition)">DeleteReadCondition(ReadCondition)</h4>
+  <div class="markdown level1 summary"><p>Deletes a <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> attached to the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>. Since <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> specializes <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> it can
+also be used to delete a <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode DeleteReadCondition(ReadCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> to be deleted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_DDS_DataReader_DeleteReadCondition_OpenDDSharp_DDS_ReadCondition__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> is not attached to the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>, the operation will return the error <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_PreconditionNotMet">PreconditionNotMet</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_GetListener.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.GetListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L258">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_GetListener_" data-uid="OpenDDSharp.DDS.DataReader.GetListener*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_GetListener" data-uid="OpenDDSharp.DDS.DataReader.GetListener">GetListener()</h4>
+  <div class="markdown level1 summary"><p>Allows access to the attached <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;GetListener is deprecated, please use Listener property instead.&quot;)]
+public DataReaderListener GetListener()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a></td>
+        <td><p>The attached <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_GetLivelinessChangedStatus_OpenDDSharp_DDS_LivelinessChangedStatus__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.GetLivelinessChangedStatus(OpenDDSharp.DDS.LivelinessChangedStatus%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L313">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_GetLivelinessChangedStatus_" data-uid="OpenDDSharp.DDS.DataReader.GetLivelinessChangedStatus*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_GetLivelinessChangedStatus_OpenDDSharp_DDS_LivelinessChangedStatus__" data-uid="OpenDDSharp.DDS.DataReader.GetLivelinessChangedStatus(OpenDDSharp.DDS.LivelinessChangedStatus@)">GetLivelinessChangedStatus(ref LivelinessChangedStatus)</h4>
+  <div class="markdown level1 summary"><p>Allows access to the <a class="xref" href="OpenDDSharp.DDS.LivelinessChangedStatus.html">LivelinessChangedStatus</a> communication status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode GetLivelinessChangedStatus(ref LivelinessChangedStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.LivelinessChangedStatus.html">LivelinessChangedStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.LivelinessChangedStatus.html">LivelinessChangedStatus</a> to be filled up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_GetMatchedPublicationData_OpenDDSharp_DDS_InstanceHandle_OpenDDSharp_DDS_PublicationBuiltinTopicData__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.GetMatchedPublicationData(OpenDDSharp.DDS.InstanceHandle%2COpenDDSharp.DDS.PublicationBuiltinTopicData%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L443">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_GetMatchedPublicationData_" data-uid="OpenDDSharp.DDS.DataReader.GetMatchedPublicationData*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_GetMatchedPublicationData_OpenDDSharp_DDS_InstanceHandle_OpenDDSharp_DDS_PublicationBuiltinTopicData__" data-uid="OpenDDSharp.DDS.DataReader.GetMatchedPublicationData(OpenDDSharp.DDS.InstanceHandle,OpenDDSharp.DDS.PublicationBuiltinTopicData@)">GetMatchedPublicationData(InstanceHandle, ref PublicationBuiltinTopicData)</h4>
+  <div class="markdown level1 summary"><p>This operation retrieves information on a publication that is currently &quot;associated&quot; with the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>; that is, a publication
+with a matching <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> and compatible QoS that the application has not indicated should be &quot;ignored&quot; by means of the
+<a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> IgnorePublication operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode GetMatchedPublicationData(InstanceHandle publicationHandle, ref PublicationBuiltinTopicData publicationData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></td>
+        <td><span class="parametername">publicationHandle</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a> of the publication data requested.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.PublicationBuiltinTopicData.html">PublicationBuiltinTopicData</a></td>
+        <td><span class="parametername">publicationData</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.PublicationBuiltinTopicData.html">PublicationBuiltinTopicData</a> structure to be filled up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_DDS_DataReader_GetMatchedPublicationData_OpenDDSharp_DDS_InstanceHandle_OpenDDSharp_DDS_PublicationBuiltinTopicData___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The publicationHandle must correspond to a publication currently associated with the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> otherwise the operation
+will fail and return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_BadParameter">BadParameter</a>. The operation GetMatchedPublications can be used to find the publications that
+are currently matched with the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_GetMatchedPublications_System_Collections_Generic_ICollection_OpenDDSharp_DDS_InstanceHandle__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.GetMatchedPublications(System.Collections.Generic.ICollection%7BOpenDDSharp.DDS.InstanceHandle%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L411">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_GetMatchedPublications_" data-uid="OpenDDSharp.DDS.DataReader.GetMatchedPublications*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_GetMatchedPublications_System_Collections_Generic_ICollection_OpenDDSharp_DDS_InstanceHandle__" data-uid="OpenDDSharp.DDS.DataReader.GetMatchedPublications(System.Collections.Generic.ICollection{OpenDDSharp.DDS.InstanceHandle})">GetMatchedPublications(ICollection&lt;InstanceHandle&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets the list of publications currently &quot;associated&quot; with the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>; that is, publications that have a
+matching <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> and compatible QoS that the application has not indicated should be &quot;ignored&quot; by means of the
+<a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> IgnorePublication operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode GetMatchedPublications(ICollection&lt;InstanceHandle&gt; publicationHandles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a>&gt;</td>
+        <td><span class="parametername">publicationHandles</span></td>
+        <td><p>The collection of publication <a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a>s to be filled up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_DDS_DataReader_GetMatchedPublications_System_Collections_Generic_ICollection_OpenDDSharp_DDS_InstanceHandle___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The handles returned in the 'publicationHandles' collection are the ones that are used by the DDS implementation to locally identify
+the corresponding matched <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> entities. These handles match the ones that appear in the <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html#OpenDDSharp_DDS_SampleInfo_InstanceHandle">InstanceHandle</a> property of the
+<a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> when reading the &quot;DCPSPublications&quot; builtin topic.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_GetQos_OpenDDSharp_DDS_DataReaderQos_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.GetQos(OpenDDSharp.DDS.DataReaderQos)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L213">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_GetQos_" data-uid="OpenDDSharp.DDS.DataReader.GetQos*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_GetQos_OpenDDSharp_DDS_DataReaderQos_" data-uid="OpenDDSharp.DDS.DataReader.GetQos(OpenDDSharp.DDS.DataReaderQos)">GetQos(DataReaderQos)</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> QoS policies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode GetQos(DataReaderQos qos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReaderQos.html">DataReaderQos</a></td>
+        <td><span class="parametername">qos</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.DataReaderQos.html">DataReaderQos</a> to be filled up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_GetRequestedDeadlineMissedStatus_OpenDDSharp_DDS_RequestedDeadlineMissedStatus__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.GetRequestedDeadlineMissedStatus(OpenDDSharp.DDS.RequestedDeadlineMissedStatus%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L328">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_GetRequestedDeadlineMissedStatus_" data-uid="OpenDDSharp.DDS.DataReader.GetRequestedDeadlineMissedStatus*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_GetRequestedDeadlineMissedStatus_OpenDDSharp_DDS_RequestedDeadlineMissedStatus__" data-uid="OpenDDSharp.DDS.DataReader.GetRequestedDeadlineMissedStatus(OpenDDSharp.DDS.RequestedDeadlineMissedStatus@)">GetRequestedDeadlineMissedStatus(ref RequestedDeadlineMissedStatus)</h4>
+  <div class="markdown level1 summary"><p>Allows access to the <a class="xref" href="OpenDDSharp.DDS.RequestedDeadlineMissedStatus.html">RequestedDeadlineMissedStatus</a> communication status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode GetRequestedDeadlineMissedStatus(ref RequestedDeadlineMissedStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.RequestedDeadlineMissedStatus.html">RequestedDeadlineMissedStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.RequestedDeadlineMissedStatus.html">RequestedDeadlineMissedStatus</a> to be filled up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_GetRequestedIncompatibleQosStatus_OpenDDSharp_DDS_RequestedIncompatibleQosStatus__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.GetRequestedIncompatibleQosStatus(OpenDDSharp.DDS.RequestedIncompatibleQosStatus%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L343">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_GetRequestedIncompatibleQosStatus_" data-uid="OpenDDSharp.DDS.DataReader.GetRequestedIncompatibleQosStatus*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_GetRequestedIncompatibleQosStatus_OpenDDSharp_DDS_RequestedIncompatibleQosStatus__" data-uid="OpenDDSharp.DDS.DataReader.GetRequestedIncompatibleQosStatus(OpenDDSharp.DDS.RequestedIncompatibleQosStatus@)">GetRequestedIncompatibleQosStatus(ref RequestedIncompatibleQosStatus)</h4>
+  <div class="markdown level1 summary"><p>Allows access to the <a class="xref" href="OpenDDSharp.DDS.RequestedIncompatibleQosStatus.html">RequestedIncompatibleQosStatus</a> communication status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode GetRequestedIncompatibleQosStatus(ref RequestedIncompatibleQosStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.RequestedIncompatibleQosStatus.html">RequestedIncompatibleQosStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.RequestedIncompatibleQosStatus.html">RequestedIncompatibleQosStatus</a> to be filled up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_GetSampleLostStatus_OpenDDSharp_DDS_SampleLostStatus__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.GetSampleLostStatus(OpenDDSharp.DDS.SampleLostStatus%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L373">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_GetSampleLostStatus_" data-uid="OpenDDSharp.DDS.DataReader.GetSampleLostStatus*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_GetSampleLostStatus_OpenDDSharp_DDS_SampleLostStatus__" data-uid="OpenDDSharp.DDS.DataReader.GetSampleLostStatus(OpenDDSharp.DDS.SampleLostStatus@)">GetSampleLostStatus(ref SampleLostStatus)</h4>
+  <div class="markdown level1 summary"><p>Allows access to the <a class="xref" href="OpenDDSharp.DDS.SampleLostStatus.html">SampleLostStatus</a> communication status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode GetSampleLostStatus(ref SampleLostStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleLostStatus.html">SampleLostStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.SampleLostStatus.html">SampleLostStatus</a> to be filled up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_GetSampleRejectedStatus_OpenDDSharp_DDS_SampleRejectedStatus__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.GetSampleRejectedStatus(OpenDDSharp.DDS.SampleRejectedStatus%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L298">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_GetSampleRejectedStatus_" data-uid="OpenDDSharp.DDS.DataReader.GetSampleRejectedStatus*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_GetSampleRejectedStatus_OpenDDSharp_DDS_SampleRejectedStatus__" data-uid="OpenDDSharp.DDS.DataReader.GetSampleRejectedStatus(OpenDDSharp.DDS.SampleRejectedStatus@)">GetSampleRejectedStatus(ref SampleRejectedStatus)</h4>
+  <div class="markdown level1 summary"><p>Allows access to the <a class="xref" href="OpenDDSharp.DDS.SampleRejectedStatus.html">SampleRejectedStatus</a> communication status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode GetSampleRejectedStatus(ref SampleRejectedStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleRejectedStatus.html">SampleRejectedStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.SampleRejectedStatus.html">SampleRejectedStatus</a> to be filled up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_GetSubscriptionMatchedStatus_OpenDDSharp_DDS_SubscriptionMatchedStatus__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.GetSubscriptionMatchedStatus(OpenDDSharp.DDS.SubscriptionMatchedStatus%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L358">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_GetSubscriptionMatchedStatus_" data-uid="OpenDDSharp.DDS.DataReader.GetSubscriptionMatchedStatus*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_GetSubscriptionMatchedStatus_OpenDDSharp_DDS_SubscriptionMatchedStatus__" data-uid="OpenDDSharp.DDS.DataReader.GetSubscriptionMatchedStatus(OpenDDSharp.DDS.SubscriptionMatchedStatus@)">GetSubscriptionMatchedStatus(ref SubscriptionMatchedStatus)</h4>
+  <div class="markdown level1 summary"><p>Allows access to the <a class="xref" href="OpenDDSharp.DDS.SubscriptionMatchedStatus.html">SubscriptionMatchedStatus</a> communication status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode GetSubscriptionMatchedStatus(ref SubscriptionMatchedStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SubscriptionMatchedStatus.html">SubscriptionMatchedStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.SubscriptionMatchedStatus.html">SubscriptionMatchedStatus</a> to be filled up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_SetListener_OpenDDSharp_DDS_DataReaderListener_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.SetListener(OpenDDSharp.DDS.DataReaderListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L270">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_SetListener_" data-uid="OpenDDSharp.DDS.DataReader.SetListener*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_SetListener_OpenDDSharp_DDS_DataReaderListener_" data-uid="OpenDDSharp.DDS.DataReader.SetListener(OpenDDSharp.DDS.DataReaderListener)">SetListener(DataReaderListener)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a> using the <a class="xref" href="OpenDDSharp.DDS.StatusMask.html#OpenDDSharp_DDS_StatusMask_DefaultStatusMask">DefaultStatusMask</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode SetListener(DataReaderListener listener)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a></td>
+        <td><span class="parametername">listener</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a> to be set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_SetListener_OpenDDSharp_DDS_DataReaderListener_OpenDDSharp_DDS_StatusMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.SetListener(OpenDDSharp.DDS.DataReaderListener%2COpenDDSharp.DDS.StatusMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L281">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_SetListener_" data-uid="OpenDDSharp.DDS.DataReader.SetListener*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_SetListener_OpenDDSharp_DDS_DataReaderListener_OpenDDSharp_DDS_StatusMask_" data-uid="OpenDDSharp.DDS.DataReader.SetListener(OpenDDSharp.DDS.DataReaderListener,OpenDDSharp.DDS.StatusMask)">SetListener(DataReaderListener, StatusMask)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode SetListener(DataReaderListener listener, StatusMask mask)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a></td>
+        <td><span class="parametername">listener</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a> to be set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.StatusMask.html">StatusMask</a></td>
+        <td><span class="parametername">mask</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.StatusMask.html">StatusMask</a> of which status changes the listener should be notified.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_SetQos_OpenDDSharp_DDS_DataReaderQos_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.SetQos(OpenDDSharp.DDS.DataReaderQos)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L238">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_SetQos_" data-uid="OpenDDSharp.DDS.DataReader.SetQos*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_SetQos_OpenDDSharp_DDS_DataReaderQos_" data-uid="OpenDDSharp.DDS.DataReader.SetQos(OpenDDSharp.DDS.DataReaderQos)">SetQos(DataReaderQos)</h4>
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> QoS policies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode SetQos(DataReaderQos qos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReaderQos.html">DataReaderQos</a></td>
+        <td><span class="parametername">qos</span></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.DataReaderQos.html">DataReaderQos</a> to be set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader_WaitForHistoricalData_OpenDDSharp_DDS_Duration_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader.WaitForHistoricalData(OpenDDSharp.DDS.Duration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L394">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataReader_WaitForHistoricalData_" data-uid="OpenDDSharp.DDS.DataReader.WaitForHistoricalData*"></a>
+  <h4 id="OpenDDSharp_DDS_DataReader_WaitForHistoricalData_OpenDDSharp_DDS_Duration_" data-uid="OpenDDSharp.DDS.DataReader.WaitForHistoricalData(OpenDDSharp.DDS.Duration)">WaitForHistoricalData(Duration)</h4>
+  <div class="markdown level1 summary"><p>Waits until all &quot;historical&quot; data is received.
+This operation is intended only for <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> entities that have a non-Volatile <a class="xref" href="OpenDDSharp.DDS.DurabilityQosPolicyKind.html">DurabilityQosPolicyKind</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReturnCode WaitForHistoricalData(Duration maxWait)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.Duration.html">Duration</a></td>
+        <td><span class="parametername">maxWait</span></td>
+        <td><p>The maximum <a class="xref" href="OpenDDSharp.DDS.Duration.html">Duration</a> time to wait for the historical data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></td>
+        <td><p>The <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a> that indicates the operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_DDS_DataReader_WaitForHistoricalData_OpenDDSharp_DDS_Duration__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The operation WaitForHistoricalData blocks the calling thread until either all &quot;historical&quot; data is received, or else the
+duration specified by the maxWait parameter elapses, whichever happens first. A return value of <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_Ok">Ok</a> indicates that all the
+&quot;historical&quot; data was received; a return value of <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_Timeout">Timeout</a> indicates that maxWait elapsed before all the data was received.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataReader.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataReader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataReader.cs/#L44" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018-2022 Jose Morat&oacute;</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

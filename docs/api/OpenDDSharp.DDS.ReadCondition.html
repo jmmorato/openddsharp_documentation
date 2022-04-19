@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ReadCondition
+   | OpenDDSharp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ReadCondition
+   | OpenDDSharp Documentation ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenDDSharp.DDS.ReadCondition">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4366666401981011" crossorigin="anonymous"></script>
+                <!-- openddsharp_ads -->
+                <ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-4366666401981011" data-ad-slot="6527324727" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+  
+  
+  <h1 id="OpenDDSharp_DDS_ReadCondition" data-uid="OpenDDSharp.DDS.ReadCondition" class="text-break">Class ReadCondition
+  </h1>
+  <div class="markdown level0 summary"><p>ReadCondition objects are conditions specifically dedicated to read operations and attached to one <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html#OpenDDSharp_DDS_ReadCondition_DataReader">DataReader</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="OpenDDSharp.DDS.Condition.html">Condition</a></div>
+    <div class="level2"><span class="xref">ReadCondition</span></div>
+      <div class="level3"><a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenDDSharp.DDS.Condition.html#OpenDDSharp_DDS_Condition_TriggerValue">Condition.TriggerValue</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenDDSharp.DDS.html">OpenDDSharp.DDS</a></h6>
+  <h6><strong>Assembly</strong>: OpenDDSharp.Standard.dll</h6>
+  <h5 id="OpenDDSharp_DDS_ReadCondition_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ReadCondition : Condition</code></pre>
+  </div>
+  <h5 id="OpenDDSharp_DDS_ReadCondition_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>ReadCondition objects allow an application to specify the data samples it is interested in (by specifying the desired sample-states,
+view-states, and instance-states). This allows the middleware to enable the condition only when suitable information is available.
+They are to be used in conjunction with a WaitSet as normal conditions. More than one ReadCondition may be attached to the same <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html#OpenDDSharp_DDS_ReadCondition_DataReader">DataReader</a>.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ReadCondition_DataReader.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ReadCondition.DataReader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/ReadCondition.cs/#L67">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_ReadCondition_DataReader_" data-uid="OpenDDSharp.DDS.ReadCondition.DataReader*"></a>
+  <h4 id="OpenDDSharp_DDS_ReadCondition_DataReader" data-uid="OpenDDSharp.DDS.ReadCondition.DataReader">DataReader</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html#OpenDDSharp_DDS_ReadCondition_DataReader">DataReader</a> associated with the <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataReader DataReader { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_DDS_ReadCondition_DataReader_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that there is exactly one <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html#OpenDDSharp_DDS_ReadCondition_DataReader">DataReader</a> associated with each <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ReadCondition_InstanceStateMask.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ReadCondition.InstanceStateMask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/ReadCondition.cs/#L59">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_ReadCondition_InstanceStateMask_" data-uid="OpenDDSharp.DDS.ReadCondition.InstanceStateMask*"></a>
+  <h4 id="OpenDDSharp_DDS_ReadCondition_InstanceStateMask" data-uid="OpenDDSharp.DDS.ReadCondition.InstanceStateMask">InstanceStateMask</h4>
+  <div class="markdown level1 summary"><p>Gets the set of instance-states that are taken into account to determine the trigger value of the <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a>.
+These are the instance-states specified when the ReadCondition was created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InstanceStateMask InstanceStateMask { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ReadCondition_SampleStateMask.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ReadCondition.SampleStateMask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/ReadCondition.cs/#L47">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_ReadCondition_SampleStateMask_" data-uid="OpenDDSharp.DDS.ReadCondition.SampleStateMask*"></a>
+  <h4 id="OpenDDSharp_DDS_ReadCondition_SampleStateMask" data-uid="OpenDDSharp.DDS.ReadCondition.SampleStateMask">SampleStateMask</h4>
+  <div class="markdown level1 summary"><p>Gets the set of sample-states that are taken into account to determine the trigger value of the <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a>.
+These are the sample-states specified when the <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> was created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SampleStateMask SampleStateMask { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ReadCondition_ViewStateMask.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ReadCondition.ViewStateMask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/ReadCondition.cs/#L53">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_ReadCondition_ViewStateMask_" data-uid="OpenDDSharp.DDS.ReadCondition.ViewStateMask*"></a>
+  <h4 id="OpenDDSharp_DDS_ReadCondition_ViewStateMask" data-uid="OpenDDSharp.DDS.ReadCondition.ViewStateMask">ViewStateMask</h4>
+  <div class="markdown level1 summary"><p>Gets the set of view-states that are taken into account to determine the trigger value of the <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a>.
+These are the view-states specified when the <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> was created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewStateMask ViewStateMask { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ReadCondition.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ReadCondition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/ReadCondition.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018-2022 Jose Morat&oacute;</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

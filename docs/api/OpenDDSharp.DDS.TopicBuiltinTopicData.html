@@ -1,0 +1,913 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct TopicBuiltinTopicData
+   | OpenDDSharp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct TopicBuiltinTopicData
+   | OpenDDSharp Documentation ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4366666401981011" crossorigin="anonymous"></script>
+                <!-- openddsharp_ads -->
+                <ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-4366666401981011" data-ad-slot="6527324727" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+  
+  
+  <h1 id="OpenDDSharp_DDS_TopicBuiltinTopicData" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData" class="text-break">Struct TopicBuiltinTopicData
+  </h1>
+  <div class="markdown level0 summary"><p>Class that contains information about available <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>s within the system.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="OpenDDSharp.DDS.TopicBuiltinTopicData.html">TopicBuiltinTopicData</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenDDSharp.DDS.html">OpenDDSharp.DDS</a></h6>
+  <h6><strong>Assembly</strong>: OpenDDSharp.Standard.dll</h6>
+  <h5 id="OpenDDSharp_DDS_TopicBuiltinTopicData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct TopicBuiltinTopicData : IEquatable&lt;TopicBuiltinTopicData&gt;</code></pre>
+  </div>
+  <h5 id="OpenDDSharp_DDS_TopicBuiltinTopicData_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The DCPSTopic topic communicates the existence of topics by means of the TopicBuiltinTopicData datatype. Each TopicBuiltinTopicData sample in a Domain represents a <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>
+in that Domain: a new TopicBuiltinTopicData instance is created when a newly-added <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>  is enabled. However, the instance is not disposed when a <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>  is
+deleted by its participant because a topic lifecycle is tied to the lifecycle of a Domain, not to the lifecycle of an individual participant.
+An updated TopicBuiltinTopicData sample is written each time a <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>  modifies one or more of its QoS policy values.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_Deadline.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.Deadline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L70">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_Deadline_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Deadline*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_Deadline" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Deadline">Deadline</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.DeadlineQosPolicy.html">DeadlineQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeadlineQosPolicy Deadline { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DeadlineQosPolicy.html">DeadlineQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_DestinationOrder.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.DestinationOrder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L100">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_DestinationOrder_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.DestinationOrder*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_DestinationOrder" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.DestinationOrder">DestinationOrder</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.DestinationOrderQosPolicy.html">DestinationOrderQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DestinationOrderQosPolicy DestinationOrder { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DestinationOrderQosPolicy.html">DestinationOrderQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_Durability.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.Durability%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L60">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_Durability_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Durability*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_Durability" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Durability">Durability</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.DurabilityQosPolicy.html">DurabilityQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DurabilityQosPolicy Durability { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DurabilityQosPolicy.html">DurabilityQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_DurabilityService.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.DurabilityService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L65">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_DurabilityService_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.DurabilityService*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_DurabilityService" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.DurabilityService">DurabilityService</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.DurabilityServiceQosPolicy.html">DurabilityServiceQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DurabilityServiceQosPolicy DurabilityService { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.DurabilityServiceQosPolicy.html">DurabilityServiceQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_History.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.History%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L105">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_History_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.History*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_History" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.History">History</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.HistoryQosPolicy.html">HistoryQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HistoryQosPolicy History { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.HistoryQosPolicy.html">HistoryQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_Key.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.Key%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L45">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_Key_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Key*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_Key" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Key">Key</h4>
+  <div class="markdown level1 summary"><p>Gets the global unique identifier of the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BuiltinTopicKey Key { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.BuiltinTopicKey.html">BuiltinTopicKey</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_LatencyBudget.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.LatencyBudget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L75">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_LatencyBudget_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.LatencyBudget*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_LatencyBudget" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.LatencyBudget">LatencyBudget</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.LatencyBudgetQosPolicy.html">LatencyBudgetQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LatencyBudgetQosPolicy LatencyBudget { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.LatencyBudgetQosPolicy.html">LatencyBudgetQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_Lifespan.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.Lifespan%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L95">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_Lifespan_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Lifespan*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_Lifespan" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Lifespan">Lifespan</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.LifespanQosPolicy.html">LifespanQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LifespanQosPolicy Lifespan { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.LifespanQosPolicy.html">LifespanQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_Liveliness.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.Liveliness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L80">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_Liveliness_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Liveliness*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_Liveliness" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Liveliness">Liveliness</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.LivelinessQosPolicy.html">LivelinessQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LivelinessQosPolicy Liveliness { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.LivelinessQosPolicy.html">LivelinessQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_Name.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L50">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_Name_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Name*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_Name" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_Ownership.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.Ownership%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L115">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_Ownership_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Ownership*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_Ownership" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Ownership">Ownership</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.OwnershipQosPolicy.html">OwnershipQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OwnershipQosPolicy Ownership { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.OwnershipQosPolicy.html">OwnershipQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_Reliability.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.Reliability%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L85">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_Reliability_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Reliability*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_Reliability" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Reliability">Reliability</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.ReliabilityQosPolicy.html">ReliabilityQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReliabilityQosPolicy Reliability { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ReliabilityQosPolicy.html">ReliabilityQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_ResourceLimits.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.ResourceLimits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L110">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_ResourceLimits_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.ResourceLimits*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_ResourceLimits" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.ResourceLimits">ResourceLimits</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPolicy.html">ResourceLimitsQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceLimitsQosPolicy ResourceLimits { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPolicy.html">ResourceLimitsQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_TopicData.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.TopicData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L120">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_TopicData_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.TopicData*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_TopicData" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.TopicData">TopicData</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.TopicDataQosPolicy.html">TopicDataQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TopicDataQosPolicy TopicData { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.TopicDataQosPolicy.html">TopicDataQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_TransportPriority.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.TransportPriority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L90">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_TransportPriority_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.TransportPriority*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_TransportPriority" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.TransportPriority">TransportPriority</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenDDSharp.DDS.TransportPriorityQosPolicy.html">TransportPriorityQosPolicy</a> attached to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransportPriorityQosPolicy TransportPriority { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.TransportPriorityQosPolicy.html">TransportPriorityQosPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_TypeName.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.TypeName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L55">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_TypeName_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.TypeName*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_TypeName" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.TypeName">TypeName</h4>
+  <div class="markdown level1 summary"><p>Gets the type name of the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TypeName { readonly get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_Equals_OpenDDSharp_DDS_TopicBuiltinTopicData_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.Equals(OpenDDSharp.DDS.TopicBuiltinTopicData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L228">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_Equals_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Equals*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_Equals_OpenDDSharp_DDS_TopicBuiltinTopicData_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Equals(OpenDDSharp.DDS.TopicBuiltinTopicData)">Equals(TopicBuiltinTopicData)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(TopicBuiltinTopicData other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.TopicBuiltinTopicData.html">TopicBuiltinTopicData</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>An object to compare with this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the current object is equal to the other parameter; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L253">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_Equals_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Equals*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_Equals_System_Object_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare with the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the specified object is equal to the current object; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_GetHashCode.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L262">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_GetHashCode_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.GetHashCode*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_GetHashCode" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A hash code for the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_op_Equality_OpenDDSharp_DDS_TopicBuiltinTopicData_OpenDDSharp_DDS_TopicBuiltinTopicData_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.op_Equality(OpenDDSharp.DDS.TopicBuiltinTopicData%2COpenDDSharp.DDS.TopicBuiltinTopicData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L293">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_op_Equality_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.op_Equality*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_op_Equality_OpenDDSharp_DDS_TopicBuiltinTopicData_OpenDDSharp_DDS_TopicBuiltinTopicData_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.op_Equality(OpenDDSharp.DDS.TopicBuiltinTopicData,OpenDDSharp.DDS.TopicBuiltinTopicData)">Equality(TopicBuiltinTopicData, TopicBuiltinTopicData)</h4>
+  <div class="markdown level1 summary"><p>Equals comparison operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(TopicBuiltinTopicData left, TopicBuiltinTopicData right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.TopicBuiltinTopicData.html">TopicBuiltinTopicData</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left value for the comparison.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.TopicBuiltinTopicData.html">TopicBuiltinTopicData</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right value for the comparison.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the left object is equal to the right object; otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData_op_Inequality_OpenDDSharp_DDS_TopicBuiltinTopicData_OpenDDSharp_DDS_TopicBuiltinTopicData_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData.op_Inequality(OpenDDSharp.DDS.TopicBuiltinTopicData%2COpenDDSharp.DDS.TopicBuiltinTopicData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L304">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_TopicBuiltinTopicData_op_Inequality_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.op_Inequality*"></a>
+  <h4 id="OpenDDSharp_DDS_TopicBuiltinTopicData_op_Inequality_OpenDDSharp_DDS_TopicBuiltinTopicData_OpenDDSharp_DDS_TopicBuiltinTopicData_" data-uid="OpenDDSharp.DDS.TopicBuiltinTopicData.op_Inequality(OpenDDSharp.DDS.TopicBuiltinTopicData,OpenDDSharp.DDS.TopicBuiltinTopicData)">Inequality(TopicBuiltinTopicData, TopicBuiltinTopicData)</h4>
+  <div class="markdown level1 summary"><p>Not equals comparison operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(TopicBuiltinTopicData left, TopicBuiltinTopicData right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.TopicBuiltinTopicData.html">TopicBuiltinTopicData</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left value for the comparison.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.DDS.TopicBuiltinTopicData.html">TopicBuiltinTopicData</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right value for the comparison.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">false</span> if the left object is equal to the right object; otherwise, <span class="xref">true</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TopicBuiltinTopicData.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TopicBuiltinTopicData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/TopicBuiltinTopicData.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018-2022 Jose Morat&oacute;</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

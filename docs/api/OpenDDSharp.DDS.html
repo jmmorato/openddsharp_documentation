@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace OpenDDSharp.DDS
+   | OpenDDSharp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace OpenDDSharp.DDS
+   | OpenDDSharp Documentation ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenDDSharp.DDS">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4366666401981011" crossorigin="anonymous"></script>
+                <!-- openddsharp_ads -->
+                <ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-4366666401981011" data-ad-slot="6527324727" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+  
+  <h1 id="OpenDDSharp_DDS" data-uid="OpenDDSharp.DDS" class="text-break">Namespace OpenDDSharp.DDS
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="OpenDDSharp.DDS.Condition.html">Condition</a></h4>
+      <section><p>A Condition is the root class for all the conditions that may be attached to a WaitSet. This basic class is specialized in three
+classes that are known by the middleware: <a class="xref" href="OpenDDSharp.DDS.GuardCondition.html">GuardCondition</a>, <a class="xref" href="OpenDDSharp.DDS.StatusCondition.html">StatusCondition</a>, and <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.ContentFilteredTopic.html">ContentFilteredTopic</a></h4>
+      <section><p>ContentFilteredTopic is an implementation of <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> that allows for content-based subscriptions.
+ContentFilteredTopic describes a more sophisticated subscription that indicates the subscriber does not want to necessarily see
+all values of each instance published under the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>. Rather, it wants to see only the values whose contents satisfy certain
+criteria. This class therefore can be used to request content-based subscriptions.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a></h4>
+      <section><p>A DataReader allows the application to declare the data it wishes to receive (i.e., make a subscription) and to access the
+data received by the attached <a class="xref" href="OpenDDSharp.DDS.DataReader.html#OpenDDSharp_DDS_DataReader_Subscriber">Subscriber</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a></h4>
+      <section><p>Abstract class that can be implemented by an application-provided class and then registered with the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>
+such that the application can be notified of relevant status changes.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DataReaderQos.html">DataReaderQos</a></h4>
+      <section><p>Holds the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> Quality of Service policies.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DataRepresentationQosPolicy.html">DataRepresentationQosPolicy</a></h4>
+      <section><p>The purpose of this QoS is to allow the application to attach additional information to the created <a class="xref" href="OpenDDSharp.DDS.Entity.html">Entity</a> objects such that when
+a remote application discovers their existence it can access that information and use it for its own purposes.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a></h4>
+      <section><p>DataWriter allows the application to set the value of the data to be published under a given <a class="xref" href="OpenDDSharp.DDS.DataWriter.html#OpenDDSharp_DDS_DataWriter_Topic">Topic</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DataWriterListener.html">DataWriterListener</a></h4>
+      <section><p>Abstract class that can be implemented by an application-provided class and then registered with the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>
+such that the application can be notified of relevant status changes.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DataWriterQos.html">DataWriterQos</a></h4>
+      <section><p>Holds the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> Quality of Service policies.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DeadlineQosPolicy.html">DeadlineQosPolicy</a></h4>
+      <section><p>This policy is useful for cases where a <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> is expected to have each instance updated periodically. On the publishing side this
+setting establishes a contract that the application must meet. On the subscribing side the setting establishes a minimum
+requirement for the remote publishers that are expected to supply the data values.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DestinationOrderQosPolicy.html">DestinationOrderQosPolicy</a></h4>
+      <section><p>This policy controls how each <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a> resolves the final value of a data instance that is written by multiple <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>
+objects (which may be associated with different <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a> objects) running on different nodes.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a></h4>
+      <section><p>The DomainParticipant represents the participation of the application on a communication plane that isolates applications
+running on the same set of physical computers from each other.</p>
+<p>A domain establishes a virtual network linking all applications that share the same Domain ID and isolating them from applications running on different domains.
+In this way, several independent distributed applications can coexist in the same physical network without interfering, or even being aware of each other.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DomainParticipantFactory.html">DomainParticipantFactory</a></h4>
+      <section><p>Allows the creation and destruction of <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> objects.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DomainParticipantFactoryQos.html">DomainParticipantFactoryQos</a></h4>
+      <section><p>Holds the <a class="xref" href="OpenDDSharp.DDS.DomainParticipantFactory.html">DomainParticipantFactory</a> Quality of Service policies.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DomainParticipantListener.html">DomainParticipantListener</a></h4>
+      <section><p>Abstract class that can be implemented by an application-provided class and then registered with the <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>
+such that the application can be notified of relevant status changes.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DomainParticipantQos.html">DomainParticipantQos</a></h4>
+      <section><p>Holds the <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> Quality of Service policies.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DurabilityQosPolicy.html">DurabilityQosPolicy</a></h4>
+      <section><p>The durability policy controls whether data writers should maintain samples after they
+have been sent to known subscribers. This policy applies to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>, <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>, and
+<a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> entities via the durability member of their respective QoS structures.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DurabilityServiceQosPolicy.html">DurabilityServiceQosPolicy</a></h4>
+      <section><p>This policy is used to configure the history QoS and the resource limits QoS used by the fictitious <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> and
+<a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> used by the &quot;persistence service&quot;.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.Entity.html">Entity</a></h4>
+      <section><p>This class is the abstract base class for all the DCPS objects that support QoS policies, a listener and a status condition. That is,
+<a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>, <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>, <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a>, <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>, <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> and <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.EntityFactoryQosPolicy.html">EntityFactoryQosPolicy</a></h4>
+      <section><p>This policy controls the behavior of the <a class="xref" href="OpenDDSharp.DDS.Entity.html">Entity</a> as a factory for other entities.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.GroupDataQosPolicy.html">GroupDataQosPolicy</a></h4>
+      <section><p>The purpose of this QoS is to allow the application to attach additional information to the created <a class="xref" href="OpenDDSharp.DDS.Entity.html">Entity</a> objects such that when
+a remote application discovers their existence it can access that information and use it for its own purposes.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.GuardCondition.html">GuardCondition</a></h4>
+      <section><p>A GuardCondition object is a specific <a class="xref" href="OpenDDSharp.DDS.Condition.html">Condition</a> whose <a class="xref" href="OpenDDSharp.DDS.Condition.html#OpenDDSharp_DDS_Condition_TriggerValue">TriggerValue</a> is completely under the control of the application.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.HistoryQosPolicy.html">HistoryQosPolicy</a></h4>
+      <section><p>This policy controls the behavior of DDS when the value of an instance changes before it is finally communicated to some of its existing <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> entities.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.LatencyBudgetQosPolicy.html">LatencyBudgetQosPolicy</a></h4>
+      <section><p>This policy provides a means for the application to indicate to the middleware the &quot;urgency&quot; of the data-communication. By
+having a non-zero duration DDS can optimize its internal operation. This policy is considered a hint. There is no specified mechanism as
+to how the service should take advantage of this hint.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.LifespanQosPolicy.html">LifespanQosPolicy</a></h4>
+      <section><p>The purpose of this QoS is to avoid delivering &quot;stale&quot; data to the application.</p>
+<p>Each data sample written by the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> has an associated &apos;expiration time&apos; beyond which the data should not be delivered
+to any application. Once the sample expires, the data will be removed from the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> caches as well as from the
+transient and persistent information caches.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.LivelinessQosPolicy.html">LivelinessQosPolicy</a></h4>
+      <section><p>This policy controls the mechanism and parameters used by DDS to ensure that particular entities on the network are still &quot;alive&quot;.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.MultiTopic.html">MultiTopic</a></h4>
+      <section><p>MultiTopic is an implementation of <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> that allows subscriptions to combine/filter/rearrange data coming from
+several topics. MultiTopic allows a more sophisticated subscription that can select and combine data received from multiple topics into a
+single resulting type(specified by the inherited type name). The data will then be filtered(selection) and possibly re-arranged
+(aggregation/projection) according to a subscription expression with the expression parameters.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.OwnershipQosPolicy.html">OwnershipQosPolicy</a></h4>
+      <section><p>This policy controls whether DDS allows multiple <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> objects to update the same instance (identified by Topic + key) of a data-object.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.OwnershipStrengthQosPolicy.html">OwnershipStrengthQosPolicy</a></h4>
+      <section><p>This QoS policy should be used in combination with the <a class="xref" href="OpenDDSharp.DDS.OwnershipQosPolicy.html">OwnershipQosPolicy</a>. It only applies to the situation case where
+ownership kind is set to <a class="xref" href="OpenDDSharp.DDS.OwnershipQosPolicyKind.html#OpenDDSharp_DDS_OwnershipQosPolicyKind_ExclusiveOwnershipQos">ExclusiveOwnershipQos</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.ParticipantBuiltinTopicDataDataReader.html">ParticipantBuiltinTopicDataDataReader</a></h4>
+      <section><p><a class="xref" href="OpenDDSharp.DDS.ParticipantBuiltinTopicData.html">ParticipantBuiltinTopicData</a> <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.PartitionQosPolicy.html">PartitionQosPolicy</a></h4>
+      <section><p>This policy allows the introduction of a logical partition concept inside the 'physical' partition induced by a domain.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.PresentationQosPolicy.html">PresentationQosPolicy</a></h4>
+      <section><p>The Presentation QoS policy controls how changes to instances by publishers are presented to data readers. It affects the relative ordering of these changes and
+the scope of this ordering. Additionally, this policy introduces the concept of coherent change sets.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.PublicationBuiltinTopicDataDataReader.html">PublicationBuiltinTopicDataDataReader</a></h4>
+      <section><p><a class="xref" href="OpenDDSharp.DDS.PublicationBuiltinTopicData.html">PublicationBuiltinTopicData</a> <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a></h4>
+      <section><p>A Publisher is the object responsible for the actual dissemination of publications.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.PublisherListener.html">PublisherListener</a></h4>
+      <section><p>Abstract class that can be implemented by an application-provided class and then registered with the <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a>
+such that the application can be notified of relevant status changes.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.PublisherQos.html">PublisherQos</a></h4>
+      <section><p>Holds the <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a> Quality of Service policies.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a></h4>
+      <section><p>QueryCondition objects are specialized <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> objects that allow the application to also specify a filter on the locally available data.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a></h4>
+      <section><p>ReadCondition objects are conditions specifically dedicated to read operations and attached to one <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html#OpenDDSharp_DDS_ReadCondition_DataReader">DataReader</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.ReaderDataLifecycleQosPolicy.html">ReaderDataLifecycleQosPolicy</a></h4>
+      <section><p>This policy controls the behavior of the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> with regards to the lifecycle of the data-instances it manages, that is, the
+data-instances that have been received and for which the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> maintains some internal resources.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.ReliabilityQosPolicy.html">ReliabilityQosPolicy</a></h4>
+      <section><p>This policy indicates the level of reliability requested by a <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> or offered by a <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPolicy.html">ResourceLimitsQosPolicy</a></h4>
+      <section><p>This policy controls the resources that DDS can use in order to meet the requirements imposed by the application and other QoS settings.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a></h4>
+      <section><p>Information that accompanies each sample that is read or taken.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.StatusCondition.html">StatusCondition</a></h4>
+      <section><p>A StatusCondition object is a specific <a class="xref" href="OpenDDSharp.DDS.Condition.html">Condition</a> that is associated with each <a class="xref" href="OpenDDSharp.DDS.Entity.html">Entity</a>.
+The <a class="xref" href="OpenDDSharp.DDS.Condition.html#OpenDDSharp_DDS_Condition_TriggerValue">TriggerValue</a> of the StatusCondition depends on the communication status of that entity (e.g., arrival of data, loss of
+information, etc.), 'filtered' by the set of <a class="xref" href="OpenDDSharp.DDS.StatusCondition.html#OpenDDSharp_DDS_StatusCondition_EnabledStatuses">EnabledStatuses</a> on the StatusCondition.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a></h4>
+      <section><p>A Subscriber is the object responsible for the actual reception of the data resulting from its subscriptions.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.SubscriberListener.html">SubscriberListener</a></h4>
+      <section><p>Abstract class that can be implemented by an application-provided class and then registered with the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>
+such that the application can be notified of relevant status changes.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.SubscriberQos.html">SubscriberQos</a></h4>
+      <section><p>Holds the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a> Quality of Service policies.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicDataDataReader.html">SubscriptionBuiltinTopicDataDataReader</a></h4>
+      <section><p><a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a> <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.html">TimeBasedFilterQosPolicy</a></h4>
+      <section><p>This policy allows a <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> to indicate that it does not necessarily want to see all values of each instance published under
+the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>. Rather, it wants to see at most one change every <a class="xref" href="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.html#OpenDDSharp_DDS_TimeBasedFilterQosPolicy_MinimumSeparation">MinimumSeparation</a> period.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a></h4>
+      <section><p>Topic is the most basic description of the data to be published and subscribed.
+A Topic is identified by its name, which must be unique in the whole Domain. In addition (by virtue of implemeting
+<a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a>) it fully specifies the type of the data that can be communicated when publishing or subscribing to the Topic.
+Topic is the only <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> that can be used for publications and therefore associated to a <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.TopicBuiltinTopicDataDataReader.html">TopicBuiltinTopicDataDataReader</a></h4>
+      <section><p><a class="xref" href="OpenDDSharp.DDS.TopicBuiltinTopicData.html">TopicBuiltinTopicData</a> <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.TopicDataQosPolicy.html">TopicDataQosPolicy</a></h4>
+      <section><p>The purpose of this QoS is to allow the application to attach additional information to the created <a class="xref" href="OpenDDSharp.DDS.Entity.html">Entity</a> objects such that when
+a remote application discovers their existence it can access that information and use it for its own purposes.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.TopicDescription.html">TopicDescription</a></h4>
+      <section><p>Default implementation of the <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> interface.
+It is the base class for <a class="xref" href="OpenDDSharp.DDS.ContentFilteredTopic.html">ContentFilteredTopic</a>, and <a class="xref" href="OpenDDSharp.DDS.MultiTopic.html">MultiTopic</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.TopicListener.html">TopicListener</a></h4>
+      <section><p>Abstract class that can be implemented by an application-provided class and then registered with the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>
+such that the application can be notified of relevant status changes.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.TopicQos.html">TopicQos</a></h4>
+      <section><p>Holds the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> Quality of Service policies.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.TransportPriorityQosPolicy.html">TransportPriorityQosPolicy</a></h4>
+      <section><p>The purpose of this QoS is to allow the application to take advantage of transports capable of sending messages with different priorities.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.UserDataQosPolicy.html">UserDataQosPolicy</a></h4>
+      <section><p>The purpose of this QoS is to allow the application to attach additional information to the created <a class="xref" href="OpenDDSharp.DDS.Entity.html">Entity</a> objects such that when
+a remote application discovers their existence it can access that information and use it for its own purposes.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.WaitSet.html">WaitSet</a></h4>
+      <section><p>A WaitSet object allows an application to wait until one or more of the attached <a class="xref" href="OpenDDSharp.DDS.Condition.html">Condition</a> objects has a <a class="xref" href="OpenDDSharp.DDS.Condition.html#OpenDDSharp_DDS_Condition_TriggerValue">TriggerValue</a> of
+<span class="xref">true</span> or else until the timeout expires.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.html">WriterDataLifecycleQosPolicy</a></h4>
+      <section><p>This policy controls the behavior of the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> with regards to the lifecycle of the data-instances it manages, that is, the
+data-instances that have been either explicitly registered with the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> using the register operations or implicitly by directly writing the data.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="OpenDDSharp.DDS.BuiltinTopicKey.html">BuiltinTopicKey</a></h4>
+      <section><p>Global unique identifier of the built-in topics.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.Duration.html">Duration</a></h4>
+      <section><p>Structure for duration representation.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.InconsistentTopicStatus.html">InconsistentTopicStatus</a></h4>
+      <section><p>The InconsistentTopic status indicates that a topic was attempted to be registered that already exists with different characteristics.
+Typically, the existing topic may have a different type associated with it.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.InstanceHandle.html">InstanceHandle</a></h4>
+      <section><p>Type definition for an instance handle.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.InstanceStateKind.html">InstanceStateKind</a></h4>
+      <section><p>Indicates if the samples are from a live <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> or not.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.InstanceStateMask.html">InstanceStateMask</a></h4>
+      <section><p>Represent a bit-mask of <a class="xref" href="OpenDDSharp.DDS.InstanceStateKind.html">InstanceStateKind</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.LivelinessChangedStatus.html">LivelinessChangedStatus</a></h4>
+      <section><p>The LivelinessChanged status indicates that there have been liveliness changes for one or more <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>
+that are publishing instances for this <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.LivelinessLostStatus.html">LivelinessLostStatus</a></h4>
+      <section><p>The LivelinessLost status indicates that the liveliness that the data writer committed through its Liveliness QoS has not been respected.
+This means that any connected data readers will consider this <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> no longer active.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.OfferedDeadlineMissedStatus.html">OfferedDeadlineMissedStatus</a></h4>
+      <section><p>The OfferedDeadlineMissed status indicates that the deadline offered by the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> has been missed for one or more instances.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.OfferedIncompatibleQosStatus.html">OfferedIncompatibleQosStatus</a></h4>
+      <section><p>The OfferedIncompatibleQos status indicates that an offered QoS was incompatible with the requested QoS of a <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.ParticipantBuiltinTopicData.html">ParticipantBuiltinTopicData</a></h4>
+      <section><p>Class that contains information about available <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>s within the system.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.PublicationBuiltinTopicData.html">PublicationBuiltinTopicData</a></h4>
+      <section><p>Class that contains information about available <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>s within the system.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.PublicationMatchedStatus.html">PublicationMatchedStatus</a></h4>
+      <section><p>The PublicationMatched status indicates that either a compatible <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> has been matched or
+a previously matched <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> has ceased to be matched.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.QosPolicyCount.html">QosPolicyCount</a></h4>
+      <section><p>Hold a counter for the QoS policies.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.RequestedDeadlineMissedStatus.html">RequestedDeadlineMissedStatus</a></h4>
+      <section><p>The RequestedDeadlineMissed status indicates that the deadline requested via the <a class="xref" href="OpenDDSharp.DDS.DeadlineQosPolicy.html">DeadlineQosPolicy</a> was not respected for a specific instance.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.RequestedIncompatibleQosStatus.html">RequestedIncompatibleQosStatus</a></h4>
+      <section><p>The RequestedIncompatibleQos status indicates that one or more QoS policy values that were requested were incompatible with what was offered.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.SampleLostStatus.html">SampleLostStatus</a></h4>
+      <section><p>The SampleLost status indicates that a sample has been lost and never received by the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.SampleRejectedStatus.html">SampleRejectedStatus</a></h4>
+      <section><p>The SampleRejected status indicates that a sample received by the data reader has been rejected.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.SampleStateKind.html">SampleStateKind</a></h4>
+      <section><p>Indicates whether or not a sample has ever been read.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.SampleStateMask.html">SampleStateMask</a></h4>
+      <section><p>Represent a bit-mask of <a class="xref" href="OpenDDSharp.DDS.SampleStateKind.html">SampleStateKind</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.StatusKind.html">StatusKind</a></h4>
+      <section><p>Kinds of communication status.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.StatusMask.html">StatusMask</a></h4>
+      <section><p>Represent a bit-mask of <a class="xref" href="OpenDDSharp.DDS.StatusKind.html">StatusKind</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.SubscriptionBuiltinTopicData.html">SubscriptionBuiltinTopicData</a></h4>
+      <section><p>Class that contains information about available <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>s within the system.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.SubscriptionMatchedStatus.html">SubscriptionMatchedStatus</a></h4>
+      <section><p>The SubscriptionMatched status indicates that either a compatible <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> has been matched or
+a previously matched data writer has ceased to be matched.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.TopicBuiltinTopicData.html">TopicBuiltinTopicData</a></h4>
+      <section><p>Class that contains information about available <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>s within the system.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.ViewStateKind.html">ViewStateKind</a></h4>
+      <section><p>Represent a bit-mask of <a class="xref" href="OpenDDSharp.DDS.ViewStateKind.html">ViewStateKind</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.ViewStateMask.html">ViewStateMask</a></h4>
+      <section><p>Represent a bit-mask of <a class="xref" href="OpenDDSharp.DDS.ViewStateKind.html">ViewStateKind</a>.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a></h4>
+      <section><p>ITopicDescription represents the fact that both publications and subscriptions are tied to a single data-type.
+The interface is implemented on <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>, <a class="xref" href="OpenDDSharp.DDS.ContentFilteredTopic.html">ContentFilteredTopic</a>, and <a class="xref" href="OpenDDSharp.DDS.MultiTopic.html">MultiTopic</a>.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DestinationOrderQosPolicyKind.html">DestinationOrderQosPolicyKind</a></h4>
+      <section><p>This enumeration defines the valid kinds of the <a class="xref" href="OpenDDSharp.DDS.DestinationOrderQosPolicy.html">DestinationOrderQosPolicy</a> Kind.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.DurabilityQosPolicyKind.html">DurabilityQosPolicyKind</a></h4>
+      <section><p>This enumeration defines the valid kinds of the <a class="xref" href="OpenDDSharp.DDS.DurabilityQosPolicy.html#OpenDDSharp_DDS_DurabilityQosPolicy_Kind">Kind</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.HistoryQosPolicyKind.html">HistoryQosPolicyKind</a></h4>
+      <section><p>This enumeration defines the valid kinds of the <a class="xref" href="OpenDDSharp.DDS.HistoryQosPolicy.html">HistoryQosPolicy</a> Kind.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.LivelinessQosPolicyKind.html">LivelinessQosPolicyKind</a></h4>
+      <section><p>This enumeration defines the valid kinds of the <a class="xref" href="OpenDDSharp.DDS.LivelinessQosPolicy.html#OpenDDSharp_DDS_LivelinessQosPolicy_Kind">Kind</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.OwnershipQosPolicyKind.html">OwnershipQosPolicyKind</a></h4>
+      <section><p>This enumeration defines the valid kinds of the <a class="xref" href="OpenDDSharp.DDS.OwnershipQosPolicy.html">OwnershipQosPolicy</a> Kind.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.PresentationQosPolicyAccessScopeKind.html">PresentationQosPolicyAccessScopeKind</a></h4>
+      <section><p>This enumeration defines the valid kinds of the <a class="xref" href="OpenDDSharp.DDS.PresentationQosPolicy.html#OpenDDSharp_DDS_PresentationQosPolicy_AccessScope">AccessScope</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.ReliabilityQosPolicyKind.html">ReliabilityQosPolicyKind</a></h4>
+      <section><p>This enumeration defines the valid kinds of the <a class="xref" href="OpenDDSharp.DDS.ReliabilityQosPolicy.html#OpenDDSharp_DDS_ReliabilityQosPolicy_Kind">Kind</a>.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.ReturnCode.html">ReturnCode</a></h4>
+      <section><p>Represents the various return code values that DDS operations return.</p>
+</section>
+      <h4><a class="xref" href="OpenDDSharp.DDS.SampleRejectedStatusKind.html">SampleRejectedStatusKind</a></h4>
+      <section><p>This enumeration defines the valid values of the <a class="xref" href="OpenDDSharp.DDS.SampleRejectedStatus.html">SampleRejectedStatus</a> LastReason.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018-2022 Jose Morat&oacute;</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,758 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RtpsDiscovery
+   | OpenDDSharp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RtpsDiscovery
+   | OpenDDSharp Documentation ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4366666401981011" crossorigin="anonymous"></script>
+                <!-- openddsharp_ads -->
+                <ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-4366666401981011" data-ad-slot="6527324727" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+  
+  
+  <h1 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery" class="text-break">Class RtpsDiscovery
+  </h1>
+  <div class="markdown level0 summary"><p>Discovery Strategy class that implements RTPS discovery.
+This class implements the Discovery interface for Rtps-based discovery.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="OpenDDSharp.OpenDDS.DCPS.Discovery.html">Discovery</a></div>
+    <div class="level2"><span class="xref">RtpsDiscovery</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenDDSharp.OpenDDS.DCPS.Discovery.html#OpenDDSharp_OpenDDS_DCPS_Discovery_DEFAULT_REPO">Discovery.DEFAULT_REPO</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.OpenDDS.DCPS.Discovery.html#OpenDDSharp_OpenDDS_DCPS_Discovery_DEFAULT_RTPS">Discovery.DEFAULT_RTPS</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.OpenDDS.DCPS.Discovery.html#OpenDDSharp_OpenDDS_DCPS_Discovery_DEFAULT_STATIC">Discovery.DEFAULT_STATIC</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenDDSharp.OpenDDS.DCPS.Discovery.html#OpenDDSharp_OpenDDS_DCPS_Discovery_Key">Discovery.Key</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenDDSharp.OpenDDS.RTPS.html">OpenDDSharp.OpenDDS.RTPS</a></h6>
+  <h6><strong>Assembly</strong>: OpenDDSharp.Standard.dll</h6>
+  <h5 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RtpsDiscovery : Discovery</code></pre>
+  </div>
+  <h5 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The RTPS specifcation splits up the discovery protocol into two independent protocols:</p>
+<p>    1. Participant Discovery Protocol.</p>
+<p>    2. Endpoint Discovery Protocol.</p>
+<p>A Participant Discovery Protocol (PDP) specifes how Participants discover each other in the
+network. Once two Participants have discovered each other, they exchange information on the
+Endpoints they contain using an Endpoint Discovery Protocol (EDP). Apart from this causality
+relationship, both protocols can be considered independent.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery__ctor_System_String_.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L258">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery__ctor_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.#ctor*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery__ctor_System_String_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.#ctor(System.String)">RtpsDiscovery(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.html">RtpsDiscovery</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RtpsDiscovery(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The discovery unique key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_D0.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.D0%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L116">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_D0_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.D0*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_D0" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.D0">D0</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an integer value representing the Offset Zero.
+The default value is 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort D0 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_D0_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The offset zero assists in providing an offset
+for calculating an assignable port in SPDP Multicast
+confgurations. The formula used is: PB + DG * domainId + d0.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_D1.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.D1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L131">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_D1_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.D1*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_D1" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.D1">D1</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an integer value representing the Offset One.
+The default value is 10.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort D1 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_D1_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The offset one assists in providing an ofset
+for calculating an assignable port in SPDP Unicast
+confgurations. The formula used is: PB + DG * domainId + d1 + PG * participantId.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DefaultMulticastGroup.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DefaultMulticastGroup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L224">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DefaultMulticastGroup_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DefaultMulticastGroup*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DefaultMulticastGroup" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DefaultMulticastGroup">DefaultMulticastGroup</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a network address specifying the multicast group to
+be used for SPDP discovery. The default value is 239.255.0.1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DefaultMulticastGroup { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DefaultMulticastGroup_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This overrides the interoperability group of the specifcation.
+It can be used, for example, to specify use of a routed group
+address to provide a larger discovery scope.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DG.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DG%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L85">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DG_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DG*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DG" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DG">DG</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an integer value representing the Domain Gain.
+The default value is 250.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort DG { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DG_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a multiplier that assists in formulating Multicast
+or Unicast ports for RTPS.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DX.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L147">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DX_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DX*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DX" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DX">DX</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an integer value representing the Offset X.
+The default value is 2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort DX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DX_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The offset X assists in providing an offset
+for calculating an assignable port in SEDP Multicast
+confgurations. The formula used is: PB + DG * domainId + dx. </p>
+<p>This is only valid when SedpMulticast=true.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_GuidInterface.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.GuidInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L246">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_GuidInterface_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.GuidInterface*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_GuidInterface" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.GuidInterface">GuidInterface</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the specific network interface to use when
+determining which local MAC address should
+appear in a GUID generated by this node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GuidInterface { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_MulticastInterface.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.MulticastInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L209">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_MulticastInterface_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.MulticastInterface*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_MulticastInterface" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.MulticastInterface">MulticastInterface</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the specific network interface to be used by this
+discovery instance. This uses a platform-specifc
+format that identifes the network interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MulticastInterface { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_PB.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.PB%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L71">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_PB_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.PB*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_PB" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.PB">PB</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the port base number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort PB { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_PB_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This number sets the starting point for deriving port numbers used for Simple
+Endpoint Discovery Protocol (SEDP). This property is used in conjunction with
+DG, PG, D0 (or DX), and D1 to construct the necessary Endpoints for RTPS
+discovery communication. The default value is 7400.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_PG.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.PG%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L101">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_PG_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.PG*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_PG" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.PG">PG</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an integer value representing the Port Gain.
+The default value is 2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort PG { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_PG_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The port gain assists in confguring SPDP Unicast
+ports and serves as an offset multiplier as
+participants are assigned addresses using the
+formula: PB + DG * domainId + d1 + PG * participantId.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_ResendPeriod.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.ResendPeriod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L56">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_ResendPeriod_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.ResendPeriod*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_ResendPeriod" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.ResendPeriod">ResendPeriod</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the number of seconds that a process waits
+between the announcement of participants.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeValue ResendPeriod { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenDDSharp.TimeValue.html">TimeValue</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_ResendPeriod_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value is 30 seconds.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SedpLocalAddress.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SedpLocalAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L176">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SedpLocalAddress_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SedpLocalAddress*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SedpLocalAddress" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SedpLocalAddress">SedpLocalAddress</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value for confgure the transport instance created and used
+by SEDP to bind to the specifed local address and port.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SedpLocalAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SedpLocalAddress_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In order to leave the port unspecifed, it can
+be omitted from the setting but the trailing ':' must
+be present.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SedpMulticast.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SedpMulticast%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L198">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SedpMulticast_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SedpMulticast*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SedpMulticast" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SedpMulticast">SedpMulticast</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether
+Multicast is used for the SEDP trafic. When set to true,
+Multicast is used. When set to false Unicast for
+SEDP is used. The default value is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SedpMulticast { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SpdpLocalAddress.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SpdpLocalAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L186">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SpdpLocalAddress_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SpdpLocalAddress*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SpdpLocalAddress" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SpdpLocalAddress">SpdpLocalAddress</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the address of a local interface (no port), which will be
+used by SPDP to bind to that specifc interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SpdpLocalAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SpdpSendAddrs.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SpdpSendAddrs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L236">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SpdpSendAddrs_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SpdpSendAddrs*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SpdpSendAddrs" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SpdpSendAddrs">SpdpSendAddrs</h4>
+  <div class="markdown level1 summary"><p>Gets a list (comma or whitespace separated) of host:port
+pairs used as destinations for SPDP content. This
+can be a combination of Unicast and Multicast
+addresses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; SpdpSendAddrs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_Ttl.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.Ttl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L161">View Source</a>
+  </span>
+  <a id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_Ttl_" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.Ttl*"></a>
+  <h4 id="OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_Ttl" data-uid="OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.Ttl">Ttl</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of the time-to-live (ttl) field of
+multicast datagrams sent as part of discovery. This
+value specifes the number of hops the datagram
+will traverse before being discarded by the network.
+The default value of 1 means that all data is
+restricted to the local network subnet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte Ttl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery.md&amp;value=---%0Auid%3A%20OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/OpenDDS/RTPS/RtpsDiscovery.cs/#L42" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018-2022 Jose Morat&oacute;</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

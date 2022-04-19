@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>OpenDDSharp API Documentation | OpenDDSharp Documentation </title>
+    <title>Enum LivelinessQosPolicyKind
+   | OpenDDSharp Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="OpenDDSharp API Documentation | OpenDDSharp Documentation ">
+    <meta name="title" content="Enum LivelinessQosPolicyKind
+   | OpenDDSharp Documentation ">
     <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -66,7 +68,7 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
+            <article class="content wrap" id="_content" data-uid="OpenDDSharp.DDS.LivelinessQosPolicyKind">
                 <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4366666401981011" crossorigin="anonymous"></script>
                 <!-- openddsharp_ads -->
                 <ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-4366666401981011" data-ad-slot="6527324727" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
@@ -74,10 +76,47 @@
                      (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
 
-<h1 id="openddsharp-api-documentation">OpenDDSharp API Documentation</h1>
-
-<p>A .NET friendly API fully documented for your DDS developments.</p>
-<p>Navigate through the namespaces to get information about the implemented OpenDDsharp APIs.</p>
+  
+  
+  <h1 id="OpenDDSharp_DDS_LivelinessQosPolicyKind" data-uid="OpenDDSharp.DDS.LivelinessQosPolicyKind" class="text-break">Enum LivelinessQosPolicyKind
+  </h1>
+  <div class="markdown level0 summary"><p>This enumeration defines the valid kinds of the <a class="xref" href="OpenDDSharp.DDS.LivelinessQosPolicy.html#OpenDDSharp_DDS_LivelinessQosPolicy_Kind">Kind</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenDDSharp.DDS.html">OpenDDSharp.DDS</a></h6>
+  <h6><strong>Assembly</strong>: OpenDDSharp.Standard.dll</h6>
+  <h5 id="OpenDDSharp_DDS_LivelinessQosPolicyKind_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum LivelinessQosPolicyKind</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="OpenDDSharp_DDS_LivelinessQosPolicyKind_AutomaticLivelinessQos">AutomaticLivelinessQos</td>
+        <td><p>Means that the service will send a liveliness indication if the participant has not sent any network traffic for the LeaseDuration</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenDDSharp_DDS_LivelinessQosPolicyKind_ManualByParticipantLivelinessQos">ManualByParticipantLivelinessQos</td>
+        <td><p>requires only that one Entity within the publisher is asserted to be alive to deduce all other <a class="xref" href="OpenDDSharp.DDS.Entity.html">Entity</a> objects within the
+same <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> are also alive.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenDDSharp_DDS_LivelinessQosPolicyKind_ManualByTopicLivelinessQos">ManualByTopicLivelinessQos</td>
+        <td><p>Requires that at least one instance within the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> is asserted.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
 </article>
           </div>
           
@@ -86,7 +125,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Documentation/OpenDDSharp.Standard.Doc/api/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_LivelinessQosPolicyKind.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.LivelinessQosPolicyKind%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/LivelinessQosPolicyKind.cs/#L25" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
