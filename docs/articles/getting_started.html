@@ -8,7 +8,7 @@
     <title>Getting Started | OpenDDSharp Documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Getting Started | OpenDDSharp Documentation ">
-    <meta name="generator" content="docfx 2.59.1.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -83,12 +83,11 @@
 <li>Microsoft <a href="https://dotnet.microsoft.com/download/dotnet/6.0">.NET 6.0 SDK</a> or greater</li>
 <li>CMake <a href="https://cmake.org/download/">Version 3.8.2</a> or greater</li>
 <li>Perl, on Windows system is recommended to use <a href="https://strawberryperl.com/">Strawberry Perl</a></li>
-<li>For Apple ARM64 systems, you must install Rosetta 2 (<code>softwareupdate --install-rosetta</code>)</li>
 </ul>
 <h2 id="install-the-openddsharp-templates">Install the OpenDDSharp Templates</h2>
 <p>OpenDDSharp provides .NET project templates in order to ease the process of creating OpenDDSharp applications.</p>
-<p>Run the following command to install OpenDDSharp templates in your computer from the <a href="https://www.nuget.org/packages/OpenDDSharp.Templates/0.8.22127.96">NuGet.org feed</a>:</p>
-<p><code>dotnet new --install OpenDDSharp.Templates::0.8.22127.96</code></p>
+<p>Run the following command to install OpenDDSharp templates in your computer from the <a href="https://www.nuget.org/packages/OpenDDSharp.Templates/0.8.21289.1-beta">NuGet.org feed</a>:</p>
+<p><code>dotnet new --install OpenDDSharp.Templates::0.8.21289.1-beta</code></p>
 <p>Two new templates will be added to the dotnet templates system, <code>openddsharp-idl-project</code> and <code>openddsharp-console-app</code>,
 that can be used to create the projects for your OpenDDSharp solution.</p>
 <p>For more information on how manage .NET project and item templates visit the <a href="https://docs.microsoft.com/en-us/dotnet/core/install/templates">microsoft documentation</a>.</p>
@@ -109,16 +108,11 @@ using his owns code generation tool. Check this <a href="idl.html">link</a> to g
 };
 </code></pre>
 <p>Build the project to auto-generate and compile the C# code for the defined structure:</p>
-<p><code>dotnet build TestMessage.csproj --runtime &lt;runtime_identifier&gt;</code></p>
+<p><code>dotnet build TestMessage.csproj</code></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>The implemented runtime identifiers are:</p>
-<ul>
-<li>win-64</li>
-<li>win-x86</li>
-<li>linux-x64</li>
-<li>osx-x64</li>
-</ul>
+<p>For Windows system you must specify the runtime to use (i.e. win-x64 or win-x86):
+<code>dotnet build TestMessage.csproj -r win-64</code></p>
 </div>
 <h2 id="helloworld-publisher">HelloWorld Publisher</h2>
 <h3 id="create-the-publisher-project">Create the publisher project</h3>
@@ -287,25 +281,6 @@ dpf.DeleteParticipant(participant);
 ParticipantService.Instance.Shutdown();
 Ace.Fini();
 </code></pre>
-<h2 id="build-and-run-the-projects">Build and run the projects</h2>
-<p>Build the publisher and subscriber project with the following commands:</p>
-<p><code>dotnet build HelloPublisher.csproj --configuration Release|Debug --runtime &lt;runtime_identifier&gt; --no-self-contained</code></p>
-<p><code>dotnet build HelloSubscriber.csproj --configuration Release|Debug --runtime &lt;runtime_identifier&gt; --no-self-contained</code></p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The implemented runtime identifiers are:</p>
-<ul>
-<li>win-64</li>
-<li>win-x86</li>
-<li>linux-x64</li>
-<li>osx-x64</li>
-</ul>
-</div>
-<div class="NOTE">
-<h5>Note</h5>
-<p>To run the program on Linux systems, you should set the <code>LD_LIBRARY_PATH</code> pointing to the directory where the executable is created.
-Similar, to run the program on MacOS systems, you should set the <code>DYLD_FALLBACK_LIBRARY_PATH</code> pointing to the directory where the executable is created.</p>
-</div>
 </article>
           </div>
           
@@ -314,7 +289,7 @@ Similar, to run the program on MacOS systems, you should set the <code>DYLD_FALL
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/fix/fix_branch_name/Documentation/OpenDDSharp.Standard.Doc/articles/getting_started.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/fix/exclude_code_coverage/Documentation/OpenDDSharp.Standard.Doc/articles/getting_started.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -334,7 +309,7 @@ Similar, to run the program on MacOS systems, you should set the <code>DYLD_FALL
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            <span>Copyright &copy; 2018-2022 Jose Morat&oacute;</span>
+            <span>Copyright &copy; 2018-2021 Jose Morat&oacute;</span>
             
           </div>
         </div>
