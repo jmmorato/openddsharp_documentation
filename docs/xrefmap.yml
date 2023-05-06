@@ -9152,19 +9152,19 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.DDS.StatusMask.Equals
   nameWithType: StatusMask.Equals
-- uid: OpenDDSharp.DDS.StatusMask.FromUInt32(System.UInt32)
-  name: FromUInt32(UInt32)
-  href: api/OpenDDSharp.DDS.StatusMask.html#OpenDDSharp_DDS_StatusMask_FromUInt32_System_UInt32_
-  commentId: M:OpenDDSharp.DDS.StatusMask.FromUInt32(System.UInt32)
-  fullName: OpenDDSharp.DDS.StatusMask.FromUInt32(System.UInt32)
-  nameWithType: StatusMask.FromUInt32(UInt32)
-- uid: OpenDDSharp.DDS.StatusMask.FromUInt32*
-  name: FromUInt32
-  href: api/OpenDDSharp.DDS.StatusMask.html#OpenDDSharp_DDS_StatusMask_FromUInt32_
-  commentId: Overload:OpenDDSharp.DDS.StatusMask.FromUInt32
+- uid: OpenDDSharp.DDS.StatusMask.FromUInt(System.UInt32)
+  name: FromUInt(UInt32)
+  href: api/OpenDDSharp.DDS.StatusMask.html#OpenDDSharp_DDS_StatusMask_FromUInt_System_UInt32_
+  commentId: M:OpenDDSharp.DDS.StatusMask.FromUInt(System.UInt32)
+  fullName: OpenDDSharp.DDS.StatusMask.FromUInt(System.UInt32)
+  nameWithType: StatusMask.FromUInt(UInt32)
+- uid: OpenDDSharp.DDS.StatusMask.FromUInt*
+  name: FromUInt
+  href: api/OpenDDSharp.DDS.StatusMask.html#OpenDDSharp_DDS_StatusMask_FromUInt_
+  commentId: Overload:OpenDDSharp.DDS.StatusMask.FromUInt
   isSpec: "True"
-  fullName: OpenDDSharp.DDS.StatusMask.FromUInt32
-  nameWithType: StatusMask.FromUInt32
+  fullName: OpenDDSharp.DDS.StatusMask.FromUInt
+  nameWithType: StatusMask.FromUInt
 - uid: OpenDDSharp.DDS.StatusMask.GetHashCode
   name: GetHashCode()
   href: api/OpenDDSharp.DDS.StatusMask.html#OpenDDSharp_DDS_StatusMask_GetHashCode
@@ -9238,19 +9238,19 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.DDS.StatusMask.Inequality
   nameWithType: StatusMask.Inequality
-- uid: OpenDDSharp.DDS.StatusMask.ToUInt32
-  name: ToUInt32()
-  href: api/OpenDDSharp.DDS.StatusMask.html#OpenDDSharp_DDS_StatusMask_ToUInt32
-  commentId: M:OpenDDSharp.DDS.StatusMask.ToUInt32
-  fullName: OpenDDSharp.DDS.StatusMask.ToUInt32()
-  nameWithType: StatusMask.ToUInt32()
-- uid: OpenDDSharp.DDS.StatusMask.ToUInt32*
-  name: ToUInt32
-  href: api/OpenDDSharp.DDS.StatusMask.html#OpenDDSharp_DDS_StatusMask_ToUInt32_
-  commentId: Overload:OpenDDSharp.DDS.StatusMask.ToUInt32
+- uid: OpenDDSharp.DDS.StatusMask.ToUInt
+  name: ToUInt()
+  href: api/OpenDDSharp.DDS.StatusMask.html#OpenDDSharp_DDS_StatusMask_ToUInt
+  commentId: M:OpenDDSharp.DDS.StatusMask.ToUInt
+  fullName: OpenDDSharp.DDS.StatusMask.ToUInt()
+  nameWithType: StatusMask.ToUInt()
+- uid: OpenDDSharp.DDS.StatusMask.ToUInt*
+  name: ToUInt
+  href: api/OpenDDSharp.DDS.StatusMask.html#OpenDDSharp_DDS_StatusMask_ToUInt_
+  commentId: Overload:OpenDDSharp.DDS.StatusMask.ToUInt
   isSpec: "True"
-  fullName: OpenDDSharp.DDS.StatusMask.ToUInt32
-  nameWithType: StatusMask.ToUInt32
+  fullName: OpenDDSharp.DDS.StatusMask.ToUInt
+  nameWithType: StatusMask.ToUInt
 - uid: OpenDDSharp.DDS.Subscriber
   name: Subscriber
   href: api/OpenDDSharp.DDS.Subscriber.html

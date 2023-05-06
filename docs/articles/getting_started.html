@@ -109,12 +109,12 @@ using his owns code generation tool. Check this <a href="idl.html">link</a> to g
 };
 </code></pre>
 <p>Build the project to auto-generate and compile the C# code for the defined structure:</p>
-<p><code>dotnet build TestMessage.csproj --runtime &lt;runtime_identifier&gt;</code></p>
+<p><code>dotnet build TestMessage/TestMessage.csproj --runtime &lt;runtime_identifier&gt; --configuration &lt;Release|Debug&gt;</code></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The implemented runtime identifiers are:</p>
 <ul>
-<li>win-64</li>
+<li>win-x64</li>
 <li>win-x86</li>
 <li>linux-x64</li>
 <li>osx-x64</li>
@@ -125,10 +125,10 @@ using his owns code generation tool. Check this <a href="idl.html">link</a> to g
 <p>Once you have defined your data transport types in the IDL project, it's time to create your first publisher application.</p>
 <p>Using the following command, you will create a console application that includes the OpenDDSharp reference, some boilerplate code
 and the configuration required to initialize your domain participant:</p>
-<p><code>dotnet new openddsharp-console-app --name Publisher --output Publisher</code></p>
+<p><code>dotnet new openddsharp-console-app --name HelloWorldPublisher --output HelloWorldPublisher</code></p>
 <p>You should add a reference to the previously created data transport types project to be able to use them in your publisher application.
 You can do it with the following command:</p>
-<p><code>dotnet add Publisher/Publisher.csproj reference TestMessage/TestMessage.csproj</code></p>
+<p><code>dotnet add HelloWorldPublisher/HelloWorldPublisher.csproj reference TestMessage/TestMessage.csproj</code></p>
 <h3 id="create-the-dds-domainparticipant">Create the DDS DomainParticipant</h3>
 <p>The first entity to be created in a DDS application is the domain participant.</p>
 <p>The domain participant is created with the domain participant factory and it is the factory for the DDS topics,
@@ -225,8 +225,8 @@ Ace.Fini();
 <h2 id="helloworld-subscriber">HelloWorld Subscriber</h2>
 <h3 id="create-the-subscriber-project">Create the subscriber project</h3>
 <p>Same than with the publisher application, you can create the subscriber application and reference the data transport types project using the OpenDDSharp console template by using the following commands:</p>
-<p><code>dotnet new openddsharp-console-app --name Subscriber --output Subscriber</code></p>
-<p><code>dotnet add Subscriber/Subscriber.csproj reference TestMessage/TestMessage.csproj</code></p>
+<p><code>dotnet new openddsharp-console-app --name HelloWorldSubscriber --output HelloWorldSubscriber</code></p>
+<p><code>dotnet add HelloWorldSubscriber/HelloWorldSubscriber.csproj reference TestMessage/TestMessage.csproj</code></p>
 <h3 id="create-the-domain-participant-register-the-type-and-create-the-topic">Create the domain participant, register the type and create the topic</h3>
 <p>You need to create the same entities as in the publisher project. Pay attention to use the same domain id (42) and
 the same topic name(<code>MessageTopic</code>) used in the publisher application.</p>
@@ -258,7 +258,7 @@ For this first application we are going to poll the information from the datarea
     if ((mask &amp; StatusKind.DataAvailableStatus) != 0)
     {
         List&lt;Message&gt; receivedData = new List&lt;Message&gt;();
-        List&lt;SampleInfo&gt; receivedInfo = new Lis&lt;SampleInfo&gt;();
+        List&lt;SampleInfo&gt; receivedInfo = new List&lt;SampleInfo&gt;();
         result = messageReader.Take(receivedData, receivedInfo);
 
         if (result == ReturnCode.Ok)
@@ -290,13 +290,13 @@ Ace.Fini();
 </code></pre>
 <h2 id="build-and-run-the-projects">Build and run the projects</h2>
 <p>Build the publisher and subscriber project with the following commands:</p>
-<p><code>dotnet build HelloPublisher.csproj --configuration Release|Debug --runtime &lt;runtime_identifier&gt; --no-self-contained</code></p>
-<p><code>dotnet build HelloSubscriber.csproj --configuration Release|Debug --runtime &lt;runtime_identifier&gt; --no-self-contained</code></p>
+<p><code>dotnet build HelloPublisher/HelloPublisher.csproj --configuration &lt;Release|Debug&gt; --runtime &lt;runtime_identifier&gt; --no-self-contained</code></p>
+<p><code>dotnet build HelloSubscriber/HelloSubscriber.csproj --configuration &lt;Release|Debug&gt; --runtime &lt;runtime_identifier&gt; --no-self-contained</code></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The implemented runtime identifiers are:</p>
 <ul>
-<li>win-64</li>
+<li>win-x64</li>
 <li>win-x86</li>
 <li>linux-x64</li>
 <li>osx-x64</li>
@@ -315,7 +315,7 @@ Similar, to run the program on MacOS systems, you should set the <code>DYLD_FALL
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/feature/update_documentation/Documentation/OpenDDSharp.Standard.Doc/articles/getting_started.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Documentation/OpenDDSharp.Standard.Doc/articles/getting_started.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
