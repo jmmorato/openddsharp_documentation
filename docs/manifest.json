@@ -1425,10 +1425,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/getting_started.html",
-          "hash": "Yr6gd/Yzd2AjHUxRaNaCtSPNH+eGq8XbBMXEa1dzceE="
+          "hash": "tR1kBjTChCpEfc9AGUpwKW1kderZC5SYZ+30w0/A0+A="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1515,7 +1515,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 4,
-          "skipped_file_count": 4
+          "skipped_file_count": 3
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
