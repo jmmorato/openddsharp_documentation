@@ -771,9 +771,7 @@
     
     <!-- mermaid support -->
     <script src="https://unpkg.com/mermaid@10.2.3/dist/mermaid.min.js"></script>
-    <script>
-        import mermaid from "https://cdn.skypack.dev/mermaid@10.2.3";
-        
+    <script>    
         // select <pre class="lang-mermaid"> _and_ <pre><code class="lang-mermaid">
         document.querySelectorAll("pre.lang-mermaid, pre>code.lang-mermaid").forEach($el => {
           // if the second selector got a hit, reference the parent <pre>
@@ -790,12 +788,12 @@
           `
         })
         
-        
         // initialize Mermaid to [1] log errors, [2] have loose security for first-party
         // authored diagrams, and [3] respect a preferred dark color scheme
         mermaid.initialize({
           logLevel: "error", // [1]
           securityLevel: "loose", // [2]
+          startOnLoad: false,
           theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ?
             "dark" :
             "default" // [3]
