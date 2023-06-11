@@ -546,9 +546,36 @@ a previously matched <a class="xref" href="OpenDDSharp.DDS.DataReader.html">Data
     <script type="text/javascript" src="../styles/main.js"></script>
     
     <!-- mermaid support -->
-    <script type="module">
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-        mermaid.initialize({ startOnLoad: true });
+    <script src="https://unpkg.com/mermaid@10.2.3/dist/mermaid.min.js"></script>
+    <script>
+        import mermaid from "https://cdn.skypack.dev/mermaid@10.2.3";
+        
+        // select <pre class="lang-mermaid"> _and_ <pre><code class="lang-mermaid">
+        document.querySelectorAll("pre.lang-mermaid, pre>code.lang-mermaid").forEach($el => {
+          // if the second selector got a hit, reference the parent <pre>
+          if ($el.tagName === "CODE")
+            $el = $el.parentElement
+          // put the Mermaid contents in the expected <div class="mermaid">
+          // plus keep the original contents in a nice <details>
+          $el.outerHTML = `
+            <div class="mermaid">${$el.textContent}</div>
+            <details>
+              <summary>Diagram source</summary>
+              <pre>${$el.textContent}</pre>
+            </details>
+          `
+        })
+        
+        
+        // initialize Mermaid to [1] log errors, [2] have loose security for first-party
+        // authored diagrams, and [3] respect a preferred dark color scheme
+        mermaid.initialize({
+          logLevel: "error", // [1]
+          securityLevel: "loose", // [2]
+          theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ?
+            "dark" :
+            "default" // [3]
+        })
     </script>
   </body>
 </html>
