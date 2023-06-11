@@ -419,7 +419,7 @@ refer to the DDS documentation and resources available in internet:</p>
     
     <!-- mermaid support -->
     <script src="https://unpkg.com/mermaid@10.2.3/dist/mermaid.min.js"></script>
-    <script>
+    <script>    
         // select <pre class="lang-mermaid"> _and_ <pre><code class="lang-mermaid">
         document.querySelectorAll("pre.lang-mermaid, pre>code.lang-mermaid").forEach($el => {
           // if the second selector got a hit, reference the parent <pre>
@@ -441,7 +441,7 @@ refer to the DDS documentation and resources available in internet:</p>
         mermaid.initialize({
           logLevel: "error", // [1]
           securityLevel: "loose", // [2]
-          startOnLoad: false,
+          startOnLoad: true,
           theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ?
             "dark" :
             "default" // [3]

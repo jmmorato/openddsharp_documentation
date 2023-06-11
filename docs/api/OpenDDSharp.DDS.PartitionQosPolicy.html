@@ -338,7 +338,7 @@ entities. It may establish new &quot;matchs&quot; that did not exist before, or 
         mermaid.initialize({
           logLevel: "error", // [1]
           securityLevel: "loose", // [2]
-          startOnLoad: false,
+          startOnLoad: true,
           theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ?
             "dark" :
             "default" // [3]

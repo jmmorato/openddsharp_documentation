@@ -449,7 +449,7 @@ The default value for this property is <span class="xref">true</span>.</p>
         mermaid.initialize({
           logLevel: "error", // [1]
           securityLevel: "loose", // [2]
-          startOnLoad: false,
+          startOnLoad: true,
           theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ?
             "dark" :
             "default" // [3]

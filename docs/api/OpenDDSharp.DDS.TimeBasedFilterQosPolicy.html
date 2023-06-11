@@ -447,7 +447,7 @@ changes without affecting the state of the associated <a class="xref" href="Open
         mermaid.initialize({
           logLevel: "error", // [1]
           securityLevel: "loose", // [2]
-          startOnLoad: false,
+          startOnLoad: true,
           theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ?
             "dark" :
             "default" // [3]

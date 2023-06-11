@@ -301,7 +301,7 @@ you should consider to sponsor it to ensure the future development of the projec
         mermaid.initialize({
           logLevel: "error", // [1]
           securityLevel: "loose", // [2]
-          startOnLoad: false,
+          startOnLoad: true,
           theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ?
             "dark" :
             "default" // [3]
