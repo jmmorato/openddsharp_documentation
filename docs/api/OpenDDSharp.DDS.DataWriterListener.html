@@ -93,7 +93,7 @@ such that the application can be notified of relevant status changes.</p>
   <h6><strong>Assembly</strong>: OpenDDSharp.Standard.dll</h6>
   <h5 id="OpenDDSharp_DDS_DataWriterListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class DataWriterListener : object</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class DataWriterListener : IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -102,7 +102,7 @@ such that the application can be notified of relevant status changes.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataWriterListener__ctor.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataWriterListener.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L69">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L54">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_DataWriterListener__ctor_" data-uid="OpenDDSharp.DDS.DataWriterListener.#ctor*"></a>
   <h4 id="OpenDDSharp_DDS_DataWriterListener__ctor" data-uid="OpenDDSharp.DDS.DataWriterListener.#ctor">DataWriterListener()</h4>
@@ -117,10 +117,61 @@ such that the application can be notified of relevant status changes.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataWriterListener_Dispose.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataWriterListener.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L187">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataWriterListener_Dispose_" data-uid="OpenDDSharp.DDS.DataWriterListener.Dispose*"></a>
+  <h4 id="OpenDDSharp_DDS_DataWriterListener_Dispose" data-uid="OpenDDSharp.DDS.DataWriterListener.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Releases the unmanaged resources used by the <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataWriterListener_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataWriterListener.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L198">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_DataWriterListener_Dispose_" data-uid="OpenDDSharp.DDS.DataWriterListener.Dispose*"></a>
+  <h4 id="OpenDDSharp_DDS_DataWriterListener_Dispose_System_Boolean_" data-uid="OpenDDSharp.DDS.DataWriterListener.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing,
+releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>True to free managed resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataWriterListener_Finalize.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataWriterListener.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L92">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L77">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_DataWriterListener_Finalize_" data-uid="OpenDDSharp.DDS.DataWriterListener.Finalize*"></a>
   <h4 id="OpenDDSharp_DDS_DataWriterListener_Finalize" data-uid="OpenDDSharp.DDS.DataWriterListener.Finalize">Finalize()</h4>
@@ -136,7 +187,7 @@ such that the application can be notified of relevant status changes.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataWriterListener_OnLivelinessLost_OpenDDSharp_DDS_DataWriter_OpenDDSharp_DDS_LivelinessLostStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataWriterListener.OnLivelinessLost(OpenDDSharp.DDS.DataWriter%2COpenDDSharp.DDS.LivelinessLostStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L145">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L110">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_DataWriterListener_OnLivelinessLost_" data-uid="OpenDDSharp.DDS.DataWriterListener.OnLivelinessLost*"></a>
   <h4 id="OpenDDSharp_DDS_DataWriterListener_OnLivelinessLost_OpenDDSharp_DDS_DataWriter_OpenDDSharp_DDS_LivelinessLostStatus_" data-uid="OpenDDSharp.DDS.DataWriterListener.OnLivelinessLost(OpenDDSharp.DDS.DataWriter,OpenDDSharp.DDS.LivelinessLostStatus)">OnLivelinessLost(DataWriter, LivelinessLostStatus)</h4>
@@ -179,7 +230,7 @@ through its Liveliness QoS has not been respected. This means that any connected
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataWriterListener_OnOfferedDeadlineMissed_OpenDDSharp_DDS_DataWriter_OpenDDSharp_DDS_OfferedDeadlineMissedStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataWriterListener.OnOfferedDeadlineMissed(OpenDDSharp.DDS.DataWriter%2COpenDDSharp.DDS.OfferedDeadlineMissedStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L126">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L91">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_DataWriterListener_OnOfferedDeadlineMissed_" data-uid="OpenDDSharp.DDS.DataWriterListener.OnOfferedDeadlineMissed*"></a>
   <h4 id="OpenDDSharp_DDS_DataWriterListener_OnOfferedDeadlineMissed_OpenDDSharp_DDS_DataWriter_OpenDDSharp_DDS_OfferedDeadlineMissedStatus_" data-uid="OpenDDSharp.DDS.DataWriterListener.OnOfferedDeadlineMissed(OpenDDSharp.DDS.DataWriter,OpenDDSharp.DDS.OfferedDeadlineMissedStatus)">OnOfferedDeadlineMissed(DataWriter, OfferedDeadlineMissedStatus)</h4>
@@ -221,7 +272,7 @@ through its Liveliness QoS has not been respected. This means that any connected
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataWriterListener_OnOfferedIncompatibleQos_OpenDDSharp_DDS_DataWriter_OpenDDSharp_DDS_OfferedIncompatibleQosStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataWriterListener.OnOfferedIncompatibleQos(OpenDDSharp.DDS.DataWriter%2COpenDDSharp.DDS.OfferedIncompatibleQosStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L135">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L100">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_DataWriterListener_OnOfferedIncompatibleQos_" data-uid="OpenDDSharp.DDS.DataWriterListener.OnOfferedIncompatibleQos*"></a>
   <h4 id="OpenDDSharp_DDS_DataWriterListener_OnOfferedIncompatibleQos_OpenDDSharp_DDS_DataWriter_OpenDDSharp_DDS_OfferedIncompatibleQosStatus_" data-uid="OpenDDSharp.DDS.DataWriterListener.OnOfferedIncompatibleQos(OpenDDSharp.DDS.DataWriter,OpenDDSharp.DDS.OfferedIncompatibleQosStatus)">OnOfferedIncompatibleQos(DataWriter, OfferedIncompatibleQosStatus)</h4>
@@ -263,7 +314,7 @@ the requested QoS of a <a class="xref" href="OpenDDSharp.DDS.DataReader.html">Da
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_DataWriterListener_OnPublicationMatched_OpenDDSharp_DDS_DataWriter_OpenDDSharp_DDS_PublicationMatchedStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.DataWriterListener.OnPublicationMatched(OpenDDSharp.DDS.DataWriter%2COpenDDSharp.DDS.PublicationMatchedStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L155">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/DataWriterListener.cs/#L120">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_DataWriterListener_OnPublicationMatched_" data-uid="OpenDDSharp.DDS.DataWriterListener.OnPublicationMatched*"></a>
   <h4 id="OpenDDSharp_DDS_DataWriterListener_OnPublicationMatched_OpenDDSharp_DDS_DataWriter_OpenDDSharp_DDS_PublicationMatchedStatus_" data-uid="OpenDDSharp.DDS.DataWriterListener.OnPublicationMatched(OpenDDSharp.DDS.DataWriter,OpenDDSharp.DDS.PublicationMatchedStatus)">OnPublicationMatched(DataWriter, PublicationMatchedStatus)</h4>

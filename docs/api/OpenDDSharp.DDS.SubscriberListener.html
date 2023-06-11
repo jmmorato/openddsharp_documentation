@@ -93,7 +93,7 @@ such that the application can be notified of relevant status changes.</p>
   <h6><strong>Assembly</strong>: OpenDDSharp.Standard.dll</h6>
   <h5 id="OpenDDSharp_DDS_SubscriberListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class SubscriberListener : object</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class SubscriberListener : IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -102,7 +102,7 @@ such that the application can be notified of relevant status changes.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener__ctor.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L93">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L62">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SubscriberListener__ctor_" data-uid="OpenDDSharp.DDS.SubscriberListener.#ctor*"></a>
   <h4 id="OpenDDSharp_DDS_SubscriberListener__ctor" data-uid="OpenDDSharp.DDS.SubscriberListener.#ctor">SubscriberListener()</h4>
@@ -117,10 +117,61 @@ such that the application can be notified of relevant status changes.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_Dispose.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L297">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriberListener_Dispose_" data-uid="OpenDDSharp.DDS.SubscriberListener.Dispose*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriberListener_Dispose" data-uid="OpenDDSharp.DDS.SubscriberListener.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Releases the unmanaged resources used by the <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L308">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SubscriberListener_Dispose_" data-uid="OpenDDSharp.DDS.SubscriberListener.Dispose*"></a>
+  <h4 id="OpenDDSharp_DDS_SubscriberListener_Dispose_System_Boolean_" data-uid="OpenDDSharp.DDS.SubscriberListener.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing,
+releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>True to free managed resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_Finalize.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L132">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L102">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SubscriberListener_Finalize_" data-uid="OpenDDSharp.DDS.SubscriberListener.Finalize*"></a>
   <h4 id="OpenDDSharp_DDS_SubscriberListener_Finalize" data-uid="OpenDDSharp.DDS.SubscriberListener.Finalize">Finalize()</h4>
@@ -136,7 +187,7 @@ such that the application can be notified of relevant status changes.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnDataAvailable_OpenDDSharp_DDS_DataReader_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnDataAvailable(OpenDDSharp.DDS.DataReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L194">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L124">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SubscriberListener_OnDataAvailable_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnDataAvailable*"></a>
   <h4 id="OpenDDSharp_DDS_SubscriberListener_OnDataAvailable_OpenDDSharp_DDS_DataReader_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnDataAvailable(OpenDDSharp.DDS.DataReader)">OnDataAvailable(DataReader)</h4>
@@ -172,7 +223,7 @@ Applications receiving this status can use the various take and read operations 
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnDataOnReaders_OpenDDSharp_DDS_Subscriber_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnDataOnReaders(OpenDDSharp.DDS.Subscriber)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L186">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L116">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SubscriberListener_OnDataOnReaders_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnDataOnReaders*"></a>
   <h4 id="OpenDDSharp_DDS_SubscriberListener_OnDataOnReaders_OpenDDSharp_DDS_Subscriber_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnDataOnReaders(OpenDDSharp.DDS.Subscriber)">OnDataOnReaders(Subscriber)</h4>
@@ -209,7 +260,7 @@ the subscriber to get the set of data readers with data available.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnLivelinessChanged_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_LivelinessChangedStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnLivelinessChanged(OpenDDSharp.DDS.DataReader%2COpenDDSharp.DDS.LivelinessChangedStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L230">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L160">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SubscriberListener_OnLivelinessChanged_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnLivelinessChanged*"></a>
   <h4 id="OpenDDSharp_DDS_SubscriberListener_OnLivelinessChanged_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_LivelinessChangedStatus_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnLivelinessChanged(OpenDDSharp.DDS.DataReader,OpenDDSharp.DDS.LivelinessChangedStatus)">OnLivelinessChanged(DataReader, LivelinessChangedStatus)</h4>
@@ -251,7 +302,7 @@ more <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>s that
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnRequestedDeadlineMissed_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_RequestedDeadlineMissedStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnRequestedDeadlineMissed(OpenDDSharp.DDS.DataReader%2COpenDDSharp.DDS.RequestedDeadlineMissedStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L203">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L133">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SubscriberListener_OnRequestedDeadlineMissed_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnRequestedDeadlineMissed*"></a>
   <h4 id="OpenDDSharp_DDS_SubscriberListener_OnRequestedDeadlineMissed_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_RequestedDeadlineMissedStatus_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnRequestedDeadlineMissed(OpenDDSharp.DDS.DataReader,OpenDDSharp.DDS.RequestedDeadlineMissedStatus)">OnRequestedDeadlineMissed(DataReader, RequestedDeadlineMissedStatus)</h4>
@@ -293,7 +344,7 @@ more <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>s that
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnRequestedIncompatibleQos_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_RequestedIncompatibleQosStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnRequestedIncompatibleQos(OpenDDSharp.DDS.DataReader%2COpenDDSharp.DDS.RequestedIncompatibleQosStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L212">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L142">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SubscriberListener_OnRequestedIncompatibleQos_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnRequestedIncompatibleQos*"></a>
   <h4 id="OpenDDSharp_DDS_SubscriberListener_OnRequestedIncompatibleQos_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_RequestedIncompatibleQosStatus_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnRequestedIncompatibleQos(OpenDDSharp.DDS.DataReader,OpenDDSharp.DDS.RequestedIncompatibleQosStatus)">OnRequestedIncompatibleQos(DataReader, RequestedIncompatibleQosStatus)</h4>
@@ -335,7 +386,7 @@ were requested were incompatible with what was offered.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnSampleLost_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_SampleLostStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnSampleLost(OpenDDSharp.DDS.DataReader%2COpenDDSharp.DDS.SampleLostStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L248">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L178">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SubscriberListener_OnSampleLost_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnSampleLost*"></a>
   <h4 id="OpenDDSharp_DDS_SubscriberListener_OnSampleLost_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_SampleLostStatus_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnSampleLost(OpenDDSharp.DDS.DataReader,OpenDDSharp.DDS.SampleLostStatus)">OnSampleLost(DataReader, SampleLostStatus)</h4>
@@ -377,7 +428,7 @@ never received by the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">Dat
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnSampleRejected_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_SampleRejectedStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnSampleRejected(OpenDDSharp.DDS.DataReader%2COpenDDSharp.DDS.SampleRejectedStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L221">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L151">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SubscriberListener_OnSampleRejected_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnSampleRejected*"></a>
   <h4 id="OpenDDSharp_DDS_SubscriberListener_OnSampleRejected_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_SampleRejectedStatus_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnSampleRejected(OpenDDSharp.DDS.DataReader,OpenDDSharp.DDS.SampleRejectedStatus)">OnSampleRejected(DataReader, SampleRejectedStatus)</h4>
@@ -419,7 +470,7 @@ never received by the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">Dat
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SubscriberListener_OnSubscriptionMatched_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_SubscriptionMatchedStatus_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SubscriberListener.OnSubscriptionMatched(OpenDDSharp.DDS.DataReader%2COpenDDSharp.DDS.SubscriptionMatchedStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L239">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp.Standard/DDS/SubscriberListener.cs/#L169">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SubscriberListener_OnSubscriptionMatched_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnSubscriptionMatched*"></a>
   <h4 id="OpenDDSharp_DDS_SubscriberListener_OnSubscriptionMatched_OpenDDSharp_DDS_DataReader_OpenDDSharp_DDS_SubscriptionMatchedStatus_" data-uid="OpenDDSharp.DDS.SubscriberListener.OnSubscriptionMatched(OpenDDSharp.DDS.DataReader,OpenDDSharp.DDS.SubscriptionMatchedStatus)">OnSubscriptionMatched(DataReader, SubscriptionMatchedStatus)</h4>

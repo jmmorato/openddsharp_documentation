@@ -642,6 +642,25 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.DDS.DataReaderListener.DataReaderListener
   nameWithType: DataReaderListener.DataReaderListener
+- uid: OpenDDSharp.DDS.DataReaderListener.Dispose
+  name: Dispose()
+  href: api/OpenDDSharp.DDS.DataReaderListener.html#OpenDDSharp_DDS_DataReaderListener_Dispose
+  commentId: M:OpenDDSharp.DDS.DataReaderListener.Dispose
+  fullName: OpenDDSharp.DDS.DataReaderListener.Dispose()
+  nameWithType: DataReaderListener.Dispose()
+- uid: OpenDDSharp.DDS.DataReaderListener.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/OpenDDSharp.DDS.DataReaderListener.html#OpenDDSharp_DDS_DataReaderListener_Dispose_System_Boolean_
+  commentId: M:OpenDDSharp.DDS.DataReaderListener.Dispose(System.Boolean)
+  fullName: OpenDDSharp.DDS.DataReaderListener.Dispose(System.Boolean)
+  nameWithType: DataReaderListener.Dispose(Boolean)
+- uid: OpenDDSharp.DDS.DataReaderListener.Dispose*
+  name: Dispose
+  href: api/OpenDDSharp.DDS.DataReaderListener.html#OpenDDSharp_DDS_DataReaderListener_Dispose_
+  commentId: Overload:OpenDDSharp.DDS.DataReaderListener.Dispose
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.DataReaderListener.Dispose
+  nameWithType: DataReaderListener.Dispose
 - uid: OpenDDSharp.DDS.DataReaderListener.Finalize
   name: Finalize()
   href: api/OpenDDSharp.DDS.DataReaderListener.html#OpenDDSharp_DDS_DataReaderListener_Finalize
@@ -1357,6 +1376,25 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.DDS.DataWriterListener.DataWriterListener
   nameWithType: DataWriterListener.DataWriterListener
+- uid: OpenDDSharp.DDS.DataWriterListener.Dispose
+  name: Dispose()
+  href: api/OpenDDSharp.DDS.DataWriterListener.html#OpenDDSharp_DDS_DataWriterListener_Dispose
+  commentId: M:OpenDDSharp.DDS.DataWriterListener.Dispose
+  fullName: OpenDDSharp.DDS.DataWriterListener.Dispose()
+  nameWithType: DataWriterListener.Dispose()
+- uid: OpenDDSharp.DDS.DataWriterListener.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/OpenDDSharp.DDS.DataWriterListener.html#OpenDDSharp_DDS_DataWriterListener_Dispose_System_Boolean_
+  commentId: M:OpenDDSharp.DDS.DataWriterListener.Dispose(System.Boolean)
+  fullName: OpenDDSharp.DDS.DataWriterListener.Dispose(System.Boolean)
+  nameWithType: DataWriterListener.Dispose(Boolean)
+- uid: OpenDDSharp.DDS.DataWriterListener.Dispose*
+  name: Dispose
+  href: api/OpenDDSharp.DDS.DataWriterListener.html#OpenDDSharp_DDS_DataWriterListener_Dispose_
+  commentId: Overload:OpenDDSharp.DDS.DataWriterListener.Dispose
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.DataWriterListener.Dispose
+  nameWithType: DataWriterListener.Dispose
 - uid: OpenDDSharp.DDS.DataWriterListener.Finalize
   name: Finalize()
   href: api/OpenDDSharp.DDS.DataWriterListener.html#OpenDDSharp_DDS_DataWriterListener_Finalize
@@ -2684,6 +2722,25 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.DDS.DomainParticipantListener.DomainParticipantListener
   nameWithType: DomainParticipantListener.DomainParticipantListener
+- uid: OpenDDSharp.DDS.DomainParticipantListener.Dispose
+  name: Dispose()
+  href: api/OpenDDSharp.DDS.DomainParticipantListener.html#OpenDDSharp_DDS_DomainParticipantListener_Dispose
+  commentId: M:OpenDDSharp.DDS.DomainParticipantListener.Dispose
+  fullName: OpenDDSharp.DDS.DomainParticipantListener.Dispose()
+  nameWithType: DomainParticipantListener.Dispose()
+- uid: OpenDDSharp.DDS.DomainParticipantListener.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/OpenDDSharp.DDS.DomainParticipantListener.html#OpenDDSharp_DDS_DomainParticipantListener_Dispose_System_Boolean_
+  commentId: M:OpenDDSharp.DDS.DomainParticipantListener.Dispose(System.Boolean)
+  fullName: OpenDDSharp.DDS.DomainParticipantListener.Dispose(System.Boolean)
+  nameWithType: DomainParticipantListener.Dispose(Boolean)
+- uid: OpenDDSharp.DDS.DomainParticipantListener.Dispose*
+  name: Dispose
+  href: api/OpenDDSharp.DDS.DomainParticipantListener.html#OpenDDSharp_DDS_DomainParticipantListener_Dispose_
+  commentId: Overload:OpenDDSharp.DDS.DomainParticipantListener.Dispose
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.DomainParticipantListener.Dispose
+  nameWithType: DomainParticipantListener.Dispose
 - uid: OpenDDSharp.DDS.DomainParticipantListener.Finalize
   name: Finalize()
   href: api/OpenDDSharp.DDS.DomainParticipantListener.html#OpenDDSharp_DDS_DomainParticipantListener_Finalize
@@ -6981,6 +7038,25 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.DDS.PublisherListener.PublisherListener
   nameWithType: PublisherListener.PublisherListener
+- uid: OpenDDSharp.DDS.PublisherListener.Dispose
+  name: Dispose()
+  href: api/OpenDDSharp.DDS.PublisherListener.html#OpenDDSharp_DDS_PublisherListener_Dispose
+  commentId: M:OpenDDSharp.DDS.PublisherListener.Dispose
+  fullName: OpenDDSharp.DDS.PublisherListener.Dispose()
+  nameWithType: PublisherListener.Dispose()
+- uid: OpenDDSharp.DDS.PublisherListener.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/OpenDDSharp.DDS.PublisherListener.html#OpenDDSharp_DDS_PublisherListener_Dispose_System_Boolean_
+  commentId: M:OpenDDSharp.DDS.PublisherListener.Dispose(System.Boolean)
+  fullName: OpenDDSharp.DDS.PublisherListener.Dispose(System.Boolean)
+  nameWithType: PublisherListener.Dispose(Boolean)
+- uid: OpenDDSharp.DDS.PublisherListener.Dispose*
+  name: Dispose
+  href: api/OpenDDSharp.DDS.PublisherListener.html#OpenDDSharp_DDS_PublisherListener_Dispose_
+  commentId: Overload:OpenDDSharp.DDS.PublisherListener.Dispose
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.PublisherListener.Dispose
+  nameWithType: PublisherListener.Dispose
 - uid: OpenDDSharp.DDS.PublisherListener.Finalize
   name: Finalize()
   href: api/OpenDDSharp.DDS.PublisherListener.html#OpenDDSharp_DDS_PublisherListener_Finalize
@@ -9520,6 +9596,25 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.DDS.SubscriberListener.SubscriberListener
   nameWithType: SubscriberListener.SubscriberListener
+- uid: OpenDDSharp.DDS.SubscriberListener.Dispose
+  name: Dispose()
+  href: api/OpenDDSharp.DDS.SubscriberListener.html#OpenDDSharp_DDS_SubscriberListener_Dispose
+  commentId: M:OpenDDSharp.DDS.SubscriberListener.Dispose
+  fullName: OpenDDSharp.DDS.SubscriberListener.Dispose()
+  nameWithType: SubscriberListener.Dispose()
+- uid: OpenDDSharp.DDS.SubscriberListener.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/OpenDDSharp.DDS.SubscriberListener.html#OpenDDSharp_DDS_SubscriberListener_Dispose_System_Boolean_
+  commentId: M:OpenDDSharp.DDS.SubscriberListener.Dispose(System.Boolean)
+  fullName: OpenDDSharp.DDS.SubscriberListener.Dispose(System.Boolean)
+  nameWithType: SubscriberListener.Dispose(Boolean)
+- uid: OpenDDSharp.DDS.SubscriberListener.Dispose*
+  name: Dispose
+  href: api/OpenDDSharp.DDS.SubscriberListener.html#OpenDDSharp_DDS_SubscriberListener_Dispose_
+  commentId: Overload:OpenDDSharp.DDS.SubscriberListener.Dispose
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.SubscriberListener.Dispose
+  nameWithType: SubscriberListener.Dispose
 - uid: OpenDDSharp.DDS.SubscriberListener.Finalize
   name: Finalize()
   href: api/OpenDDSharp.DDS.SubscriberListener.html#OpenDDSharp_DDS_SubscriberListener_Finalize
@@ -11554,6 +11649,25 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.DDS.TopicListener.TopicListener
   nameWithType: TopicListener.TopicListener
+- uid: OpenDDSharp.DDS.TopicListener.Dispose
+  name: Dispose()
+  href: api/OpenDDSharp.DDS.TopicListener.html#OpenDDSharp_DDS_TopicListener_Dispose
+  commentId: M:OpenDDSharp.DDS.TopicListener.Dispose
+  fullName: OpenDDSharp.DDS.TopicListener.Dispose()
+  nameWithType: TopicListener.Dispose()
+- uid: OpenDDSharp.DDS.TopicListener.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/OpenDDSharp.DDS.TopicListener.html#OpenDDSharp_DDS_TopicListener_Dispose_System_Boolean_
+  commentId: M:OpenDDSharp.DDS.TopicListener.Dispose(System.Boolean)
+  fullName: OpenDDSharp.DDS.TopicListener.Dispose(System.Boolean)
+  nameWithType: TopicListener.Dispose(Boolean)
+- uid: OpenDDSharp.DDS.TopicListener.Dispose*
+  name: Dispose
+  href: api/OpenDDSharp.DDS.TopicListener.html#OpenDDSharp_DDS_TopicListener_Dispose_
+  commentId: Overload:OpenDDSharp.DDS.TopicListener.Dispose
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.TopicListener.Dispose
+  nameWithType: TopicListener.Dispose
 - uid: OpenDDSharp.DDS.TopicListener.Finalize
   name: Finalize()
   href: api/OpenDDSharp.DDS.TopicListener.html#OpenDDSharp_DDS_TopicListener_Finalize
