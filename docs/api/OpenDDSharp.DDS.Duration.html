@@ -574,24 +574,9 @@
     <script type="text/javascript" src="../styles/main.js"></script>
     
     <!-- mermaid support -->
-    <script src="https://unpkg.com/mermaid@8.4/dist/mermaid.min.js"></script>
-    <script>
-        mermaid.initialize({
-            startOnLoad: false
-        });
-    
-        window.onload = function () {
-            const elements = document.getElementsByClassName("lang-mermaid");
-            let index = 0;
-    
-            while (elements.length != 0) {
-                let element = elements[0];
-                mermaid.render('graph'+index, element.innerText, (svgGraph) => {                    
-                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
-                });
-                ++index;
-            }
-        }
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
     </script>
   </body>
 </html>

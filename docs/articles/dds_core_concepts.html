@@ -245,7 +245,7 @@ to further segregate data within those domains. Participants within a domain can
 participants in the same domain or with participants in other domains explicitly configured to allow communication.
 This isolation ensures that data remains contained within its intended scope and prevents unintended data leakage or
 interference.</p>
-<h2 id="benefits-of-dds-domain-isolation">Benefits of DDS Domain Isolation</h2>
+<h3 id="benefits-of-dds-domain-isolation">Benefits of DDS Domain Isolation</h3>
 <p>DDS domains provide several benefits for data isolation within a network:</p>
 <ul>
 <li><p><strong>Security and Privacy</strong>: DDS domains enable data isolation, preventing unauthorized access to sensitive information.
@@ -418,24 +418,9 @@ refer to the DDS documentation and resources available in internet:</p>
     <script type="text/javascript" src="../styles/main.js"></script>
     
     <!-- mermaid support -->
-    <script src="https://unpkg.com/mermaid@8.4/dist/mermaid.min.js"></script>
-    <script>
-        mermaid.initialize({
-            startOnLoad: false
-        });
-    
-        window.onload = function () {
-            const elements = document.getElementsByClassName("lang-mermaid");
-            let index = 0;
-    
-            while (elements.length != 0) {
-                let element = elements[0];
-                mermaid.render('graph'+index, element.innerText, (svgGraph) => {                    
-                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
-                });
-                ++index;
-            }
-        }
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
     </script>
   </body>
 </html>
