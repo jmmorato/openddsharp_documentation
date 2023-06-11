@@ -371,8 +371,8 @@ Similar, to run the program on MacOS systems, you should set the <code>DYLD_FALL
           logLevel: "error", // [1]
           securityLevel: "loose", // [2]
           startOnLoad: true,
-          theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ?
-            "dark" :
+          theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) ?
+            "light" :
             "default" // [3]
         })
     </script>

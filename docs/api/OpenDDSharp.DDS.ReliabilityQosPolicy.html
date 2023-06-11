@@ -479,8 +479,8 @@ For the purposes of this inequality, the values of Reliability kind are consider
           logLevel: "error", // [1]
           securityLevel: "loose", // [2]
           startOnLoad: true,
-          theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ?
-            "dark" :
+          theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) ?
+            "light" :
             "default" // [3]
         })
     </script>

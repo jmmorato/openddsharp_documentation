@@ -183,8 +183,8 @@ QoS policy). In any case there is no &quot;filtering&quot; of modifications made
           logLevel: "error", // [1]
           securityLevel: "loose", // [2]
           startOnLoad: true,
-          theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ?
-            "dark" :
+          theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) ?
+            "light" :
             "default" // [3]
         })
     </script>
