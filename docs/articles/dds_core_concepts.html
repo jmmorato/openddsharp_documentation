@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>DDS (Data Distribution System) Core Concepts | OpenDDSharp Documentation </title>
+    <title>DDS (Data Distribution Service) Core Concepts | OpenDDSharp Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="DDS (Data Distribution System) Core Concepts | OpenDDSharp Documentation ">
+    <meta name="title" content="DDS (Data Distribution Service) Core Concepts | OpenDDSharp Documentation ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -74,7 +74,7 @@
                      (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
 
-<h1 id="dds-data-distribution-system-core-concepts">DDS (Data Distribution System) Core Concepts</h1>
+<h1 id="dds-data-distribution-service-core-concepts">DDS (Data Distribution Service) Core Concepts</h1>
 
 <h2 id="introduction">Introduction</h2>
 <p>Data Distribution Service (DDS) is a middleware technology that enables efficient and
@@ -83,7 +83,7 @@ model for real-time and scalable data distribution.</p>
 <p>DDS is designed to address the challenges of real-time systems, where data needs to be shared among multiple components
 or applications in a distributed environment. It offers a standardized approach for data communication,
 ensuring timely delivery, scalability, and interoperability.</p>
-<p>This document aims to provide an overview of key concepts and features of DDS, including Data-Centric Publish-Subscribe,
+<p>This article aims to provide an overview of key concepts and features of DDS, including Data-Centric Publish-Subscribe,
 Quality of Service Policies, Extensible Transport Framework, DDS Discovery, DDS Domains, DDS Entities, and the OpenDDS
 underlying native layer used by OpenDDSharp.</p>
 <h2 id="data-centric-publish-subscribe-dcps">Data-Centric Publish-Subscribe (DCPS)</h2>
@@ -143,13 +143,6 @@ This processing can include analysis, visualization, storage, or any other desir
 <li><strong>Flexibility:</strong> Publishers and subscribers can dynamically join or leave the system without affecting other components.</li>
 <li><strong>Efficiency:</strong> DCPS optimizes data distribution by utilizing efficient filtering, content-based routing, and data transformation</li>
 </ul>
-<h2 id="extensible-transport-framework-etf">Extensible Transport Framework (ETF)</h2>
-<p>The Extensible Transport Framework (ETF) in DDS allows for pluggable transport protocols, enabling DDS to work over
-different network technologies. The ETF provides an abstraction layer that separates the DDS core from the underlying
-transport implementation, allowing for flexibility and extensibility.</p>
-<p>DDS supports various transport protocols out of the box, such as TCP/IP, UDP/IP, Shared Memory,
-and Real-Time Publish-Subscribe (RTPS) over different network interfaces.
-Additionally, developers can extend the ETF to integrate DDS with custom or proprietary network technologies.</p>
 <h2 id="dds-discovery">DDS Discovery</h2>
 <p>DDS Discovery is the mechanism by which participants in a DDS system can discover and establish communication with
 each other. During the discovery process, participants exchange information about their capabilities and data
@@ -367,6 +360,13 @@ to build DDS applications.</p>
 and compatibility with the DDS standard.</p>
 <p>OpenDDSharp has been build on top of OpenDDS and provides a .NET API for DDS by p-invoking the native OpenDDS API and
 creating an IDL to C# code generator that can interact with the underlying OpenDDS native layer.</p>
+<h3 id="extensible-transport-framework-etf">Extensible Transport Framework (ETF)</h3>
+<p>The Extensible Transport Framework (ETF) in OpenDDS allows for pluggable transport protocols, enabling OpenDDS to work over
+different network technologies. The ETF provides an abstraction layer that separates the OpenDDS core from the underlying
+transport implementation, allowing for flexibility and extensibility.</p>
+<p>OpenDDS supports various transport protocols out of the box, such as TCP/IP, UDP/IP, Shared Memory,
+and Real-Time Publish-Subscribe (RTPS) over different network interfaces.
+Additionally, developers can extend the ETF to integrate DDS with custom or proprietary network technologies.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>This chapter has provided an overview of the core concepts and features of DDS.</p>
 <p>Understanding the Data-Centric Publish-Subscribe model, Quality of Service policies, Extensible Transport Framework,
@@ -386,7 +386,7 @@ refer to the DDS documentation and resources available in internet:</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Documentation/OpenDDSharp.Standard.Doc/articles/dds_core_concepts.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/main/Documentation/articles/dds_core_concepts.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -13687,32 +13687,6 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.OpenDDS.DCPS.TransportInst.OptimumPacketSize
   nameWithType: TransportInst.OptimumPacketSize
-- uid: OpenDDSharp.OpenDDS.DCPS.TransportInst.QueueInitialPools
-  name: QueueInitialPools
-  href: api/OpenDDSharp.OpenDDS.DCPS.TransportInst.html#OpenDDSharp_OpenDDS_DCPS_TransportInst_QueueInitialPools
-  commentId: P:OpenDDSharp.OpenDDS.DCPS.TransportInst.QueueInitialPools
-  fullName: OpenDDSharp.OpenDDS.DCPS.TransportInst.QueueInitialPools
-  nameWithType: TransportInst.QueueInitialPools
-- uid: OpenDDSharp.OpenDDS.DCPS.TransportInst.QueueInitialPools*
-  name: QueueInitialPools
-  href: api/OpenDDSharp.OpenDDS.DCPS.TransportInst.html#OpenDDSharp_OpenDDS_DCPS_TransportInst_QueueInitialPools_
-  commentId: Overload:OpenDDSharp.OpenDDS.DCPS.TransportInst.QueueInitialPools
-  isSpec: "True"
-  fullName: OpenDDSharp.OpenDDS.DCPS.TransportInst.QueueInitialPools
-  nameWithType: TransportInst.QueueInitialPools
-- uid: OpenDDSharp.OpenDDS.DCPS.TransportInst.QueueMessagesPerPool
-  name: QueueMessagesPerPool
-  href: api/OpenDDSharp.OpenDDS.DCPS.TransportInst.html#OpenDDSharp_OpenDDS_DCPS_TransportInst_QueueMessagesPerPool
-  commentId: P:OpenDDSharp.OpenDDS.DCPS.TransportInst.QueueMessagesPerPool
-  fullName: OpenDDSharp.OpenDDS.DCPS.TransportInst.QueueMessagesPerPool
-  nameWithType: TransportInst.QueueMessagesPerPool
-- uid: OpenDDSharp.OpenDDS.DCPS.TransportInst.QueueMessagesPerPool*
-  name: QueueMessagesPerPool
-  href: api/OpenDDSharp.OpenDDS.DCPS.TransportInst.html#OpenDDSharp_OpenDDS_DCPS_TransportInst_QueueMessagesPerPool_
-  commentId: Overload:OpenDDSharp.OpenDDS.DCPS.TransportInst.QueueMessagesPerPool
-  isSpec: "True"
-  fullName: OpenDDSharp.OpenDDS.DCPS.TransportInst.QueueMessagesPerPool
-  nameWithType: TransportInst.QueueMessagesPerPool
 - uid: OpenDDSharp.OpenDDS.DCPS.TransportInst.ThreadPerConnection
   name: ThreadPerConnection
   href: api/OpenDDSharp.OpenDDS.DCPS.TransportInst.html#OpenDDSharp_OpenDDS_DCPS_TransportInst_ThreadPerConnection
