@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>OpenDDSharp Domain Module | OpenDDSharp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="OpenDDSharp Domain Module | OpenDDSharp Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4366666401981011" crossorigin="anonymous"></script>
+                <!-- openddsharp_ads -->
+                <ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-4366666401981011" data-ad-slot="6527324727" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+<h1 id="openddsharp-domain-module">OpenDDSharp Domain Module</h1>
+
+<h2 id="participant-service-class">Participant Service Class</h2>
+<p>The <code>ParticipantService</code> is singleton class in OpenDDSharp that provides the primary interface for managing
+the DDS participants in your application. It allows you to obtain the <code>DomainParticipantFactory</code>, set up discovery,
+and control the behavior of the DDS entities that will be created.</p>
+<p>Being a singleton class means that there is only one instance of <code>ParticipantService</code> per application process.
+This ensures that there's a centralized management entity for all <code>DomainParticipants</code> in the system.</p>
+<p>In order to get the <code>ParticipantService</code> instance, you need to access the <code>ParticipantService.Instance</code> property.
+This property returns the singleton instance of the <code>ParticipantService</code> class, which you can then use to access
+the methods and properties implemented in the class.</p>
+<p>Here's an example of how to get the <code>ParticipantService</code> instance in OpenDDSharp and call the
+<code>GetDomainParticipantFactory()</code> method to retrieve a new <code>DomainParticipantFactory</code> object:</p>
+<pre><code class="lang-csharp">var dpf = ParticipantService.Instance.GetDomainParticipantFactory();
+</code></pre>
+<p>This method consumes <code>-DCPS*</code> and <code>-ORB*</code> options and their arguments. These options are used to configure the
+<code>DomainParticipantFactory</code> and its associated resources. Refer to the OpenDDS
+<a href="https://opendds.readthedocs.io/en/latest/devguide/run_time_configuration.html">Run-time Configuration</a>
+documentation for more information on the available options and their arguments.</p>
+<p>For example, you can use the <code>-DCPSConfigFile</code> option to
+specify a configuration file that contains the settings for the <code>DomainParticipantFactory</code> (e.g., transport, discovery,
+etc...). Here's an example of how to get the <code>ParticipantService</code> instance in OpenDDSharp and call the
+<code>GetDomainParticipantFactory()</code> method to retrieve a new <code>DomainParticipantFactory</code> object with a configuration file:</p>
+<pre><code class="lang-csharp">var dpf = ParticipantService.Instance.GetDomainParticipantFactory(&quot;-DCPSConfigFile&quot;, &quot;rtps.ini&quot;);
+</code></pre>
+<p>The <code>ParticipantService</code> class also provides methods for configuring the default discovery behavior for all
+<code>DomainParticipants</code> in a specific domain ID. Discovery is a key feature of DDS that allows DDS entities to find each
+other and communicate without having to know their exact location or address. It enables the creation of distributed
+systems where entities can be added or removed dynamically at runtime, without requiring any manual configuration
+or intervention from the user.</p>
+<p>You can configure the default discovery behavior for all <code>DomainParticipants</code> in a specific domain ID
+created from the <code>DomainParticipantFactory</code> by calling the <code>AddDiscovery</code> and <code>SetRepoDomain</code> method on
+the <code>ParticipantService</code> instance. Here's an example of how to configure the default discovery behavior in domain ID 42
+(RTPS Discovery) and in domain ID 23 (InfoRepo Discovery) using the <code>ParticipantService</code> instance:</p>
+<pre><code class="lang-csharp">const string RTPS_DISCOVERY = &quot;RtpsDiscovery&quot;;
+const string INFOREPO_DISCOVERY = &quot;InfoRepo&quot;;
+const string INFOREPO_IOR = &quot;repo.ior&quot;;
+const int RTPS_DOMAIN = 42;
+const int INFOREPO_DOMAIN = 23;
+
+var disc = new RtpsDiscovery(RTPS_DISCOVERY)
+{
+    ResendPeriod = new TimeValue
+    {
+        Seconds = 2,
+    },
+    SedpMulticast = false,
+};
+
+ParticipantService.Instance.AddDiscovery(disc);
+ParticipantService.Instance.DefaultDiscovery = RTPS_DISCOVERY;
+ParticipantService.Instance.SetRepoDomain(RTPS_DOMAIN, RTPS_DISCOVERY);
+
+var infoRepo = new InfoRepoDiscovery(INFOREPO_DISCOVERY, &quot;corbaloc::localhost:12345/DCPSInfoRepo&quot;);
+ParticipantService.Instance.AddDiscovery(infoRepo);
+ParticipantService.Instance.SetRepoDomain(INFOREPO_DOMAIN, INFOREPO_DISCOVERY);
+</code></pre>
+<p>For a detailed description of the methods and properties implemented in the <code>ParticipantService</code>, please refer
+to the <a href="xref:OpenDDSharp.DDS.ParticipantService">ParticipantService API Reference</a> documentation.</p>
+<h2 id="domain-participant-factory-class">Domain Participant Factory Class</h2>
+<p>The <code>DomainParticipantFactory</code> is the class responsible for creating and managing <code>DomainParticipant</code> objects.
+It serves as a central point for configuring and customizing the behavior of <code>DomainParticipants</code> and their
+associated resources.</p>
+<p>Here's an example of how to create a new <code>DomainParticipant</code> with default QoS settings using the
+<code>DomainParticipantFactory</code>:</p>
+<pre><code class="lang-csharp">var dpf = ParticipantService.Instance.GetDomainParticipantFactory(&quot;-DCPSConfigFile&quot;, &quot;rtps.ini&quot;);
+var participant = dpf.CreateParticipant(42);
+</code></pre>
+<p>You should always try to optimize the number of <code>DomainParticipants</code> in your application by reusing them whenever
+possible. This will help reduce the overhead associated with creating and destroying <code>DomainParticipants</code> and
+improve the overall performance of your application. For example, if you have multiple publishers and subscribers
+in your application, you can create a single <code>DomainParticipant</code> and use it to create all the publishers
+and subscribers.</p>
+<p>By calling the <code>LookupParticipant()</code> method on the <code>DomainParticipantFactory</code>, you can retrieve an existing
+<code>DomainParticipant</code> with the specified domain ID. If the <code>DomainParticipant</code> does not exist, the method will
+return <code>null</code>. Here's an example of how to retrieve an existing <code>DomainParticipant</code> with domain ID 42:</p>
+<pre><code class="lang-csharp">var lookupParticipant = dpf.LookupParticipant(42);
+</code></pre>
+<p>Once you don't need the <code>DomainParticipant</code> anymore in your application, you can destroy it by calling the
+<code>DeleteConatinedEntities()</code> and <code>DeleteParticipant()</code> method on the <code>DomainParticipantFactory</code> in order to free up
+any resources associated with it:</p>
+<pre><code class="lang-csharp">participant.DeleteContainedEntities();
+dpf.DeleteParticipant(participant);
+</code></pre>
+<p>For a detailed description of the methods and properties implemented in the <code>DomainParticipantFactory</code>, please refer
+to the <a class="xref" href="../api/OpenDDSharp.DDS.DomainParticipantFactory.html">DomainParticipantFactory API Reference</a> documentation.</p>
+<h3 id="domain-participant-factory-qos">Domain Participant Factory QoS</h3>
+<p>In DDS, Quality of Service (QoS) refers to a set of configurable parameters that affect various aspects of
+communication, such as reliability, durability, resource usage, etc...</p>
+<p>These QoS settings can be applied at different levels in the DDS system, including the <code>DomainParticipantFactory</code>.
+This allows you to customize the behavior of the <code>DomainParticipantFactory</code> and its associated resources to suit
+your specific needs.</p>
+<p>Here's an example of how to set the QoS policies for the <code>DomainParticipantFactory</code>:</p>
+<pre><code class="lang-csharp">var qos = new DomainParticipantFactoryQos
+{
+    EntityFactory =
+    {
+        AutoenableCreatedEntities = false,
+    },
+};
+
+var result = dpf.SetQos(qos);
+</code></pre>
+<p>For a detailed description of the QoS policies implemented for the <code>DomainParticipantFactory</code>, please refer
+to the <a class="xref" href="../api/OpenDDSharp.DDS.DomainParticipantFactoryQos.html">DomainParticipantFactoryQos API Reference</a> documentation.</p>
+<p>The <code>DomainParticipantFactory</code> also allows you to set QoS policies that will be used as default values for all
+<code>DomainParticipants</code> created from it. This means that any <code>DomainParticipants</code> created from the <code>DomainParticipantFactory</code>
+will inherit the QoS policies set on the factory at the time of creation. However, you can also override these QoS
+policies when creating individual <code>DomainParticipants</code> if needed.</p>
+<p>By allowing customization at the <code>DomainParticipantFactory</code> level, DDS provides a convenient way to apply common
+configuration settings to all <code>DomainParticipants</code> created within an application. This can lead to more efficient and
+consistent behavior across the DDS system.</p>
+<p>Here's an example of how to set the default QoS policies for all <code>DomainParticipants</code> created from the
+<code>DomainParticipantFactory</code>:</p>
+<pre><code class="lang-csharp">// Retrieve the current default DomainParticipant QoS policies
+var qos = new DomainParticipantQos();
+dpf.GetDefaultDomainParticipantQos(qos);
+
+// Set the desired DomainParticipant QoS policies
+qos.EntityFactory.AutoEnableCreatedEntities = false;
+
+// Apply the new default DomainParticipant QoS policies to the DomainParticipantFactory
+dpf.SetDefaultDomainParticipantQos(qos);
+</code></pre>
+<p>For a detailed description of the QoS policies implemented for the <code>DomainParticipant</code>, please refer
+to the <a class="xref" href="../api/OpenDDSharp.DDS.DomainParticipantFactoryQos.html">DomainParticipantQos API Reference</a> documentation.</p>
+<h2 id="domain-participant-class">Domain Participant Class</h2>
+<p>The <code>DomainParticipant</code> class is a fundamental component in the DDS (Data Distribution Service) middleware.
+It represents a participant in the DDS domain, which is a logical grouping of DDS entities such as publishers,
+subscribers, and topics. The <code>DomainParticipant</code> provides a context for communication and coordination between
+these entities within a domain.</p>
+<p>To create a <code>DomainParticipant</code> in OpenDDSharp, you typically need to specify a domain ID. The domain ID allows you
+to logically separate different DDS systems or applications within a larger infrastructure.
+It ensures that DDS entities belonging to different domains do not interfere with each other and enables isolation and
+independence between them.</p>
+<p>The domain ID acts as an identifier that allows DDS entities to discover and communicate with each other within
+the same domain. By assigning different domain IDs to different DDS domains, you can create separate communication
+spaces, even within a single physical network. This separation can be beneficial in scenarios where you have multiple
+independent systems or applications that need to communicate using DDS, but you want to avoid interference
+or data leakage between them.</p>
+<p>For example, you might have one domain for a real-time control system and another domain for a monitoring
+and analysis system. By assigning distinct domain IDs to these domains, you ensure that the entities in each domain
+operate independently and can only communicate within their own domain, providing isolation and control over the data
+flow.</p>
+<p>In summary, the domain ID is a numeric identifier that distinguishes and separates DDS domains, enabling
+independent communication and data exchange between OpenDDSharp entities. Here's an example of how to create a
+<code>DomainParticipant</code> using the OpenDDSharp C# API:</p>
+<pre><code class="lang-csharp">var dpf = ParticipantService.Instance.GetDomainParticipantFactory(&quot;-DCPSConfigFile&quot;, &quot;rtps.ini&quot;);
+var participant = dpf.CreateParticipant(42);
+</code></pre>
+<p>In this example, the <code>DomainParticipantFactory</code> is initialized with command-line arguments and configured with the
+<code>rtps.ini</code> configuration file. The <code>CreateParticipant()</code> method is then called on the <code>DomainParticipantFactory</code>
+to create a new <code>DomainParticipant</code> with the specified domain ID (42 in this case).</p>
+<p>In DDS, the <code>DomainParticipant</code> acts as a factory for creating and managing other DDS entities such as publishers,
+subscribers, and topics. This means that you can use the <code>DomainParticipant</code> to create these entities and access
+their methods and properties. For example, you can create a publisher by calling the <code>CreatePublisher()</code> method on
+the <code>DomainParticipant</code>, or create a subscriber by calling the <code>CreateSubscriber()</code> method on the <code>DomainParticipant</code>.</p>
+<p>Here's an example of how to create a publisher and a subscriber using the <code>DomainParticipant</code>:</p>
+<pre><code class="lang-csharp">var publisher = participant.CreatePublisher();
+var subscriber = participant.CreateSubscriber();
+</code></pre>
+<p>You will also use the <code>DomainParticipant</code> to create topics. A topic is a named entity that defines the data type
+and structure of the information that will be exchanged between DDS entities. Topics are used to define the
+communication channels between publishers and subscribers, allowing them to exchange data in a standardized way.</p>
+<p>Here's an example of how to create a topic using the <code>DomainParticipant</code>:</p>
+<pre><code class="lang-csharp">var topic = participant.CreateTopic(&quot;MyTopic&quot;, &quot;MyType&quot;);
+</code></pre>
+<p>The <code>CreatePublisher()</code>, <code>CreateSubscriber()</code>, and <code>CreateTopic()</code> methods all take an optional <code>PublisherQos</code>,
+<code>SubscriberQos</code>, and <code>TopicQos</code> parameter respectively. These parameters allow you to specify the QoS policies that
+will be used for the newly created entities. If you don't specify any QoS policies, the default QoS policies will be
+used instead.</p>
+<p>Here's an example of how to create a publisher with custom QoS policies using the <code>DomainParticipant</code>:</p>
+<pre><code class="lang-csharp">var qos = new PublisherQos
+{
+    Partition =
+    {
+        Name = new List&lt;string&gt; { &quot;MyPartition&quot; },
+    },
+};
+
+var publisher = participant.CreatePublisher(qos);
+</code></pre>
+<p>You can configure the default QoS policies for all <code>Publisher</code>, <code>Subscriber</code>, and <code>Topic</code> entities created from
+the <code>DomainParticipant</code> by calling the <code>SetDefaultPublisherQos()</code>, <code>SetDefaultSubscriberQos()</code>, and
+<code>SetDefaultTopicQos()</code> methods respectively. This ensures that all entities created from the <code>DomainParticipant</code>
+will inherit the default QoS policies set on the <code>DomainParticipant</code> at the time of creation if not specified otherwise
+during the entity creation call.</p>
+<p>Here's an example of how to set the default QoS policies for all <code>Publisher</code> entities created from the
+<code>DomainParticipant</code>:</p>
+<pre><code class="lang-csharp">// Retrieve the current default Publisher QoS policies
+var qos = new PublisherQos();
+participant.GetDefaultPublisherQos(qos);
+
+// Set the desired Publisher QoS policies
+qos.Partition.Name = List&lt;string&gt; { &quot;MyPartition&quot; };
+
+// Apply the new default Publisher QoS policies to the DomainParticipant
+participant.SetDefaultPublisherQos(qos);
+</code></pre>
+<p>The <code>DomainParticipant</code> also provides methods that allow you to inspect the entities created within the DDS domain where
+it resides. For example, you can use the <code>GetDiscoveredParticipants()</code> method to retrieve a list of all
+<code>DomainParticipant</code> handlers that have been discovered in the domain. After, call the <code>GetDiscoveredParticipantData()</code>
+method to retrieve the <code>ParticipantBuiltinTopicData</code> for each discovered participant and check the information returned.
+This can be useful if you want to inspect the DDS participants that are currently active in the system.</p>
+<p>Here's an example of how to retrieve a list of all <code>DomainParticipant</code> handlers that have been discovered in the domain
+and the information returned for each discovered participant:</p>
+<pre><code class="lang-csharp">var handles = new List&lt;InstanceHandle&gt;();
+var result = participant.GetDiscoveredParticipants(handles);
+
+if (result == ReturnCode.Ok)
+{
+    foreach (var handle in handles)
+    {
+        var data = new ParticipantBuiltinTopicData();
+        result = participant.GetDiscoveredParticipantData(ref data, handle);
+
+        if (result == ReturnCode.Ok)
+        {
+            Console.WriteLine($&quot;Discovered participant: {data.Key}&quot;);
+        }
+    }
+}
+</code></pre>
+<p>In addition, the <code>DomainParticipant</code> provides administration services in the domain, offering operations that allow the
+application to ‘ignore’ locally any information about a given participant, publication, subscription, or topic.
+This is useful when you want to remove a participant, publication, subscription, or topic from the domain without
+having to delete it. For example, you might want to ignore a publication or subscription that is no longer needed
+in the domain, but still exists in the system.</p>
+<p>Here's an example of how to ignore a publication using the <code>DomainParticipant</code>:</p>
+<pre><code class="lang-csharp">participant.IgnorePublication(dataWriterInstanceHandle);
+</code></pre>
+<p>For a detailed description of the methods and properties implemented in the <code>DomainParticipant</code>, please refer
+to the <a class="xref" href="../api/OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant API Reference</a> documentation.</p>
+<h3 id="domain-participant-qos">Domain Participant QoS</h3>
+<p>The <code>DomainParticipantQos</code> class holds all properties that allows you to customize the behavior of the
+<code>DomainParticipant</code> and its associated resources to suit your specific needs. These properties are referred to as
+Quality of Service (QoS) policies and can be set at the <code>DomainParticipant</code> level.</p>
+<p>As already mentioned in the previous sections, you can configure the default QoS policies for all <code>DomainParticipants</code>
+created from the <code>DomainParticipantFactory</code> by calling the <code>SetDefaultDomainParticipantQos()</code> method on the
+<code>DomainParticipantFactory</code> class or directly during the <code>DomainParticipant</code> creation call. In addition,
+the <code>DomainParticipant</code> also provides a <code>SetQos()</code> method that allows you to set the QoS policies for an existing
+<code>DomainParticipant</code>.</p>
+<p>Here's an example of how to set the QoS policies for the <code>DomainParticipant</code>:</p>
+<pre><code class="lang-csharp">var qos = new DomainParticipantQos
+{
+    EntityFactory =
+    {
+        AutoenableCreatedEntities = false,
+    },
+};
+
+var result = participant.SetQos(qos);
+</code></pre>
+<p>Some <code>DomainParticipant</code> QoS policies are immutable, this means that can only be set at the <code>DomainParticipant</code> before
+has been enabled (because the <code>DomainParticipant</code> has been created or enabled, depending on the
+<code>AutoenableCreatedEntities</code> policy configured in the <code>DomainParticipantFactory</code> object that created the participant).
+If you try to set an immutable QoS policy after the <code>DomainParticipant</code> has been enabled, the <code>SetQos()</code> method will
+return <code>ReturnCode.ImmutablePolicy</code> and the changes won't be applied.</p>
+<p>For a detailed description of the QoS policies implemented for the <code>DomainParticipant</code>, please refer
+to the <a class="xref" href="../api/OpenDDSharp.DDS.DomainParticipantQos.html">DomainParticipantQos API Reference</a> documentation.</p>
+<h2 id="domain-module-diagram">Domain Module Diagram</h2>
+<p>Here is a diagram illustrating the relationships between the main classes of the Domain Module and Participant Service, Domain Participant Factory,
+and Domain Participant class, along with the modules related to them:</p>
+<pre><code class="lang-mermaid">graph TB
+    subgraph A[Domain Module]
+        AA[ParticipantService] --&gt; AB[DomainParticipantFactory]
+        AB --&gt; AD[DomainParticipant]
+    end     
+    A ==&gt; C[Topic Definition Module]
+    A ==&gt; D[Publication Module]
+    A ==&gt; E[Subscription Module]
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/feature/domain_module_article/Documentation/articles/domain_module.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018 Jose Morat&oacute;</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+    <!-- mermaid support -->
+    <script src="https://unpkg.com/mermaid@10.2.3/dist/mermaid.min.js"></script>
+    <script>    
+        // select <pre class="lang-mermaid"> _and_ <pre><code class="lang-mermaid">
+        document.querySelectorAll("pre.lang-mermaid, pre>code.lang-mermaid").forEach($el => {
+          // if the second selector got a hit, reference the parent <pre>
+          if ($el.tagName === "CODE")
+            $el = $el.parentElement
+          // put the Mermaid contents in the expected <div class="mermaid">
+          // plus keep the original contents in a nice <details>
+          $el.outerHTML = `
+            <div class="mermaid">${$el.textContent}</div>
+            <details>
+              <summary>Diagram source</summary>
+              <pre>${$el.textContent}</pre>
+            </details>
+          `
+        })
+        
+        // initialize Mermaid to [1] log errors, [2] have loose security for first-party
+        // authored diagrams, and [3] respect a preferred dark color scheme
+        mermaid.initialize({
+          logLevel: "error", // [1]
+          securityLevel: "loose", // [2]
+          startOnLoad: true,
+          theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) ?
+            "light" :
+            "default" // [3]
+        })
+    </script>
+  </body>
+</html>
