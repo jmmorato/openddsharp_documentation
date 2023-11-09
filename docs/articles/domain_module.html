@@ -76,7 +76,44 @@
 
 <h1 id="openddsharp-domain-module">OpenDDSharp Domain Module</h1>
 
-<h2 id="participant-service-class">Participant Service Class</h2>
+<p>The Domain module is a fundamental component of the Data Distribution Service (DDS) standard, it contains the entity
+(<code>DomaintParticipant</code>) that represent a participation the DDS domain, and the related classes for the creation,
+configuration and management of a participant in the DDS system.</p>
+<p>A DDS domain is a logical communication channel where data is exchanged between different DDS entities.
+A domain can be thought of as a virtual network within which DDS participants communicate. It provides a boundary
+within which participants can discover and communicate directly with each other, share common resources, and have their
+own specific QoS and security settings. <code>DomainParticipants</code> in different DDS domains will never exchange messages with
+each other, even those running on the same application, computer or sharing the same physical network.
+This isolation is important for managing and scaling complex real-time systems where different groups of participants
+may have distinct communication requirements and security concerns.</p>
+<p>An application participates in a DDS domain by creating a <code>DomainParticipant</code> for that domain ID. A domain ID is
+represented by an integer required during the <code>DomainParticipant</code> creation. A application could also to participate
+in several domains by creating one <code>DomainParticipant</code> for each domain ID. The following diagram represents an
+application (<code>Application A</code>) that is used as a bridge between two different domains. That way, the application can be
+used, for example, to solve transport communication issues between different physical networks, to restrict data
+sensitive topics between different applications or to merge the data of two different group of applications:
+share</p>
+<pre><code class="lang-mermaid">graph TB
+    subgraph D1[Domain 1]
+        AB[Application B]
+    end
+    
+    subgraph D12[Domain 1 &amp; 2]
+        AA[Application A]
+    end
+    
+    subgraph D2[Domain 2]
+        AC[Application C]
+    end
+    
+    AB &lt;==&gt; AA
+    AC &lt;==&gt; AA
+</code></pre>
+<p>In summary, the Domain module serves as a central coordination point for the various elements involved in data
+communication within a DDS domain. The Domain module is responsible for managing the configuration and communication
+within a DDS system. It provides the foundation for creating participants, which can then create publishers and
+subscribers, and it also facilitates the management of QoS policies and transport configurations.</p>
+<h2 id="participantservice-class">ParticipantService Class</h2>
 <p>The <code>ParticipantService</code> is singleton class in OpenDDSharp that provides the primary interface for managing
 the DDS participants in your application. It allows you to obtain the <code>DomainParticipantFactory</code>, set up discovery,
 and control the behavior of the DDS entities that will be created.</p>
@@ -132,8 +169,8 @@ ParticipantService.Instance.AddDiscovery(infoRepo);
 ParticipantService.Instance.SetRepoDomain(INFOREPO_DOMAIN, INFOREPO_DISCOVERY);
 </code></pre>
 <p>For a detailed description of the methods and properties implemented in the <code>ParticipantService</code>, please refer
-to the <a href="xref:OpenDDSharp.DDS.ParticipantService">ParticipantService API Reference</a> documentation.</p>
-<h2 id="domain-participant-factory-class">Domain Participant Factory Class</h2>
+to the <a class="xref" href="../api/OpenDDSharp.OpenDDS.DCPS.ParticipantService.html">ParticipantService API Reference</a> documentation.</p>
+<h2 id="domainparticipantfactory-class">DomainParticipantFactory Class</h2>
 <p>The <code>DomainParticipantFactory</code> is the class responsible for creating and managing <code>DomainParticipant</code> objects.
 It serves as a central point for configuring and customizing the behavior of <code>DomainParticipants</code> and their
 associated resources.</p>
@@ -160,7 +197,7 @@ dpf.DeleteParticipant(participant);
 </code></pre>
 <p>For a detailed description of the methods and properties implemented in the <code>DomainParticipantFactory</code>, please refer
 to the <a class="xref" href="../api/OpenDDSharp.DDS.DomainParticipantFactory.html">DomainParticipantFactory API Reference</a> documentation.</p>
-<h3 id="domain-participant-factory-qos">Domain Participant Factory QoS</h3>
+<h3 id="domainparticipantfactoryqos-class">DomainParticipantFactoryQoS Class</h3>
 <p>In DDS, Quality of Service (QoS) refers to a set of configurable parameters that affect various aspects of
 communication, such as reliability, durability, resource usage, etc...</p>
 <p>These QoS settings can be applied at different levels in the DDS system, including the <code>DomainParticipantFactory</code>.
@@ -200,7 +237,7 @@ dpf.SetDefaultDomainParticipantQos(qos);
 </code></pre>
 <p>For a detailed description of the QoS policies implemented for the <code>DomainParticipant</code>, please refer
 to the <a class="xref" href="../api/OpenDDSharp.DDS.DomainParticipantFactoryQos.html">DomainParticipantQos API Reference</a> documentation.</p>
-<h2 id="domain-participant-class">Domain Participant Class</h2>
+<h2 id="domainparticipant-class">DomainParticipant Class</h2>
 <p>The <code>DomainParticipant</code> class is a fundamental component in the DDS (Data Distribution Service) middleware.
 It represents a participant in the DDS domain, which is a logical grouping of DDS entities such as publishers,
 subscribers, and topics. The <code>DomainParticipant</code> provides a context for communication and coordination between
@@ -307,7 +344,7 @@ in the domain, but still exists in the system.</p>
 </code></pre>
 <p>For a detailed description of the methods and properties implemented in the <code>DomainParticipant</code>, please refer
 to the <a class="xref" href="../api/OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant API Reference</a> documentation.</p>
-<h3 id="domain-participant-qos">Domain Participant QoS</h3>
+<h3 id="domainparticipantqos-class">DomainParticipantQoS Class</h3>
 <p>The <code>DomainParticipantQos</code> class holds all properties that allows you to customize the behavior of the
 <code>DomainParticipant</code> and its associated resources to suit your specific needs. These properties are referred to as
 Quality of Service (QoS) policies and can be set at the <code>DomainParticipant</code> level.</p>
@@ -334,17 +371,126 @@ If you try to set an immutable QoS policy after the <code>DomainParticipant</cod
 return <code>ReturnCode.ImmutablePolicy</code> and the changes won't be applied.</p>
 <p>For a detailed description of the QoS policies implemented for the <code>DomainParticipant</code>, please refer
 to the <a class="xref" href="../api/OpenDDSharp.DDS.DomainParticipantQos.html">DomainParticipantQos API Reference</a> documentation.</p>
+<h3 id="domainparticipantlistener-class">DomainParticipantListener Class</h3>
+<p>The <code>DomainParticipantListener</code> is an abstract class that provides a way to receive notifications about status
+changes related to the <code>DomainParticipant</code> entities. <code>DomainParticipantListener</code> inherits the callbacks
+from <code>TopicListener</code>, <code>PublisherListener</code>, and <code>SubscriberListener</code>, therefore it can be used to receive notifications
+about topics, publishers and subscribers created by the <code>DomainParticipant</code>.</p>
+<p>To use the <code>DomainParticipantListener</code>, you need to create a class that extends it and override the callback methods.
+These methods allow you to respond to various events related to the participant entities, such as missed deadlines,
+incompatible QoS, liveliness loss, and more. Here's an example of how to create a class that extends the
+<code>DomainParticipantListener</code> and overrides the callback methods:</p>
+<pre><code class="lang-csharp">public class MyParticipantListener : DomainParticipantListener
+{
+    public override void OnInconsistentTopic(Topic topic, InconsistentTopicStatus status)
+    {
+        Console.WriteLine($&quot;DomainParticipant OnInconsistentTopic called&quot;);
+    }
+
+    public override void OnDataAvailable(DataReader reader)
+    {
+        Console.WriteLine($&quot;DomainParticipant OnDataAvailable called&quot;);
+    }
+
+    public override void OnDataOnReaders(Subscriber subscriber)
+    {
+        Conosole.WriteLine($&quot;DomainParticipant OnDataOnReaders called&quot;);
+    }
+
+    public override void OnLivelinessChanged(DataReader reader, LivelinessChangedStatus status)
+    {
+        Console.WriteLine($&quot;DomainParticipant OnLivelinessChanged called&quot;);
+    }
+
+    public override void OnRequestedDeadlineMissed(DataReader reader, RequestedDeadlineMissedStatus status)
+    {
+        Console.WriteLine($&quot;DomainParticipant OnRequestedDeadlineMissed called&quot;);
+    }
+
+    public override void OnRequestedIncompatibleQos(DataReader reader, RequestedIncompatibleQosStatus status)
+    {
+        Console.WriteLine($&quot;DomainParticipant OnRequestedIncompatibleQos called&quot;);
+    }
+
+    public override void OnSampleLost(DataReader reader, SampleLostStatus status)
+    {
+        Console.WriteLine($&quot;DomainParticipant OnSampleLost called&quot;);
+    }
+
+    public override void OnSampleRejected(DataReader reader, SampleRejectedStatus status)
+    {
+        Console.WriteLine($&quot;DomainParticipant OnSampleRejected called&quot;);
+    }
+
+    public override void OnSubscriptionMatched(DataReader reader, SubscriptionMatchedStatus status)
+    {
+        Console.WriteLine($&quot;DomainParticipant OnSubscriptionMatched called&quot;);
+    }
+
+    public override void OnLivelinessLost(DataWriter writer, LivelinessLostStatus status)
+    {
+        Console.WriteLine($&quot;DomainParticipant OnLivelinessLost called&quot;);
+    }
+
+    public override void OnOfferedDeadlineMissed(DataWriter writer, OfferedDeadlineMissedStatus status)
+    {
+        Console.WriteLine($&quot;DomainParticipant OnOfferedDeadlineMissed called&quot;);
+    }
+
+    public override void OnOfferedIncompatibleQos(DataWriter writer, OfferedIncompatibleQosStatus status)
+    {
+        Console.WriteLine($&quot;DomainParticipant OnOfferedIncompatibleQos called&quot;);
+    }
+
+    public override void OnPublicationMatched(DataWriter writer, PublicationMatchedStatus status)
+    {
+        Console.WriteLine($&quot;DomainParticipant OnPublicationMatched called&quot;);
+    }
+}
+</code></pre>
+<p>Once you have created your <code>DomainParticipantListener</code> implementation class, you can register it during the creation of
+the <code>DomainParticipant</code> object. Here's an example of how to register the listener during the <code>DomainParticipant</code>
+creation:</p>
+<pre><code class="lang-csharp">var dpf = ParticipantService.Instance.GetDomainParticipantFactory(&quot;-DCPSConfigFile&quot;, &quot;rtps.ini&quot;);
+var listener = new MyParticipantListener();
+var participant = dpf.CreateParticipant(42, null, listener);
+</code></pre>
+<p>The events received by the <code>DomainParticipantListener</code> can be masked by setting the <code>StatusMask</code> parameter. This
+parameter allows you to specify which events you want to receive notifications for. For example, if you only want to
+receive notifications about liveliness loss and incompatible QoS, you can set the <code>StatusMask</code> property to
+<code>StatusMask.LivelinessLost | StatusMask.OfferedIncompatibleQos</code>. This will ensure that you only receive notifications
+for these two events and ignore all others. Here's an example of how to set the <code>StatusMask</code> property:</p>
+<pre><code class="lang-csharp">```csharp
+var dpf = ParticipantService.Instance.GetDomainParticipantFactory(&quot;-DCPSConfigFile&quot;, &quot;rtps.ini&quot;);
+var listener = new MyParticipantListener();
+var participant = dpf.CreateParticipant(42, null, listener, StatusMask.LivelinessLost | StatusMask.OfferedIncompatibleQos);
+</code></pre>
+<p>The <code>DomainParticipantListener</code> also provides a <code>SetListener()</code> method that allows you to register a listener
+after the <code>DomainParticipant</code> has been created. This can be useful if you want to change the listener at runtime
+without having to recreate the <code>DomainParticipant</code>. Here's an example of how to register a listener after the
+<code>DomainParticipant</code> has been created:</p>
+<pre><code class="lang-csharp">var listener = new MyParticipantListener();
+participant.SetListener(listener, StatusMask.LivelinessLost | StatusMask.OfferedIncompatibleQos);
+</code></pre>
+<p>In order to remove the listener, you can call the <code>SetListener()</code> method with a <code>null</code> listener. Here's an example
+of how to remove the listener:</p>
+<pre><code class="lang-csharp">participant.SetListener(null);
+</code></pre>
 <h2 id="domain-module-diagram">Domain Module Diagram</h2>
-<p>Here is a diagram illustrating the relationships between the main classes of the Domain Module and Participant Service, Domain Participant Factory,
-and Domain Participant class, along with the modules related to them:</p>
+<p>Here is a diagram illustrating the relationships between the main classes of the Domain Module
+along with the modules related to them:</p>
 <pre><code class="lang-mermaid">graph TB
     subgraph A[Domain Module]
-        AA[ParticipantService] --&gt; AB[DomainParticipantFactory]
-        AB --&gt; AD[DomainParticipant]
+        direction TB
+        AA[ParticipantService] --&gt;|retrieve| AB[DomainParticipantFactory]
+        AB o-.-o|1| DomainParticipantFactoryQos
+        AB ---&gt;|create| AD[DomainParticipant]
+        AD o-.-o|1| DomainParticipantQos
+        AD o-.-o|0..1| DomainParticipantListener
     end     
-    A ==&gt; C[Topic Definition Module]
-    A ==&gt; D[Publication Module]
-    A ==&gt; E[Subscription Module]
+    A ==&gt; C[/\nTopic-Definition\nModule\]
+    A ==&gt; D[/\nPublication\nModule\]
+    A ==&gt; E[/\nSubscription\nModule\]
 </code></pre>
 </article>
           </div>
@@ -354,7 +500,7 @@ and Domain Participant class, along with the modules related to them:</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/feature/domain_module_article/Documentation/articles/domain_module.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Documentation/articles/domain_module.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
