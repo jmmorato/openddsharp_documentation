@@ -382,7 +382,8 @@ incompatible QoS, liveliness loss, and more. Here's an example of how to create 
 <code>DomainParticipantListener</code> and overrides the callback methods:</p>
 <pre><code class="lang-csharp">public class MyParticipantListener : DomainParticipantListener
 {
-    public override void OnInconsistentTopic(Topic topic, InconsistentTopicStatus status)
+    public override void OnInconsistentTopic(Topic topic,
+        InconsistentTopicStatus status)
     {
         Console.WriteLine($&quot;DomainParticipant OnInconsistentTopic called&quot;);
     }
@@ -397,52 +398,62 @@ incompatible QoS, liveliness loss, and more. Here's an example of how to create 
         Conosole.WriteLine($&quot;DomainParticipant OnDataOnReaders called&quot;);
     }
 
-    public override void OnLivelinessChanged(DataReader reader, LivelinessChangedStatus status)
+    public override void OnLivelinessChanged(DataReader reader,
+        LivelinessChangedStatus status)
     {
         Console.WriteLine($&quot;DomainParticipant OnLivelinessChanged called&quot;);
     }
 
-    public override void OnRequestedDeadlineMissed(DataReader reader, RequestedDeadlineMissedStatus status)
+    public override void OnRequestedDeadlineMissed(DataReader reader,
+        RequestedDeadlineMissedStatus status)
     {
         Console.WriteLine($&quot;DomainParticipant OnRequestedDeadlineMissed called&quot;);
     }
 
-    public override void OnRequestedIncompatibleQos(DataReader reader, RequestedIncompatibleQosStatus status)
+    public override void OnRequestedIncompatibleQos(DataReader reader,
+        RequestedIncompatibleQosStatus status)
     {
         Console.WriteLine($&quot;DomainParticipant OnRequestedIncompatibleQos called&quot;);
     }
 
-    public override void OnSampleLost(DataReader reader, SampleLostStatus status)
+    public override void OnSampleLost(DataReader reader,
+        SampleLostStatus status)
     {
         Console.WriteLine($&quot;DomainParticipant OnSampleLost called&quot;);
     }
 
-    public override void OnSampleRejected(DataReader reader, SampleRejectedStatus status)
+    public override void OnSampleRejected(DataReader reader,
+        SampleRejectedStatus status)
     {
         Console.WriteLine($&quot;DomainParticipant OnSampleRejected called&quot;);
     }
 
-    public override void OnSubscriptionMatched(DataReader reader, SubscriptionMatchedStatus status)
+    public override void OnSubscriptionMatched(DataReader reader,
+        SubscriptionMatchedStatus status)
     {
         Console.WriteLine($&quot;DomainParticipant OnSubscriptionMatched called&quot;);
     }
 
-    public override void OnLivelinessLost(DataWriter writer, LivelinessLostStatus status)
+    public override void OnLivelinessLost(DataWriter writer,
+        LivelinessLostStatus status)
     {
         Console.WriteLine($&quot;DomainParticipant OnLivelinessLost called&quot;);
     }
 
-    public override void OnOfferedDeadlineMissed(DataWriter writer, OfferedDeadlineMissedStatus status)
+    public override void OnOfferedDeadlineMissed(DataWriter writer,
+        OfferedDeadlineMissedStatus status)
     {
         Console.WriteLine($&quot;DomainParticipant OnOfferedDeadlineMissed called&quot;);
     }
 
-    public override void OnOfferedIncompatibleQos(DataWriter writer, OfferedIncompatibleQosStatus status)
+    public override void OnOfferedIncompatibleQos(DataWriter writer,
+        OfferedIncompatibleQosStatus status)
     {
         Console.WriteLine($&quot;DomainParticipant OnOfferedIncompatibleQos called&quot;);
     }
 
-    public override void OnPublicationMatched(DataWriter writer, PublicationMatchedStatus status)
+    public override void OnPublicationMatched(DataWriter writer,
+        PublicationMatchedStatus status)
     {
         Console.WriteLine($&quot;DomainParticipant OnPublicationMatched called&quot;);
     }

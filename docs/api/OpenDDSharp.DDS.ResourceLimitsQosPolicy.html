@@ -80,7 +80,8 @@
   
   <h1 id="OpenDDSharp_DDS_ResourceLimitsQosPolicy" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy" class="text-break">Class ResourceLimitsQosPolicy
   </h1>
-  <div class="markdown level0 summary"><p>This policy controls the resources that DDS can use in order to meet the requirements imposed by the application and other QoS settings.</p>
+  <div class="markdown level0 summary"><p>This policy controls the resources that DDS can use in order to meet the requirements imposed by the
+application and other QoS settings.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -95,16 +96,27 @@
     <pre><code class="lang-csharp hljs">public sealed class ResourceLimitsQosPolicy : IEquatable&lt;ResourceLimitsQosPolicy&gt;</code></pre>
   </div>
   <h5 id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>If the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> objects are communicating samples faster than they are ultimately taken by the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> objects, the
-middleware will eventually hit against some of the QoS-imposed resource limits. Note that this may occur when just a single
-<a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> cannot keep up with its corresponding <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>. The behavior in this case depends on the setting for the
-Reliability QoS. If reliability is BestEffort then DDS is allowed to drop samples. If the reliability is Reliable, DDS will block the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>
-or discard the sample at the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> in order not to lose existing samples.</p>
-<p>The setting of ResourceLimits MaxSamples must be consistent with the MaxSamplesPerInstance. For these two
-values to be consistent they must verify that “MaxSamples >= MaxSamplesPerInstance.”</p>
-<p>The setting of ResourceLimits MaxSamplesPerInstance must be consistent with the History Depth. For these two
-QoS to be consistent, they must verify that &quot;depth &lt;= MaxSamplesPerInstance&quot;.</p>
-<p>An attempt to set this policy to inconsistent values when an entity is created of via a SetQos operation will cause the operation to fail.</p>
+  <div class="markdown level0 remarks"><p>
+If the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> objects are communicating samples faster than they are ultimately taken by
+the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> objects, the middleware will eventually hit against some of the QoS-imposed resource
+limits. Note that this may occur when just a single <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> cannot keep up with its corresponding
+<a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>. The behavior in this case depends on the setting for the Reliability QoS.
+If reliability is BestEffort then DDS is allowed to drop samples. If the reliability is Reliable,
+DDS will block the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> or discard the sample at the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> in order not to
+lose existing samples.
+</p>
+<p>
+The setting of ResourceLimits MaxSamples must be consistent with the MaxSamplesPerInstance. For these two
+values to be consistent they must verify that “MaxSamples >= MaxSamplesPerInstance”.
+</p>
+<p>
+The setting of ResourceLimits MaxSamplesPerInstance must be consistent with the History Depth. For these two
+QoS to be consistent, they must verify that &quot;depth &lt;= MaxSamplesPerInstance&quot;.
+</p>
+<p>
+An attempt to set this policy to inconsistent values when an entity is created of via a SetQos operation will
+cause the operation to fail.
+</p>
 </div>
   <h3 id="fields">Fields
   </h3>
@@ -113,7 +125,7 @@ QoS to be consistent, they must verify that &quot;depth &lt;= MaxSamplesPerInsta
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ResourceLimitsQosPolicy_LengthUnlimited.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ResourceLimitsQosPolicy.LengthUnlimited%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L46">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L58">View Source</a>
   </span>
   <h4 id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_LengthUnlimited" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.LengthUnlimited">LengthUnlimited</h4>
   <div class="markdown level1 summary"><p>Used to indicate the absence of a particular limit.</p>
@@ -145,12 +157,12 @@ QoS to be consistent, they must verify that &quot;depth &lt;= MaxSamplesPerInsta
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ResourceLimitsQosPolicy_MaxInstances.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ResourceLimitsQosPolicy.MaxInstances%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L60">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L72">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_MaxInstances_" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.MaxInstances*"></a>
   <h4 id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_MaxInstances" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.MaxInstances">MaxInstances</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the maximum number of instances that a <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> or <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> can manage.
-The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPolicy.html#OpenDDSharp_DDS_ResourceLimitsQosPolicy_LengthUnlimited">LengthUnlimited</a>.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of instances that a <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> or <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>
+can manage. The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPolicy.html#OpenDDSharp_DDS_ResourceLimitsQosPolicy_LengthUnlimited">LengthUnlimited</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -177,12 +189,12 @@ The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPoli
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ResourceLimitsQosPolicy_MaxSamples.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ResourceLimitsQosPolicy.MaxSamples%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L54">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L66">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_MaxSamples_" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.MaxSamples*"></a>
   <h4 id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_MaxSamples" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.MaxSamples">MaxSamples</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the maximum number of samples a single <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> or <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> can manage across all of its instances.
-The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPolicy.html#OpenDDSharp_DDS_ResourceLimitsQosPolicy_LengthUnlimited">LengthUnlimited</a>.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of samples a single <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> or <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>
+can manage across all of its instances. The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPolicy.html#OpenDDSharp_DDS_ResourceLimitsQosPolicy_LengthUnlimited">LengthUnlimited</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -209,12 +221,12 @@ The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPoli
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ResourceLimitsQosPolicy_MaxSamplesPerInstance.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ResourceLimitsQosPolicy.MaxSamplesPerInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L66">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L78">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_MaxSamplesPerInstance_" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.MaxSamplesPerInstance*"></a>
   <h4 id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_MaxSamplesPerInstance" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.MaxSamplesPerInstance">MaxSamplesPerInstance</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the maximum number of samples that can be managed for an individual instance in a single <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> or <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.
-The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPolicy.html#OpenDDSharp_DDS_ResourceLimitsQosPolicy_LengthUnlimited">LengthUnlimited</a>.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of samples that can be managed for an individual instance in a single
+<a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> or <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>. The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPolicy.html#OpenDDSharp_DDS_ResourceLimitsQosPolicy_LengthUnlimited">LengthUnlimited</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -243,7 +255,7 @@ The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPoli
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ResourceLimitsQosPolicy_Equals_OpenDDSharp_DDS_ResourceLimitsQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ResourceLimitsQosPolicy.Equals(OpenDDSharp.DDS.ResourceLimitsQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L84">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L99">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_Equals_" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.Equals*"></a>
   <h4 id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_Equals_OpenDDSharp_DDS_ResourceLimitsQosPolicy_" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.Equals(OpenDDSharp.DDS.ResourceLimitsQosPolicy)">Equals(ResourceLimitsQosPolicy)</h4>
@@ -283,7 +295,8 @@ The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPoli
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the current object is equal to the other parameter; otherwise, <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the current object is equal to the other parameter;
+otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -293,7 +306,7 @@ The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPoli
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ResourceLimitsQosPolicy_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ResourceLimitsQosPolicy.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L101">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L119">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_Equals_" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.Equals*"></a>
   <h4 id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_Equals_System_Object_" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.Equals(System.Object)">Equals(Object)</h4>
@@ -333,7 +346,8 @@ The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPoli
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the specified object is equal to the current object; otherwise, <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the specified object is equal to the current object;
+otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -343,7 +357,7 @@ The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPoli
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ResourceLimitsQosPolicy_GetHashCode.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ResourceLimitsQosPolicy.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L110">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L128">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_GetHashCode_" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.GetHashCode*"></a>
   <h4 id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_GetHashCode" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.GetHashCode">GetHashCode()</h4>
@@ -377,7 +391,7 @@ The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPoli
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ResourceLimitsQosPolicy_op_Equality_OpenDDSharp_DDS_ResourceLimitsQosPolicy_OpenDDSharp_DDS_ResourceLimitsQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ResourceLimitsQosPolicy.op_Equality(OpenDDSharp.DDS.ResourceLimitsQosPolicy%2COpenDDSharp.DDS.ResourceLimitsQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L127">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L147">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_op_Equality_" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.op_Equality*"></a>
   <h4 id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_op_Equality_OpenDDSharp_DDS_ResourceLimitsQosPolicy_OpenDDSharp_DDS_ResourceLimitsQosPolicy_" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.op_Equality(OpenDDSharp.DDS.ResourceLimitsQosPolicy,OpenDDSharp.DDS.ResourceLimitsQosPolicy)">Equality(ResourceLimitsQosPolicy, ResourceLimitsQosPolicy)</h4>
@@ -433,7 +447,7 @@ The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPoli
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ResourceLimitsQosPolicy_op_Inequality_OpenDDSharp_DDS_ResourceLimitsQosPolicy_OpenDDSharp_DDS_ResourceLimitsQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ResourceLimitsQosPolicy.op_Inequality(OpenDDSharp.DDS.ResourceLimitsQosPolicy%2COpenDDSharp.DDS.ResourceLimitsQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L148">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L170">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_op_Inequality_" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.op_Inequality*"></a>
   <h4 id="OpenDDSharp_DDS_ResourceLimitsQosPolicy_op_Inequality_OpenDDSharp_DDS_ResourceLimitsQosPolicy_OpenDDSharp_DDS_ResourceLimitsQosPolicy_" data-uid="OpenDDSharp.DDS.ResourceLimitsQosPolicy.op_Inequality(OpenDDSharp.DDS.ResourceLimitsQosPolicy,OpenDDSharp.DDS.ResourceLimitsQosPolicy)">Inequality(ResourceLimitsQosPolicy, ResourceLimitsQosPolicy)</h4>
@@ -495,7 +509,7 @@ The default value is <a class="xref" href="OpenDDSharp.DDS.ResourceLimitsQosPoli
                     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_ResourceLimitsQosPolicy.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.ResourceLimitsQosPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L40" class="contribution-link">View Source</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/ResourceLimitsQosPolicy.cs/#L52" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

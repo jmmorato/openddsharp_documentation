@@ -80,7 +80,8 @@
   
   <h1 id="OpenDDSharp_DDS_QueryCondition" data-uid="OpenDDSharp.DDS.QueryCondition" class="text-break">Class QueryCondition
   </h1>
-  <div class="markdown level0 summary"><p>QueryCondition objects are specialized <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> objects that allow the application to also specify a filter on the locally available data.</p>
+  <div class="markdown level0 summary"><p>QueryCondition objects are specialized <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> objects that allow the application to also
+specify a filter on the locally available data.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -118,7 +119,8 @@
     <pre><code class="lang-csharp hljs">public class QueryCondition : ReadCondition</code></pre>
   </div>
   <h5 id="OpenDDSharp_DDS_QueryCondition_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The query is similar to an SQL WHERE clause and can be parameterized by arguments that are dynamically changeable by the <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html#OpenDDSharp_DDS_QueryCondition_SetQueryParameters_System_String___">SetQueryParameters(String[])</a> operation.</p>
+  <div class="markdown level0 remarks"><p>The query is similar to an SQL WHERE clause and can be parameterized by arguments that are dynamically changeable
+by the <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html#OpenDDSharp_DDS_QueryCondition_SetQueryParameters_System_String___">SetQueryParameters(String[])</a> operation.</p>
 </div>
   <h3 id="properties">Properties
   </h3>
@@ -127,11 +129,11 @@
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_QueryCondition_QueryExpression.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.QueryCondition.QueryExpression%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/QueryCondition.cs/#L45">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/QueryCondition.cs/#L51">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_QueryCondition_QueryExpression_" data-uid="OpenDDSharp.DDS.QueryCondition.QueryExpression*"></a>
   <h4 id="OpenDDSharp_DDS_QueryCondition_QueryExpression" data-uid="OpenDDSharp.DDS.QueryCondition.QueryExpression">QueryExpression</h4>
-  <div class="markdown level1 summary"><p>Gets the queryexpression associated with the <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a>.
+  <div class="markdown level1 summary"><p>Gets the QueryExpression associated with the <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a>.
 That is, the expression specified when the <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> was created.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -161,12 +163,13 @@ That is, the expression specified when the <a class="xref" href="OpenDDSharp.DDS
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_QueryCondition_GetQueryParameters_IList_System_String__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.QueryCondition.GetQueryParameters(IList%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/QueryCondition.cs/#L63">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/QueryCondition.cs/#L71">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_QueryCondition_GetQueryParameters_" data-uid="OpenDDSharp.DDS.QueryCondition.GetQueryParameters*"></a>
   <h4 id="OpenDDSharp_DDS_QueryCondition_GetQueryParameters_IList_System_String__" data-uid="OpenDDSharp.DDS.QueryCondition.GetQueryParameters(IList{System.String})">GetQueryParameters(IList&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Gets the query parameters associated with the <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a>. That is, the parameters specified on the last
-successful call to <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html#OpenDDSharp_DDS_QueryCondition_SetQueryParameters_System_String___">SetQueryParameters(String[])</a>, or if <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html#OpenDDSharp_DDS_QueryCondition_SetQueryParameters_System_String___">SetQueryParameters(String[])</a> was never called, the arguments specified when the
+  <div class="markdown level1 summary"><p>Gets the query parameters associated with the <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a>. That is, the parameters
+specified on the last successful call to <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html#OpenDDSharp_DDS_QueryCondition_SetQueryParameters_System_String___">SetQueryParameters(String[])</a>, or if
+<a class="xref" href="OpenDDSharp.DDS.QueryCondition.html#OpenDDSharp_DDS_QueryCondition_SetQueryParameters_System_String___">SetQueryParameters(String[])</a> was never called, the arguments specified when the
 <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> was created.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -213,7 +216,7 @@ successful call to <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html#Ope
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_QueryCondition_SetQueryParameters_System_String___.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.QueryCondition.SetQueryParameters(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/QueryCondition.cs/#L88">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/QueryCondition.cs/#L96">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_QueryCondition_SetQueryParameters_" data-uid="OpenDDSharp.DDS.QueryCondition.SetQueryParameters*"></a>
   <h4 id="OpenDDSharp_DDS_QueryCondition_SetQueryParameters_System_String___" data-uid="OpenDDSharp.DDS.QueryCondition.SetQueryParameters(System.String[])">SetQueryParameters(String[])</h4>
@@ -269,7 +272,7 @@ successful call to <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html#Ope
                     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_QueryCondition.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.QueryCondition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/QueryCondition.cs/#L34" class="contribution-link">View Source</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/QueryCondition.cs/#L40" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

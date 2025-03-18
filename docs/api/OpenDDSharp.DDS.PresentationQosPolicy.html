@@ -80,8 +80,9 @@
   
   <h1 id="OpenDDSharp_DDS_PresentationQosPolicy" data-uid="OpenDDSharp.DDS.PresentationQosPolicy" class="text-break">Class PresentationQosPolicy
   </h1>
-  <div class="markdown level0 summary"><p>The Presentation QoS policy controls how changes to instances by publishers are presented to data readers. It affects the relative ordering of these changes and
-the scope of this ordering. Additionally, this policy introduces the concept of coherent change sets.</p>
+  <div class="markdown level0 summary"><p>The Presentation QoS policy controls how changes to instances by publishers are presented to data readers.
+It affects the relative ordering of these changes and  the scope of this ordering. Additionally, this policy
+introduces the concept of coherent change sets.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -96,8 +97,8 @@ the scope of this ordering. Additionally, this policy introduces the concept of 
     <pre><code class="lang-csharp hljs">public sealed class PresentationQosPolicy : IEquatable&lt;PresentationQosPolicy&gt;</code></pre>
   </div>
   <h5 id="OpenDDSharp_DDS_PresentationQosPolicy_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>This policy controls the ordering and scope of samples made available to the subscriber, but the subscriber application must use the proper logic in reading samples
-to guarantee the requested behavior.</p>
+  <div class="markdown level0 remarks"><p>This policy controls the ordering and scope of samples made available to the subscriber, but the subscriber
+application must use the proper logic in reading samples to guarantee the requested behavior.</p>
 </div>
   <h3 id="properties">Properties
   </h3>
@@ -106,11 +107,12 @@ to guarantee the requested behavior.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_PresentationQosPolicy_AccessScope.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.PresentationQosPolicy.AccessScope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L39">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L41">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_PresentationQosPolicy_AccessScope_" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.AccessScope*"></a>
   <h4 id="OpenDDSharp_DDS_PresentationQosPolicy_AccessScope" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.AccessScope">AccessScope</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value that specifies how the samples representing changes to data instances are presented to a subscribing application.</p>
+  <div class="markdown level1 summary"><p>Gets or sets a value that specifies how the samples representing changes to data instances are presented to
+a subscribing application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -137,13 +139,15 @@ to guarantee the requested behavior.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_PresentationQosPolicy_CoherentAccess.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.PresentationQosPolicy.CoherentAccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L46">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L50">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_PresentationQosPolicy_CoherentAccess_" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.CoherentAccess*"></a>
   <h4 id="OpenDDSharp_DDS_PresentationQosPolicy_CoherentAccess" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.CoherentAccess">CoherentAccess</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether allow one or more changes to an instance be made available to an associated data reader as a single change or not. If a data reader does not receive
-the entire set of coherent changes made by a publisher, then none of the changes are made available. The semantics of coherent changes are similar in nature
-to those found in transactions provided by many relational databases. By default, CoherentAccess is <span class="xref">false</span>.</p>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether allow one or more changes to an instance be made available to an
+associated data reader as a single change or not. If a data reader does not receive the entire set of coherent
+changes made by a publisher, then none of the changes are made available. The semantics of coherent changes
+are similar in nature to those found in transactions provided by many relational databases.
+By default, CoherentAccess is <span class="xref">false</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -170,7 +174,7 @@ to those found in transactions provided by many relational databases. By default
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_PresentationQosPolicy_OrderedAccess.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.PresentationQosPolicy.OrderedAccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L51">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L55">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_PresentationQosPolicy_OrderedAccess_" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.OrderedAccess*"></a>
   <h4 id="OpenDDSharp_DDS_PresentationQosPolicy_OrderedAccess" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.OrderedAccess">OrderedAccess</h4>
@@ -203,7 +207,7 @@ to those found in transactions provided by many relational databases. By default
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_PresentationQosPolicy_Equals_OpenDDSharp_DDS_PresentationQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.PresentationQosPolicy.Equals(OpenDDSharp.DDS.PresentationQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L69">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L73">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_PresentationQosPolicy_Equals_" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.Equals*"></a>
   <h4 id="OpenDDSharp_DDS_PresentationQosPolicy_Equals_OpenDDSharp_DDS_PresentationQosPolicy_" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.Equals(OpenDDSharp.DDS.PresentationQosPolicy)">Equals(PresentationQosPolicy)</h4>
@@ -253,7 +257,7 @@ to those found in transactions provided by many relational databases. By default
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_PresentationQosPolicy_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.PresentationQosPolicy.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L86">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L90">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_PresentationQosPolicy_Equals_" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.Equals*"></a>
   <h4 id="OpenDDSharp_DDS_PresentationQosPolicy_Equals_System_Object_" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.Equals(System.Object)">Equals(Object)</h4>
@@ -303,7 +307,7 @@ to those found in transactions provided by many relational databases. By default
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_PresentationQosPolicy_GetHashCode.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.PresentationQosPolicy.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L95">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L99">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_PresentationQosPolicy_GetHashCode_" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.GetHashCode*"></a>
   <h4 id="OpenDDSharp_DDS_PresentationQosPolicy_GetHashCode" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.GetHashCode">GetHashCode()</h4>
@@ -337,7 +341,7 @@ to those found in transactions provided by many relational databases. By default
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_PresentationQosPolicy_op_Equality_OpenDDSharp_DDS_PresentationQosPolicy_OpenDDSharp_DDS_PresentationQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.PresentationQosPolicy.op_Equality(OpenDDSharp.DDS.PresentationQosPolicy%2COpenDDSharp.DDS.PresentationQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L112">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L116">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_PresentationQosPolicy_op_Equality_" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.op_Equality*"></a>
   <h4 id="OpenDDSharp_DDS_PresentationQosPolicy_op_Equality_OpenDDSharp_DDS_PresentationQosPolicy_OpenDDSharp_DDS_PresentationQosPolicy_" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.op_Equality(OpenDDSharp.DDS.PresentationQosPolicy,OpenDDSharp.DDS.PresentationQosPolicy)">Equality(PresentationQosPolicy, PresentationQosPolicy)</h4>
@@ -393,7 +397,7 @@ to those found in transactions provided by many relational databases. By default
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_PresentationQosPolicy_op_Inequality_OpenDDSharp_DDS_PresentationQosPolicy_OpenDDSharp_DDS_PresentationQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.PresentationQosPolicy.op_Inequality(OpenDDSharp.DDS.PresentationQosPolicy%2COpenDDSharp.DDS.PresentationQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L133">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L137">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_PresentationQosPolicy_op_Inequality_" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.op_Inequality*"></a>
   <h4 id="OpenDDSharp_DDS_PresentationQosPolicy_op_Inequality_OpenDDSharp_DDS_PresentationQosPolicy_OpenDDSharp_DDS_PresentationQosPolicy_" data-uid="OpenDDSharp.DDS.PresentationQosPolicy.op_Inequality(OpenDDSharp.DDS.PresentationQosPolicy,OpenDDSharp.DDS.PresentationQosPolicy)">Inequality(PresentationQosPolicy, PresentationQosPolicy)</h4>
@@ -455,7 +459,7 @@ to those found in transactions provided by many relational databases. By default
                     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_PresentationQosPolicy.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.PresentationQosPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L33" class="contribution-link">View Source</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/PresentationQosPolicy.cs/#L34" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

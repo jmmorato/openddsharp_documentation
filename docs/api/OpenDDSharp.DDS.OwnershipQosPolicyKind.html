@@ -101,17 +101,20 @@
     <tbody>
       <tr>
         <td id="OpenDDSharp_DDS_OwnershipQosPolicyKind_ExclusiveOwnershipQos">ExclusiveOwnershipQos</td>
-        <td><p>Indicates that each instance of a data-object can only be modified by one <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>. In other words, at any point
-in time a single <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> &quot;owns&quot; each instance and is the only one whose modifications will be visible to
+        <td><p>Indicates that each instance of a data-object can only be modified by one <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>.
+In other words, at any point in time a single <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> &quot;owns&quot; each instance and is the
+only one whose modifications will be visible to
 the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> objects.</p>
 </td>
       </tr>
       <tr>
         <td id="OpenDDSharp_DDS_OwnershipQosPolicyKind_SharedOwnershipQos">SharedOwnershipQos</td>
         <td><p>Indicates that DDS does not enforce unique ownership for each instance. In this case, multiple writers can
-update the same data-object instance. The subscriber to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> will be able to access modifications from all <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>
-objects, subject to the settings of other QoS that may filter particular samples (e.g., the TimeBasedFilter or History
-QoS policy). In any case there is no &quot;filtering&quot; of modifications made based on the identity of the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> that causes the modification.</p>
+update the same data-object instance. The subscriber to the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> will be able to access
+modifications from all <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> objects, subject to the settings of other QoS that may
+filter particular samples (e.g., the TimeBasedFilter or History QoS policy). In any case there is no
+&quot;filtering&quot; of modifications made based on the identity of the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>
+that causes the modification.</p>
 </td>
       </tr>
     </tbody>

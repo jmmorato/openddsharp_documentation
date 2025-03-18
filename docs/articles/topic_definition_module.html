@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>OpenDDSharp Topic-Definition Module | OpenDDSharp Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="OpenDDSharp Topic-Definition Module | OpenDDSharp Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+                <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4366666401981011" crossorigin="anonymous"></script>
+                <!-- openddsharp_ads -->
+                <ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-4366666401981011" data-ad-slot="6527324727" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+<h1 id="openddsharp-topic-definition-module">OpenDDSharp Topic-Definition Module</h1>
+
+<p>The Data Distribution Service (DDS) Topic-Definition module is the component in the DDS middleware that handles
+the definition and management of topics. Topics in DDS represent the data that is being published and subscribed to
+within the DDS system.</p>
+<p>The following sections describe the interfaces and classes that are part of the Topic-Definition module.</p>
+<h2 id="auto-generated-typesupport-classes">Auto-Generated TypeSupport Classes</h2>
+<p>TODO</p>
+<p><code>TypeSupport</code> is a class that provides the necessary operations for working with the data types associated with topics.
+It includes functions for serializing and deserializing data, as well as for managing the type information.</p>
+<h2 id="itopicdescription-interface">ITopicDescription Interface</h2>
+<p>The <code>ITopicDescription</code> interface is the contract between publications and subscriptions that ensures both are linked
+to the same data-type. It allows applications to discover the type associated with a topic, enabling them to work
+with data in a generic way. The <code>ITopicDescription</code> is the base interface for the <code>Topic</code>, <code>ContentFilteredTopic</code>
+and <code>MultiTopic</code> classes.</p>
+<p>Before a type can be used in a DDS system, it must be registered within the middleware. This is done by creating
+a specific <code>TypeSupport</code> object for the type and registering it to the <code>DomainParticipant</code>. You will learn more
+about <code>TypeSupport</code> classes in the next section.</p>
+<p>A new <code>ITopicDescription</code> is created locally when calling the <code>CreateTopic</code>, <code>CreateContentFilteredTopic</code> or
+<code>CreateMultiTopic</code> method from a <code>DomainParticipant</code> object.</p>
+<p>Here is an example of how to register a type and create a new topic with a <code>DomainParticipant</code>:</p>
+<pre><code class="lang-csharp">var support = new MyTypeTypeSupport();
+var typeName = support.GetTypeName();
+var result = support.RegisterType(participant, typeName);
+
+var myTopic = participant.CreateTopic(&quot;MyTopic&quot;, typeName);
+</code></pre>
+<p>The <code>TypeName</code> property in the <code>ITopicDescription</code> object gets type name used to register the type in the
+<code>DomainParticipant</code>. This <code>TypeName</code> creates a unique resulting type for the publication or the subscription and
+therefore creates an implicit association with a specific <code>TypeSupport</code> class.</p>
+<p>During the registration of the type, you can use the type name you want to use in the <code>DomainParticipant</code> to refer to the
+type. This type name must be unique within the scope of the <code>DomainParticipant</code> and cannot be used to register another
+type. It is a good practice to use the type name returned by the <code>GetTypeName</code> method of the <code>TypeSupport</code> class as
+shown in the previous example. It gives you a full-qualified name of the type as per the type definition in the IDL
+file. For example, the following IDL code snippet will generate a type name of <code>MyModule::MyType</code> that can be retrieved
+calling the <code>GetTypeName</code> method of the <code>MyTypeTypeSupport</code> class:</p>
+<pre><code>module MyModule {
+    @topic
+    struct MyType {
+        @key string Key; 
+    };
+};
+</code></pre>
+<p>The <code>Participant</code> property in the <code>ITopicDescription</code> object holds a read-only reference to the <code>DomainParticipant</code>
+that created it. All <code>ITopicDescription</code> created with the same <code>DomainParticipant</code> object points to the same object
+reference in memory and therefore can be compared using the <code>==</code> operator.</p>
+<p>The property <code>Name</code> gets the name used to create the <code>ITopicDescription</code>. This name must be unique within the scope of
+the <code>DomainParticipant</code> that creates the <code>ITopicDescription</code> and must be shared by the publication and subscription
+that want to communicate with each other.</p>
+<p>The topic description name can be used to retrieve the <code>ITopicDescription</code> locally. For example, the following code
+snippet shows how to retrieve a topic description from a <code>DomainParticipant</code> object using its name:</p>
+<pre><code class="lang-csharp">var topicDescription = participant.LookupTopicDescription(&quot;MyTopic&quot;);
+Console.WriteLine($&quot;Topic name: {topicDescription.Name}&quot;);
+Console.WriteLine($&quot;Topic type name: {topicDescription.TypeName}&quot;);
+</code></pre>
+<p>The <code>LookupTopicDescription</code> method returns a <code>ITopicDescription</code> object that matches the name provided as a parameter.
+If no <code>ITopicDescription</code> is found, the method returns <code>null</code>.</p>
+<h2 id="topic-class">Topic Class</h2>
+<p>TODO</p>
+<p><code>Topic</code> is a class that defines a specific data type that will be exchanged between DDS participants.
+It associates a data type (e.g., a structure or a class) with a name that identifies the topic.
+It also encapsulates information about the data type, including its name and a unique identifier.</p>
+<h3 id="topicqos-class">TopicQos Class</h3>
+<p>TODO</p>
+<h3 id="topiclistener-class">TopicListener Class</h3>
+<p>TODO</p>
+<p><code>TopicListener</code> is an interface that allows applications to define callback methods that are triggered when certain
+events related to a topic occur. For example, a listener can be notified when a new topic is discovered or when
+a topic is removed.</p>
+<h2 id="contentfilteredtopic-class">ContentFilteredTopic Class</h2>
+<p>TODO</p>
+<p><code>ContentFilteredTopic</code> is a specialized type of topic that allows a subscriber to filter the data it receives
+based on specific criteria. It provides a way to subscribe to a subset of the data that a publisher is offering,
+based on a defined filter expression.</p>
+<h2 id="multitopic-class">MultiTopic Class</h2>
+<p>TODO</p>
+<p><code>MultiTopic</code> is a class that enables a subscriber to express interest in multiple related topics with a single
+subscription. It allows a subscriber to consolidate its subscriptions to various related topics, reducing the overhead
+associated with managing multiple subscriptions.</p>
+<h2 id="topic-definition-module-diagram">Topic-Definition Module Diagram</h2>
+<p>TODO</p>
+<p>Now, let's visualize the relationships between these classes in a diagram:</p>
+<pre><code>          +----------------+
+          | TopicDescription|
+          +----------------+
+                 /           \
+                /             \
+               /               \
+              /                 \
+    +--------+                   +------+
+    |   Topic  |                   | TypeSupport |
+    +--------+                   +------+
+           |                            |
+           |                            |
+           |                            |
+           |                            |
+           |                            |
+ +-----------------+          +------------------+
+ |ContentFilteredTopic|          |    MultiTopic    |
+ +-----------------+          +------------------+
+                                     |
+                                     |
+                              +------------+
+                              |TopicListener|
+                              +------------+
+</code></pre>
+<p>This diagram represents the relationships between the classes within the Topic-Definition module.
+Note that <code>Topic</code> and <code>TypeSupport</code> are central to the module, with other classes building on or utilizing their
+functionalities. <code>TopicDescription</code> provides a level of abstraction, while specialized topics like
+<code>ContentFilteredTopic</code> and <code>MultiTopic</code> offer additional features for filtering and managing subscriptions.
+The <code>TopicListener</code> interface allows applications to respond to events related to topics.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Documentation/articles/topic_definition_module.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright &copy; 2018 Jose Morat&oacute;</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+    <!-- mermaid support -->
+    <script src="https://unpkg.com/mermaid@10.2.3/dist/mermaid.min.js"></script>
+    <script>    
+        // select <pre class="lang-mermaid"> _and_ <pre><code class="lang-mermaid">
+        document.querySelectorAll("pre.lang-mermaid, pre>code.lang-mermaid").forEach($el => {
+          // if the second selector got a hit, reference the parent <pre>
+          if ($el.tagName === "CODE")
+            $el = $el.parentElement
+          // put the Mermaid contents in the expected <div class="mermaid">
+          // plus keep the original contents in a nice <details>
+          $el.outerHTML = `
+            <div class="mermaid">${$el.textContent}</div>
+            <details>
+              <summary>Diagram source</summary>
+              <pre>${$el.textContent}</pre>
+            </details>
+          `
+        })
+        
+        // initialize Mermaid to [1] log errors, [2] have loose security for first-party
+        // authored diagrams, and [3] respect a preferred dark color scheme
+        mermaid.initialize({
+          logLevel: "error", // [1]
+          securityLevel: "loose", // [2]
+          startOnLoad: true,
+          theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) ?
+            "light" :
+            "default" // [3]
+        })
+    </script>
+  </body>
+</html>

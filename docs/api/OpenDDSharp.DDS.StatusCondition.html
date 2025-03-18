@@ -81,8 +81,9 @@
   <h1 id="OpenDDSharp_DDS_StatusCondition" data-uid="OpenDDSharp.DDS.StatusCondition" class="text-break">Class StatusCondition
   </h1>
   <div class="markdown level0 summary"><p>A StatusCondition object is a specific <a class="xref" href="OpenDDSharp.DDS.Condition.html">Condition</a> that is associated with each <a class="xref" href="OpenDDSharp.DDS.Entity.html">Entity</a>.
-The <a class="xref" href="OpenDDSharp.DDS.Condition.html#OpenDDSharp_DDS_Condition_TriggerValue">TriggerValue</a> of the StatusCondition depends on the communication status of that entity (e.g., arrival of data, loss of
-information, etc.), 'filtered' by the set of <a class="xref" href="OpenDDSharp.DDS.StatusCondition.html#OpenDDSharp_DDS_StatusCondition_EnabledStatuses">EnabledStatuses</a> on the StatusCondition.</p>
+The <a class="xref" href="OpenDDSharp.DDS.Condition.html#OpenDDSharp_DDS_Condition_TriggerValue">TriggerValue</a> of the StatusCondition depends on the communication status of
+that entity (e.g., arrival of data, loss of information, etc.), 'filtered' by the set of
+<a class="xref" href="OpenDDSharp.DDS.StatusCondition.html#OpenDDSharp_DDS_StatusCondition_EnabledStatuses">EnabledStatuses</a> on the StatusCondition.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -110,11 +111,12 @@ information, etc.), 'filtered' by the set of <a class="xref" href="OpenDDSharp.D
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_StatusCondition_EnabledStatuses.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.StatusCondition.EnabledStatuses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/StatusCondition.cs/#L56">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/StatusCondition.cs/#L68">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_StatusCondition_EnabledStatuses_" data-uid="OpenDDSharp.DDS.StatusCondition.EnabledStatuses*"></a>
   <h4 id="OpenDDSharp_DDS_StatusCondition_EnabledStatuses" data-uid="OpenDDSharp.DDS.StatusCondition.EnabledStatuses">EnabledStatuses</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="OpenDDSharp.DDS.StatusMask.html">StatusMask</a> that is taken into account to determine the <a class="xref" href="OpenDDSharp.DDS.Condition.html#OpenDDSharp_DDS_Condition_TriggerValue">TriggerValue</a> of the <a class="xref" href="OpenDDSharp.DDS.StatusCondition.html">StatusCondition</a>.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="OpenDDSharp.DDS.StatusMask.html">StatusMask</a> that is taken into account to determine the
+<a class="xref" href="OpenDDSharp.DDS.Condition.html#OpenDDSharp_DDS_Condition_TriggerValue">TriggerValue</a> of the <a class="xref" href="OpenDDSharp.DDS.StatusCondition.html">StatusCondition</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -137,9 +139,15 @@ information, etc.), 'filtered' by the set of <a class="xref" href="OpenDDSharp.D
     </tbody>
   </table>
   <h5 id="OpenDDSharp_DDS_StatusCondition_EnabledStatuses_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Set a new value for the property may change the <a class="xref" href="OpenDDSharp.DDS.Condition.html#OpenDDSharp_DDS_Condition_TriggerValue">TriggerValue</a> of the <a class="xref" href="OpenDDSharp.DDS.StatusCondition.html">StatusCondition</a>.</p>
-<p><a class="xref" href="OpenDDSharp.DDS.WaitSet.html">WaitSet</a> objects behavior depend on the changes of the <a class="xref" href="OpenDDSharp.DDS.Condition.html#OpenDDSharp_DDS_Condition_TriggerValue">TriggerValue</a> of their attached conditions.
-Therefore, any <a class="xref" href="OpenDDSharp.DDS.WaitSet.html">WaitSet</a> to which the <a class="xref" href="OpenDDSharp.DDS.StatusCondition.html">StatusCondition</a> is attached is potentially affected by this operation.</p>
+  <div class="markdown level1 remarks"><p>
+Set a new value for the property may change the <a class="xref" href="OpenDDSharp.DDS.Condition.html#OpenDDSharp_DDS_Condition_TriggerValue">TriggerValue</a> of the
+<a class="xref" href="OpenDDSharp.DDS.StatusCondition.html">StatusCondition</a>.
+</p>
+<p>
+<a class="xref" href="OpenDDSharp.DDS.WaitSet.html">WaitSet</a> objects behavior depend on the changes of the <a class="xref" href="OpenDDSharp.DDS.Condition.html#OpenDDSharp_DDS_Condition_TriggerValue">TriggerValue</a> of
+their attached conditions. Therefore, any <a class="xref" href="OpenDDSharp.DDS.WaitSet.html">WaitSet</a> to which the <a class="xref" href="OpenDDSharp.DDS.StatusCondition.html">StatusCondition</a>
+is attached is potentially affected by this operation.
+</p>
 <p>If the setter is not invoked, the default mask of enabled statuses includes all the statuses.</p>
 </div>
   <span class="small pull-right mobile-hide">
@@ -147,7 +155,7 @@ Therefore, any <a class="xref" href="OpenDDSharp.DDS.WaitSet.html">WaitSet</a> t
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_StatusCondition_Entity.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.StatusCondition.Entity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/StatusCondition.cs/#L45">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/StatusCondition.cs/#L50">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_StatusCondition_Entity_" data-uid="OpenDDSharp.DDS.StatusCondition.Entity*"></a>
   <h4 id="OpenDDSharp_DDS_StatusCondition_Entity" data-uid="OpenDDSharp.DDS.StatusCondition.Entity">Entity</h4>
@@ -187,7 +195,7 @@ Therefore, any <a class="xref" href="OpenDDSharp.DDS.WaitSet.html">WaitSet</a> t
                     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_StatusCondition.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.StatusCondition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/StatusCondition.cs/#L32" class="contribution-link">View Source</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/StatusCondition.cs/#L37" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

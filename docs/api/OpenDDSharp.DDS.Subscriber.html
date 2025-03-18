@@ -111,10 +111,14 @@
     <pre><code class="lang-csharp hljs">public class Subscriber : Entity</code></pre>
   </div>
   <h5 id="OpenDDSharp_DDS_Subscriber_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>A Subscriber acts on the behalf of one or several <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> objects that are related to it. When it receives data (from the
-other parts of the system), it builds the list of concerned <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> objects, and then indicates to the application that data is
-available, through its listener or by enabling related conditions. The application can access the list of concerned <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>
-objects through the operation GetDataReaders and then access the data available though operations on the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.</p>
+  <div class="markdown level0 remarks"><p>
+A Subscriber acts on the behalf of one or several <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> objects that are related to it.
+When it receives data (from the other parts of the system), it builds the list of concerned
+<a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> objects, and then indicates to the application that data is available, through its
+listener or by enabling related conditions. The application can access the list of concerned
+<a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> objects through the operation GetDataReaders and then access the data available though
+operations on the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.
+</p>
 <p>All operations except for the operations <a class="xref" href="OpenDDSharp.DDS.Subscriber.html#OpenDDSharp_DDS_Subscriber_SetQos_OpenDDSharp_DDS_SubscriberQos_">SetQos(SubscriberQos)</a>, <a class="xref" href="OpenDDSharp.DDS.Subscriber.html#OpenDDSharp_DDS_Subscriber_GetQos_OpenDDSharp_DDS_SubscriberQos_">GetQos(SubscriberQos)</a>, SetListener,
 <a class="xref" href="OpenDDSharp.DDS.Subscriber.html#OpenDDSharp_DDS_Subscriber_GetListener">GetListener()</a>, <a class="xref" href="OpenDDSharp.DDS.Entity.html#OpenDDSharp_DDS_Entity_Enable">Enable()</a>, <a class="xref" href="OpenDDSharp.DDS.Entity.html#OpenDDSharp_DDS_Entity_StatusCondition">StatusCondition</a>, CreateDataReader,
 return the value <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_NotEnabled">NotEnabled</a> if the Subscriber has not been enabled yet.</p>
@@ -126,7 +130,7 @@ return the value <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSha
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_Listener.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.Listener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L51">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L59">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_Listener_" data-uid="OpenDDSharp.DDS.Subscriber.Listener*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_Listener" data-uid="OpenDDSharp.DDS.Subscriber.Listener">Listener</h4>
@@ -157,7 +161,7 @@ return the value <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSha
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_Participant.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.Participant%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L57">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L65">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_Participant_" data-uid="OpenDDSharp.DDS.Subscriber.Participant*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_Participant" data-uid="OpenDDSharp.DDS.Subscriber.Participant">Participant</h4>
@@ -190,7 +194,7 @@ return the value <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSha
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_BeginAccess.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.BeginAccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L485">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L541">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_BeginAccess_" data-uid="OpenDDSharp.DDS.Subscriber.BeginAccess*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_BeginAccess" data-uid="OpenDDSharp.DDS.Subscriber.BeginAccess">BeginAccess()</h4>
@@ -220,7 +224,7 @@ the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>.</p>
   </table>
   <h5 id="OpenDDSharp_DDS_Subscriber_BeginAccess_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The application is required to use this operation only if <a class="xref" href="OpenDDSharp.DDS.PresentationQosPolicy.html">PresentationQosPolicy</a> of the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a> to which the
-<a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> belongs has the <a class="xref" href="OpenDDSharp.DDS.PresentationQosPolicy.html#OpenDDSharp_DDS_PresentationQosPolicy_AccessScope">AccessScope</a> set to 
+<a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> belongs has the <a class="xref" href="OpenDDSharp.DDS.PresentationQosPolicy.html#OpenDDSharp_DDS_PresentationQosPolicy_AccessScope">AccessScope</a> set to
 <a class="xref" href="OpenDDSharp.DDS.PresentationQosPolicyAccessScopeKind.html#OpenDDSharp_DDS_PresentationQosPolicyAccessScopeKind_GroupPresentationQos">GroupPresentationQos</a>.</p>
 <p>In the aforementioned case, the operation BeginAccess must be called prior to calling any of the sample-accessing operations,
 namely: GetDataReaders on the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a> and Read, Take on any <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>.
@@ -234,7 +238,7 @@ called BeginAccess.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_CreateDataReader_OpenDDSharp_DDS_ITopicDescription_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.CreateDataReader(OpenDDSharp.DDS.ITopicDescription)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L79">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L93">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_CreateDataReader_" data-uid="OpenDDSharp.DDS.Subscriber.CreateDataReader*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_CreateDataReader_OpenDDSharp_DDS_ITopicDescription_" data-uid="OpenDDSharp.DDS.Subscriber.CreateDataReader(OpenDDSharp.DDS.ITopicDescription)">CreateDataReader(ITopicDescription)</h4>
@@ -280,17 +284,21 @@ called BeginAccess.</p>
     </tbody>
   </table>
   <h5 id="OpenDDSharp_DDS_Subscriber_CreateDataReader_OpenDDSharp_DDS_ITopicDescription__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> will be attached and belong to the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>.</p>
-<p>The <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> passed to this operation must have been created from the same <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> that was used to
-create this <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>. If the <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> was created from a different <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>, the operation will fail and
-return a <span class="xref">null</span> result.</p>
+  <div class="markdown level1 remarks"><p>
+The returned <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> will be attached and belong to the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>.
+</p>
+<p>
+The <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> passed to this operation must have been created from the same
+<a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> that was used to create this <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>. If the
+<a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> was created from a different <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>, the operation
+will fail and return a <span class="xref">null</span> result.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_CreateDataReader_OpenDDSharp_DDS_ITopicDescription_OpenDDSharp_DDS_DataReaderQos_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.CreateDataReader(OpenDDSharp.DDS.ITopicDescription%2COpenDDSharp.DDS.DataReaderQos)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L96">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L118">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_CreateDataReader_" data-uid="OpenDDSharp.DDS.Subscriber.CreateDataReader*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_CreateDataReader_OpenDDSharp_DDS_ITopicDescription_OpenDDSharp_DDS_DataReaderQos_" data-uid="OpenDDSharp.DDS.Subscriber.CreateDataReader(OpenDDSharp.DDS.ITopicDescription,OpenDDSharp.DDS.DataReaderQos)">CreateDataReader(ITopicDescription, DataReaderQos)</h4>
@@ -342,22 +350,27 @@ return a <span class="xref">null</span> result.</p>
     </tbody>
   </table>
   <h5 id="OpenDDSharp_DDS_Subscriber_CreateDataReader_OpenDDSharp_DDS_ITopicDescription_OpenDDSharp_DDS_DataReaderQos__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> will be attached and belong to the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>.</p>
-<p>The <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> passed to this operation must have been created from the same <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> that was used to
-create this <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>. If the <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> was created from a different <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>, the operation will fail and
-return a <span class="xref">null</span> result.</p>
+  <div class="markdown level1 remarks"><p>
+The returned <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> will be attached and belong to the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>.
+</p>
+<p>
+The <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> passed to this operation must have been created from the same
+<a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> that was used to create this <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>. If the
+<a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> was created from a different <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>,
+the operation will fail and return a <span class="xref">null</span> result.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_CreateDataReader_OpenDDSharp_DDS_ITopicDescription_OpenDDSharp_DDS_DataReaderQos_OpenDDSharp_DDS_DataReaderListener_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.CreateDataReader(OpenDDSharp.DDS.ITopicDescription%2COpenDDSharp.DDS.DataReaderQos%2COpenDDSharp.DDS.DataReaderListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L109">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L138">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_CreateDataReader_" data-uid="OpenDDSharp.DDS.Subscriber.CreateDataReader*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_CreateDataReader_OpenDDSharp_DDS_ITopicDescription_OpenDDSharp_DDS_DataReaderQos_OpenDDSharp_DDS_DataReaderListener_" data-uid="OpenDDSharp.DDS.Subscriber.CreateDataReader(OpenDDSharp.DDS.ITopicDescription,OpenDDSharp.DDS.DataReaderQos,OpenDDSharp.DDS.DataReaderListener)">CreateDataReader(ITopicDescription, DataReaderQos, DataReaderListener)</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> with the desired QoS policies and attaches to it the specified <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a>.
-The specified <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a> will be attached with the default <a class="xref" href="OpenDDSharp.DDS.StatusMask.html">StatusMask</a>.</p>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> with the desired QoS policies and attaches to it the specified
+<a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a>. The specified <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a> will be attached with the
+default <a class="xref" href="OpenDDSharp.DDS.StatusMask.html">StatusMask</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -415,11 +428,12 @@ The specified <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">Dat
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_CreateDataReader_OpenDDSharp_DDS_ITopicDescription_OpenDDSharp_DDS_DataReaderQos_OpenDDSharp_DDS_DataReaderListener_OpenDDSharp_DDS_StatusMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.CreateDataReader(OpenDDSharp.DDS.ITopicDescription%2COpenDDSharp.DDS.DataReaderQos%2COpenDDSharp.DDS.DataReaderListener%2COpenDDSharp.DDS.StatusMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L128">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L170">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_CreateDataReader_" data-uid="OpenDDSharp.DDS.Subscriber.CreateDataReader*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_CreateDataReader_OpenDDSharp_DDS_ITopicDescription_OpenDDSharp_DDS_DataReaderQos_OpenDDSharp_DDS_DataReaderListener_OpenDDSharp_DDS_StatusMask_" data-uid="OpenDDSharp.DDS.Subscriber.CreateDataReader(OpenDDSharp.DDS.ITopicDescription,OpenDDSharp.DDS.DataReaderQos,OpenDDSharp.DDS.DataReaderListener,OpenDDSharp.DDS.StatusMask)">CreateDataReader(ITopicDescription, DataReaderQos, DataReaderListener, StatusMask)</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> with the desired QoS policies and attaches to it the specified <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a>.</p>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> with the desired QoS policies and attaches to it the specified
+<a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">DataReaderListener</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -479,24 +493,30 @@ The specified <a class="xref" href="OpenDDSharp.DDS.DataReaderListener.html">Dat
     </tbody>
   </table>
   <h5 id="OpenDDSharp_DDS_Subscriber_CreateDataReader_OpenDDSharp_DDS_ITopicDescription_OpenDDSharp_DDS_DataReaderQos_OpenDDSharp_DDS_DataReaderListener_OpenDDSharp_DDS_StatusMask__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The returned <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> will be attached and belong to the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>.</p>
-<p>The <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> passed to this operation must have been created from the same <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> that was used to
-create this <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>. If the <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> was created from a different <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>, the operation will fail and
-return a <span class="xref">null</span> result.</p>
+  <div class="markdown level1 remarks"><p>
+The returned <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> will be attached and belong to the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>.
+</p>
+<p>
+The <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> passed to this operation must have been created from the same
+<a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> that was used to create this <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>.
+If the <a class="xref" href="OpenDDSharp.DDS.ITopicDescription.html">ITopicDescription</a> was created from a different <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>,
+the operation will fail and return a <span class="xref">null</span> result.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_DeleteContainedEntities.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.DeleteContainedEntities%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L220">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L276">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_DeleteContainedEntities_" data-uid="OpenDDSharp.DDS.Subscriber.DeleteContainedEntities*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_DeleteContainedEntities" data-uid="OpenDDSharp.DDS.Subscriber.DeleteContainedEntities">DeleteContainedEntities()</h4>
-  <div class="markdown level1 summary"><p>This operation deletes all the entities that were created by means of the &quot;create&quot; operations on the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>. That is, it
-deletes all contained <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> objects. This pattern is applied recursively. In this manner the operation
-DeleteContainedEntities on the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a> will end up deleting all the entities recursively contained in the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>, that
-is also the <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> and <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> objects belonging to the contained <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>s.</p>
+  <div class="markdown level1 summary"><p>This operation deletes all the entities that were created by means of the &quot;create&quot; operations on the
+<a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>. That is, it deletes all contained <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> objects. This pattern
+is applied recursively. In this manner the operation DeleteContainedEntities on the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>
+will end up deleting all the entities recursively contained in the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>, that
+is also the <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> and <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> objects belonging to the
+contained <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>s.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -520,16 +540,20 @@ is also the <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCond
     </tbody>
   </table>
   <h5 id="OpenDDSharp_DDS_Subscriber_DeleteContainedEntities_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The operation will return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_PreconditionNotMet">PreconditionNotMet</a> if any of the contained entities is in a state where it cannot be deleted.</p>
-<p>Once DeleteContainedEntities returns successfully, the application may delete the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a> knowing that it has no
-contained <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> objects.</p>
+  <div class="markdown level1 remarks"><p>
+The operation will return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_PreconditionNotMet">PreconditionNotMet</a> if any of the contained entities is in a
+state where it cannot be deleted.
+</p>
+<p>
+Once DeleteContainedEntities returns successfully, the application may delete the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>
+knowing that it has no contained <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> objects.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_DeleteDataReader_OpenDDSharp_DDS_DataReader_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.DeleteDataReader(OpenDDSharp.DDS.DataReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L191">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L241">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_DeleteDataReader_" data-uid="OpenDDSharp.DDS.Subscriber.DeleteDataReader*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_DeleteDataReader_OpenDDSharp_DDS_DataReader_" data-uid="OpenDDSharp.DDS.Subscriber.DeleteDataReader(OpenDDSharp.DDS.DataReader)">DeleteDataReader(DataReader)</h4>
@@ -575,20 +599,28 @@ contained <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> 
     </tbody>
   </table>
   <h5 id="OpenDDSharp_DDS_Subscriber_DeleteDataReader_OpenDDSharp_DDS_DataReader__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> does not belong to the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>, the operation returns the error <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_PreconditionNotMet">PreconditionNotMet</a>.</p>
-<p>The deletion of a <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> is not allowed if there are any existing <a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> or <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> objects that are
-attached to the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>. If the DeleteDataReader operation is called on a <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> with any of these existing objects
-attached to it, it will return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_PreconditionNotMet">PreconditionNotMet</a>.</p>
-<p>The DeleteDataReader operation must be called on the same <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a> object used to create the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>. If
-DeleteDataReader is called on a different <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>, the operation will have no effect and it will return
-<a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_PreconditionNotMet">PreconditionNotMet</a>.</p>
+  <div class="markdown level1 remarks"><p>
+If the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> does not belong to the <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>, the operation returns the
+error <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_PreconditionNotMet">PreconditionNotMet</a>.
+</p>
+<p>
+The deletion of a <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> is not allowed if there are any existing
+<a class="xref" href="OpenDDSharp.DDS.ReadCondition.html">ReadCondition</a> or <a class="xref" href="OpenDDSharp.DDS.QueryCondition.html">QueryCondition</a> objects that are attached to the
+<a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>. If the DeleteDataReader operation is called on a <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> with any
+of these existing objects attached to it, it will return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_PreconditionNotMet">PreconditionNotMet</a>.
+</p>
+<p>
+The DeleteDataReader operation must be called on the same <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a> object used to create the
+<a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a>. If DeleteDataReader is called on a different <a class="xref" href="OpenDDSharp.DDS.Subscriber.html">Subscriber</a>, the operation
+will have no effect and it will return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_PreconditionNotMet">PreconditionNotMet</a>.
+</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_EndAccess.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.EndAccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L500">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L556">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_EndAccess_" data-uid="OpenDDSharp.DDS.Subscriber.EndAccess*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_EndAccess" data-uid="OpenDDSharp.DDS.Subscriber.EndAccess">EndAccess()</h4>
@@ -626,7 +658,7 @@ sample-accessing operations. This call must close a previous call to <a class="x
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_GetDataReaders_IList_OpenDDSharp_DDS_DataReader__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.GetDataReaders(IList%7BOpenDDSharp.DDS.DataReader%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L300">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L356">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_GetDataReaders_" data-uid="OpenDDSharp.DDS.Subscriber.GetDataReaders*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_GetDataReaders_IList_OpenDDSharp_DDS_DataReader__" data-uid="OpenDDSharp.DDS.Subscriber.GetDataReaders(IList{OpenDDSharp.DDS.DataReader})">GetDataReaders(IList&lt;DataReader&gt;)</h4>
@@ -692,7 +724,7 @@ objects in a particular order. In this case, the application should process each
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_GetDataReaders_IList_OpenDDSharp_DDS_DataReader__OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.GetDataReaders(IList%7BOpenDDSharp.DDS.DataReader%7D%2COpenDDSharp.DDS.SampleStateMask%2COpenDDSharp.DDS.ViewStateMask%2COpenDDSharp.DDS.InstanceStateMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L332">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L388">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_GetDataReaders_" data-uid="OpenDDSharp.DDS.Subscriber.GetDataReaders*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_GetDataReaders_IList_OpenDDSharp_DDS_DataReader__OpenDDSharp_DDS_SampleStateMask_OpenDDSharp_DDS_ViewStateMask_OpenDDSharp_DDS_InstanceStateMask_" data-uid="OpenDDSharp.DDS.Subscriber.GetDataReaders(IList{OpenDDSharp.DDS.DataReader},OpenDDSharp.DDS.SampleStateMask,OpenDDSharp.DDS.ViewStateMask,OpenDDSharp.DDS.InstanceStateMask)">GetDataReaders(IList&lt;DataReader&gt;, SampleStateMask, ViewStateMask, InstanceStateMask)</h4>
@@ -776,7 +808,7 @@ objects in a particular order. In this case, the application should process each
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_GetDefaultDataReaderQos_OpenDDSharp_DDS_DataReaderQos_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.GetDefaultDataReaderQos(OpenDDSharp.DDS.DataReaderQos)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L515">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L571">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_GetDefaultDataReaderQos_" data-uid="OpenDDSharp.DDS.Subscriber.GetDefaultDataReaderQos*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_GetDefaultDataReaderQos_OpenDDSharp_DDS_DataReaderQos_" data-uid="OpenDDSharp.DDS.Subscriber.GetDefaultDataReaderQos(OpenDDSharp.DDS.DataReaderQos)">GetDefaultDataReaderQos(DataReaderQos)</h4>
@@ -831,7 +863,7 @@ created <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> en
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_GetListener.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.GetListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L434">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L490">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_GetListener_" data-uid="OpenDDSharp.DDS.Subscriber.GetListener*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_GetListener" data-uid="OpenDDSharp.DDS.Subscriber.GetListener">GetListener()</h4>
@@ -863,7 +895,7 @@ created <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> en
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_GetQos_OpenDDSharp_DDS_SubscriberQos_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.GetQos(OpenDDSharp.DDS.SubscriberQos)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L389">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L445">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_GetQos_" data-uid="OpenDDSharp.DDS.Subscriber.GetQos*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_GetQos_OpenDDSharp_DDS_SubscriberQos_" data-uid="OpenDDSharp.DDS.Subscriber.GetQos(OpenDDSharp.DDS.SubscriberQos)">GetQos(SubscriberQos)</h4>
@@ -913,7 +945,7 @@ created <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> en
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_LookupDataReader_System_String_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.LookupDataReader(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L248">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L304">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_LookupDataReader_" data-uid="OpenDDSharp.DDS.Subscriber.LookupDataReader*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_LookupDataReader_System_String_" data-uid="OpenDDSharp.DDS.Subscriber.LookupDataReader(System.String)">LookupDataReader(String)</h4>
@@ -969,7 +1001,7 @@ It is not specified which one.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_NotifyDataReaders.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.NotifyDataReaders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L379">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L435">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_NotifyDataReaders_" data-uid="OpenDDSharp.DDS.Subscriber.NotifyDataReaders*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_NotifyDataReaders" data-uid="OpenDDSharp.DDS.Subscriber.NotifyDataReaders">NotifyDataReaders()</h4>
@@ -1006,7 +1038,7 @@ entities with a <a class="xref" href="OpenDDSharp.DDS.StatusKind.html#OpenDDShar
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_SetDefaultDataReaderQos_OpenDDSharp_DDS_DataReaderQos_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.SetDefaultDataReaderQos(OpenDDSharp.DDS.DataReaderQos)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L545">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L601">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_SetDefaultDataReaderQos_" data-uid="OpenDDSharp.DDS.Subscriber.SetDefaultDataReaderQos*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_SetDefaultDataReaderQos_OpenDDSharp_DDS_DataReaderQos_" data-uid="OpenDDSharp.DDS.Subscriber.SetDefaultDataReaderQos(OpenDDSharp.DDS.DataReaderQos)">SetDefaultDataReaderQos(DataReaderQos)</h4>
@@ -1061,7 +1093,7 @@ return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_Ret
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_SetListener_OpenDDSharp_DDS_SubscriberListener_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.SetListener(OpenDDSharp.DDS.SubscriberListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L446">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L502">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_SetListener_" data-uid="OpenDDSharp.DDS.Subscriber.SetListener*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_SetListener_OpenDDSharp_DDS_SubscriberListener_" data-uid="OpenDDSharp.DDS.Subscriber.SetListener(OpenDDSharp.DDS.SubscriberListener)">SetListener(SubscriberListener)</h4>
@@ -1111,7 +1143,7 @@ return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_Ret
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_SetListener_OpenDDSharp_DDS_SubscriberListener_OpenDDSharp_DDS_StatusMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.SetListener(OpenDDSharp.DDS.SubscriberListener%2COpenDDSharp.DDS.StatusMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L457">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L513">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_SetListener_" data-uid="OpenDDSharp.DDS.Subscriber.SetListener*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_SetListener_OpenDDSharp_DDS_SubscriberListener_OpenDDSharp_DDS_StatusMask_" data-uid="OpenDDSharp.DDS.Subscriber.SetListener(OpenDDSharp.DDS.SubscriberListener,OpenDDSharp.DDS.StatusMask)">SetListener(SubscriberListener, StatusMask)</h4>
@@ -1167,7 +1199,7 @@ return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_Ret
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber_SetQos_OpenDDSharp_DDS_SubscriberQos_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber.SetQos(OpenDDSharp.DDS.SubscriberQos)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L414">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L470">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Subscriber_SetQos_" data-uid="OpenDDSharp.DDS.Subscriber.SetQos*"></a>
   <h4 id="OpenDDSharp_DDS_Subscriber_SetQos_OpenDDSharp_DDS_SubscriberQos_" data-uid="OpenDDSharp.DDS.Subscriber.SetQos(OpenDDSharp.DDS.SubscriberQos)">SetQos(SubscriberQos)</h4>
@@ -1223,7 +1255,7 @@ return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_Ret
                     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Subscriber.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Subscriber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L41" class="contribution-link">View Source</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Subscriber.cs/#L49" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

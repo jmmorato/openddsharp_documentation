@@ -3313,12 +3313,12 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.DDS.Duration.GetHashCode
   nameWithType: Duration.GetHashCode
-- uid: OpenDDSharp.DDS.Duration.InfiniteNanoseconds
-  name: InfiniteNanoseconds
-  href: api/OpenDDSharp.DDS.Duration.html#OpenDDSharp_DDS_Duration_InfiniteNanoseconds
-  commentId: F:OpenDDSharp.DDS.Duration.InfiniteNanoseconds
-  fullName: OpenDDSharp.DDS.Duration.InfiniteNanoseconds
-  nameWithType: Duration.InfiniteNanoseconds
+- uid: OpenDDSharp.DDS.Duration.InfiniteNanoSeconds
+  name: InfiniteNanoSeconds
+  href: api/OpenDDSharp.DDS.Duration.html#OpenDDSharp_DDS_Duration_InfiniteNanoSeconds
+  commentId: F:OpenDDSharp.DDS.Duration.InfiniteNanoSeconds
+  fullName: OpenDDSharp.DDS.Duration.InfiniteNanoSeconds
+  nameWithType: Duration.InfiniteNanoSeconds
 - uid: OpenDDSharp.DDS.Duration.InfiniteSeconds
   name: InfiniteSeconds
   href: api/OpenDDSharp.DDS.Duration.html#OpenDDSharp_DDS_Duration_InfiniteSeconds
@@ -4366,6 +4366,129 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.DDS.ITopicDescription.TypeName
   nameWithType: ITopicDescription.TypeName
+- uid: OpenDDSharp.DDS.ITypeSupport
+  name: ITypeSupport
+  href: api/OpenDDSharp.DDS.ITypeSupport.html
+  commentId: T:OpenDDSharp.DDS.ITypeSupport
+  fullName: OpenDDSharp.DDS.ITypeSupport
+  nameWithType: ITypeSupport
+- uid: OpenDDSharp.DDS.ITypeSupport.GetTypeName
+  name: GetTypeName()
+  href: api/OpenDDSharp.DDS.ITypeSupport.html#OpenDDSharp_DDS_ITypeSupport_GetTypeName
+  commentId: M:OpenDDSharp.DDS.ITypeSupport.GetTypeName
+  fullName: OpenDDSharp.DDS.ITypeSupport.GetTypeName()
+  nameWithType: ITypeSupport.GetTypeName()
+- uid: OpenDDSharp.DDS.ITypeSupport.GetTypeName*
+  name: GetTypeName
+  href: api/OpenDDSharp.DDS.ITypeSupport.html#OpenDDSharp_DDS_ITypeSupport_GetTypeName_
+  commentId: Overload:OpenDDSharp.DDS.ITypeSupport.GetTypeName
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.ITypeSupport.GetTypeName
+  nameWithType: ITypeSupport.GetTypeName
+- uid: OpenDDSharp.DDS.ITypeSupport.RegisterType(OpenDDSharp.DDS.DomainParticipant,System.String)
+  name: RegisterType(DomainParticipant, String)
+  href: api/OpenDDSharp.DDS.ITypeSupport.html#OpenDDSharp_DDS_ITypeSupport_RegisterType_OpenDDSharp_DDS_DomainParticipant_System_String_
+  commentId: M:OpenDDSharp.DDS.ITypeSupport.RegisterType(OpenDDSharp.DDS.DomainParticipant,System.String)
+  fullName: OpenDDSharp.DDS.ITypeSupport.RegisterType(OpenDDSharp.DDS.DomainParticipant, System.String)
+  nameWithType: ITypeSupport.RegisterType(DomainParticipant, String)
+- uid: OpenDDSharp.DDS.ITypeSupport.RegisterType*
+  name: RegisterType
+  href: api/OpenDDSharp.DDS.ITypeSupport.html#OpenDDSharp_DDS_ITypeSupport_RegisterType_
+  commentId: Overload:OpenDDSharp.DDS.ITypeSupport.RegisterType
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.ITypeSupport.RegisterType
+  nameWithType: ITypeSupport.RegisterType
+- uid: OpenDDSharp.DDS.ITypeSupport.UnregisterType(OpenDDSharp.DDS.DomainParticipant,System.String)
+  name: UnregisterType(DomainParticipant, String)
+  href: api/OpenDDSharp.DDS.ITypeSupport.html#OpenDDSharp_DDS_ITypeSupport_UnregisterType_OpenDDSharp_DDS_DomainParticipant_System_String_
+  commentId: M:OpenDDSharp.DDS.ITypeSupport.UnregisterType(OpenDDSharp.DDS.DomainParticipant,System.String)
+  fullName: OpenDDSharp.DDS.ITypeSupport.UnregisterType(OpenDDSharp.DDS.DomainParticipant, System.String)
+  nameWithType: ITypeSupport.UnregisterType(DomainParticipant, String)
+- uid: OpenDDSharp.DDS.ITypeSupport.UnregisterType*
+  name: UnregisterType
+  href: api/OpenDDSharp.DDS.ITypeSupport.html#OpenDDSharp_DDS_ITypeSupport_UnregisterType_
+  commentId: Overload:OpenDDSharp.DDS.ITypeSupport.UnregisterType
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.ITypeSupport.UnregisterType
+  nameWithType: ITypeSupport.UnregisterType
+- uid: OpenDDSharp.DDS.ITypeSupport`1
+  name: ITypeSupport<T>
+  href: api/OpenDDSharp.DDS.ITypeSupport-1.html
+  commentId: T:OpenDDSharp.DDS.ITypeSupport`1
+  name.vb: ITypeSupport(Of T)
+  fullName: OpenDDSharp.DDS.ITypeSupport<T>
+  fullName.vb: OpenDDSharp.DDS.ITypeSupport(Of T)
+  nameWithType: ITypeSupport<T>
+  nameWithType.vb: ITypeSupport(Of T)
+- uid: OpenDDSharp.DDS.ITypeSupport`1.DecodeFromBytes(System.Byte[])
+  name: DecodeFromBytes(Byte[])
+  href: api/OpenDDSharp.DDS.ITypeSupport-1.html#OpenDDSharp_DDS_ITypeSupport_1_DecodeFromBytes_System_Byte___
+  commentId: M:OpenDDSharp.DDS.ITypeSupport`1.DecodeFromBytes(System.Byte[])
+  name.vb: DecodeFromBytes(Byte())
+  fullName: OpenDDSharp.DDS.ITypeSupport<T>.DecodeFromBytes(System.Byte[])
+  fullName.vb: OpenDDSharp.DDS.ITypeSupport(Of T).DecodeFromBytes(System.Byte())
+  nameWithType: ITypeSupport<T>.DecodeFromBytes(Byte[])
+  nameWithType.vb: ITypeSupport(Of T).DecodeFromBytes(Byte())
+- uid: OpenDDSharp.DDS.ITypeSupport`1.DecodeFromBytes*
+  name: DecodeFromBytes
+  href: api/OpenDDSharp.DDS.ITypeSupport-1.html#OpenDDSharp_DDS_ITypeSupport_1_DecodeFromBytes_
+  commentId: Overload:OpenDDSharp.DDS.ITypeSupport`1.DecodeFromBytes
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.ITypeSupport<T>.DecodeFromBytes
+  fullName.vb: OpenDDSharp.DDS.ITypeSupport(Of T).DecodeFromBytes
+  nameWithType: ITypeSupport<T>.DecodeFromBytes
+  nameWithType.vb: ITypeSupport(Of T).DecodeFromBytes
+- uid: OpenDDSharp.DDS.ITypeSupport`1.DecodeFromString(System.String)
+  name: DecodeFromString(String)
+  href: api/OpenDDSharp.DDS.ITypeSupport-1.html#OpenDDSharp_DDS_ITypeSupport_1_DecodeFromString_System_String_
+  commentId: M:OpenDDSharp.DDS.ITypeSupport`1.DecodeFromString(System.String)
+  fullName: OpenDDSharp.DDS.ITypeSupport<T>.DecodeFromString(System.String)
+  fullName.vb: OpenDDSharp.DDS.ITypeSupport(Of T).DecodeFromString(System.String)
+  nameWithType: ITypeSupport<T>.DecodeFromString(String)
+  nameWithType.vb: ITypeSupport(Of T).DecodeFromString(String)
+- uid: OpenDDSharp.DDS.ITypeSupport`1.DecodeFromString*
+  name: DecodeFromString
+  href: api/OpenDDSharp.DDS.ITypeSupport-1.html#OpenDDSharp_DDS_ITypeSupport_1_DecodeFromString_
+  commentId: Overload:OpenDDSharp.DDS.ITypeSupport`1.DecodeFromString
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.ITypeSupport<T>.DecodeFromString
+  fullName.vb: OpenDDSharp.DDS.ITypeSupport(Of T).DecodeFromString
+  nameWithType: ITypeSupport<T>.DecodeFromString
+  nameWithType.vb: ITypeSupport(Of T).DecodeFromString
+- uid: OpenDDSharp.DDS.ITypeSupport`1.EncodeToBytes(`0)
+  name: EncodeToBytes(T)
+  href: api/OpenDDSharp.DDS.ITypeSupport-1.html#OpenDDSharp_DDS_ITypeSupport_1_EncodeToBytes__0_
+  commentId: M:OpenDDSharp.DDS.ITypeSupport`1.EncodeToBytes(`0)
+  fullName: OpenDDSharp.DDS.ITypeSupport<T>.EncodeToBytes(T)
+  fullName.vb: OpenDDSharp.DDS.ITypeSupport(Of T).EncodeToBytes(T)
+  nameWithType: ITypeSupport<T>.EncodeToBytes(T)
+  nameWithType.vb: ITypeSupport(Of T).EncodeToBytes(T)
+- uid: OpenDDSharp.DDS.ITypeSupport`1.EncodeToBytes*
+  name: EncodeToBytes
+  href: api/OpenDDSharp.DDS.ITypeSupport-1.html#OpenDDSharp_DDS_ITypeSupport_1_EncodeToBytes_
+  commentId: Overload:OpenDDSharp.DDS.ITypeSupport`1.EncodeToBytes
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.ITypeSupport<T>.EncodeToBytes
+  fullName.vb: OpenDDSharp.DDS.ITypeSupport(Of T).EncodeToBytes
+  nameWithType: ITypeSupport<T>.EncodeToBytes
+  nameWithType.vb: ITypeSupport(Of T).EncodeToBytes
+- uid: OpenDDSharp.DDS.ITypeSupport`1.EncodeToString(`0)
+  name: EncodeToString(T)
+  href: api/OpenDDSharp.DDS.ITypeSupport-1.html#OpenDDSharp_DDS_ITypeSupport_1_EncodeToString__0_
+  commentId: M:OpenDDSharp.DDS.ITypeSupport`1.EncodeToString(`0)
+  fullName: OpenDDSharp.DDS.ITypeSupport<T>.EncodeToString(T)
+  fullName.vb: OpenDDSharp.DDS.ITypeSupport(Of T).EncodeToString(T)
+  nameWithType: ITypeSupport<T>.EncodeToString(T)
+  nameWithType.vb: ITypeSupport(Of T).EncodeToString(T)
+- uid: OpenDDSharp.DDS.ITypeSupport`1.EncodeToString*
+  name: EncodeToString
+  href: api/OpenDDSharp.DDS.ITypeSupport-1.html#OpenDDSharp_DDS_ITypeSupport_1_EncodeToString_
+  commentId: Overload:OpenDDSharp.DDS.ITypeSupport`1.EncodeToString
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.ITypeSupport<T>.EncodeToString
+  fullName.vb: OpenDDSharp.DDS.ITypeSupport(Of T).EncodeToString
+  nameWithType: ITypeSupport<T>.EncodeToString
+  nameWithType.vb: ITypeSupport(Of T).EncodeToString
 - uid: OpenDDSharp.DDS.LatencyBudgetQosPolicy
   name: LatencyBudgetQosPolicy
   href: api/OpenDDSharp.DDS.LatencyBudgetQosPolicy.html
@@ -8079,6 +8202,28 @@ references:
   commentId: T:OpenDDSharp.DDS.SampleInfo
   fullName: OpenDDSharp.DDS.SampleInfo
   nameWithType: SampleInfo
+- uid: OpenDDSharp.DDS.SampleInfo.#ctor
+  name: SampleInfo()
+  href: api/OpenDDSharp.DDS.SampleInfo.html#OpenDDSharp_DDS_SampleInfo__ctor
+  commentId: M:OpenDDSharp.DDS.SampleInfo.#ctor
+  fullName: OpenDDSharp.DDS.SampleInfo.SampleInfo()
+  nameWithType: SampleInfo.SampleInfo()
+- uid: OpenDDSharp.DDS.SampleInfo.#ctor(OpenDDSharp.Marshaller.Cdr.CdrReader,Span{System.Byte})
+  name: SampleInfo(CdrReader, Span<Byte>)
+  href: api/OpenDDSharp.DDS.SampleInfo.html#OpenDDSharp_DDS_SampleInfo__ctor_OpenDDSharp_Marshaller_Cdr_CdrReader_Span_System_Byte__
+  commentId: M:OpenDDSharp.DDS.SampleInfo.#ctor(OpenDDSharp.Marshaller.Cdr.CdrReader,Span{System.Byte})
+  name.vb: SampleInfo(CdrReader, Span(Of Byte))
+  fullName: OpenDDSharp.DDS.SampleInfo.SampleInfo(OpenDDSharp.Marshaller.Cdr.CdrReader, Span<System.Byte>)
+  fullName.vb: OpenDDSharp.DDS.SampleInfo.SampleInfo(OpenDDSharp.Marshaller.Cdr.CdrReader, Span(Of System.Byte))
+  nameWithType: SampleInfo.SampleInfo(CdrReader, Span<Byte>)
+  nameWithType.vb: SampleInfo.SampleInfo(CdrReader, Span(Of Byte))
+- uid: OpenDDSharp.DDS.SampleInfo.#ctor*
+  name: SampleInfo
+  href: api/OpenDDSharp.DDS.SampleInfo.html#OpenDDSharp_DDS_SampleInfo__ctor_
+  commentId: Overload:OpenDDSharp.DDS.SampleInfo.#ctor
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.SampleInfo.SampleInfo
+  nameWithType: SampleInfo.SampleInfo
 - uid: OpenDDSharp.DDS.SampleInfo.AbsoluteGenerationRank
   name: AbsoluteGenerationRank
   href: api/OpenDDSharp.DDS.SampleInfo.html#OpenDDSharp_DDS_SampleInfo_AbsoluteGenerationRank
@@ -8124,6 +8269,31 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.DDS.SampleInfo.Equals
   nameWithType: SampleInfo.Equals
+- uid: OpenDDSharp.DDS.SampleInfo.FromCDR(OpenDDSharp.Marshaller.Cdr.CdrReader,Span{System.Byte})
+  name: FromCDR(CdrReader, Span<Byte>)
+  href: api/OpenDDSharp.DDS.SampleInfo.html#OpenDDSharp_DDS_SampleInfo_FromCDR_OpenDDSharp_Marshaller_Cdr_CdrReader_Span_System_Byte__
+  commentId: M:OpenDDSharp.DDS.SampleInfo.FromCDR(OpenDDSharp.Marshaller.Cdr.CdrReader,Span{System.Byte})
+  name.vb: FromCDR(CdrReader, Span(Of Byte))
+  fullName: OpenDDSharp.DDS.SampleInfo.FromCDR(OpenDDSharp.Marshaller.Cdr.CdrReader, Span<System.Byte>)
+  fullName.vb: OpenDDSharp.DDS.SampleInfo.FromCDR(OpenDDSharp.Marshaller.Cdr.CdrReader, Span(Of System.Byte))
+  nameWithType: SampleInfo.FromCDR(CdrReader, Span<Byte>)
+  nameWithType.vb: SampleInfo.FromCDR(CdrReader, Span(Of Byte))
+- uid: OpenDDSharp.DDS.SampleInfo.FromCDR(Span{System.Byte})
+  name: FromCDR(Span<Byte>)
+  href: api/OpenDDSharp.DDS.SampleInfo.html#OpenDDSharp_DDS_SampleInfo_FromCDR_Span_System_Byte__
+  commentId: M:OpenDDSharp.DDS.SampleInfo.FromCDR(Span{System.Byte})
+  name.vb: FromCDR(Span(Of Byte))
+  fullName: OpenDDSharp.DDS.SampleInfo.FromCDR(Span<System.Byte>)
+  fullName.vb: OpenDDSharp.DDS.SampleInfo.FromCDR(Span(Of System.Byte))
+  nameWithType: SampleInfo.FromCDR(Span<Byte>)
+  nameWithType.vb: SampleInfo.FromCDR(Span(Of Byte))
+- uid: OpenDDSharp.DDS.SampleInfo.FromCDR*
+  name: FromCDR
+  href: api/OpenDDSharp.DDS.SampleInfo.html#OpenDDSharp_DDS_SampleInfo_FromCDR_
+  commentId: Overload:OpenDDSharp.DDS.SampleInfo.FromCDR
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.SampleInfo.FromCDR
+  nameWithType: SampleInfo.FromCDR
 - uid: OpenDDSharp.DDS.SampleInfo.FromNative(OpenDDSharp.DDS.SampleInfoWrapper)
   name: FromNative(SampleInfoWrapper)
   href: api/OpenDDSharp.DDS.SampleInfo.html#OpenDDSharp_DDS_SampleInfo_FromNative_OpenDDSharp_DDS_SampleInfoWrapper_
@@ -8280,6 +8450,19 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.DDS.SampleInfo.SourceTimestamp
   nameWithType: SampleInfo.SourceTimestamp
+- uid: OpenDDSharp.DDS.SampleInfo.ToCDR
+  name: ToCDR()
+  href: api/OpenDDSharp.DDS.SampleInfo.html#OpenDDSharp_DDS_SampleInfo_ToCDR
+  commentId: M:OpenDDSharp.DDS.SampleInfo.ToCDR
+  fullName: OpenDDSharp.DDS.SampleInfo.ToCDR()
+  nameWithType: SampleInfo.ToCDR()
+- uid: OpenDDSharp.DDS.SampleInfo.ToCDR*
+  name: ToCDR
+  href: api/OpenDDSharp.DDS.SampleInfo.html#OpenDDSharp_DDS_SampleInfo_ToCDR_
+  commentId: Overload:OpenDDSharp.DDS.SampleInfo.ToCDR
+  isSpec: "True"
+  fullName: OpenDDSharp.DDS.SampleInfo.ToCDR
+  nameWithType: SampleInfo.ToCDR
 - uid: OpenDDSharp.DDS.SampleInfo.ValidData
   name: ValidData
   href: api/OpenDDSharp.DDS.SampleInfo.html#OpenDDSharp_DDS_SampleInfo_ValidData
@@ -13124,6 +13307,19 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.RtpsUdpInst
   nameWithType: RtpsUdpInst.RtpsUdpInst
+- uid: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.GetMulticastGroupAddress(System.Int32)
+  name: GetMulticastGroupAddress(Int32)
+  href: api/OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.html#OpenDDSharp_OpenDDS_DCPS_RtpsUdpInst_GetMulticastGroupAddress_System_Int32_
+  commentId: M:OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.GetMulticastGroupAddress(System.Int32)
+  fullName: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.GetMulticastGroupAddress(System.Int32)
+  nameWithType: RtpsUdpInst.GetMulticastGroupAddress(Int32)
+- uid: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.GetMulticastGroupAddress*
+  name: GetMulticastGroupAddress
+  href: api/OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.html#OpenDDSharp_OpenDDS_DCPS_RtpsUdpInst_GetMulticastGroupAddress_
+  commentId: Overload:OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.GetMulticastGroupAddress
+  isSpec: "True"
+  fullName: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.GetMulticastGroupAddress
+  nameWithType: RtpsUdpInst.GetMulticastGroupAddress
 - uid: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.HeartbeatPeriod
   name: HeartbeatPeriod
   href: api/OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.html#OpenDDSharp_OpenDDS_DCPS_RtpsUdpInst_HeartbeatPeriod
@@ -13163,19 +13359,6 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.LocalAddress
   nameWithType: RtpsUdpInst.LocalAddress
-- uid: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.MulticastGroupAddress
-  name: MulticastGroupAddress
-  href: api/OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.html#OpenDDSharp_OpenDDS_DCPS_RtpsUdpInst_MulticastGroupAddress
-  commentId: P:OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.MulticastGroupAddress
-  fullName: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.MulticastGroupAddress
-  nameWithType: RtpsUdpInst.MulticastGroupAddress
-- uid: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.MulticastGroupAddress*
-  name: MulticastGroupAddress
-  href: api/OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.html#OpenDDSharp_OpenDDS_DCPS_RtpsUdpInst_MulticastGroupAddress_
-  commentId: Overload:OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.MulticastGroupAddress
-  isSpec: "True"
-  fullName: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.MulticastGroupAddress
-  nameWithType: RtpsUdpInst.MulticastGroupAddress
 - uid: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.MulticastInterface
   name: MulticastInterface
   href: api/OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.html#OpenDDSharp_OpenDDS_DCPS_RtpsUdpInst_MulticastInterface
@@ -13267,6 +13450,19 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.SendBufferSize
   nameWithType: RtpsUdpInst.SendBufferSize
+- uid: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.SetMulticastGroupAddress(System.String)
+  name: SetMulticastGroupAddress(String)
+  href: api/OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.html#OpenDDSharp_OpenDDS_DCPS_RtpsUdpInst_SetMulticastGroupAddress_System_String_
+  commentId: M:OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.SetMulticastGroupAddress(System.String)
+  fullName: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.SetMulticastGroupAddress(System.String)
+  nameWithType: RtpsUdpInst.SetMulticastGroupAddress(String)
+- uid: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.SetMulticastGroupAddress*
+  name: SetMulticastGroupAddress
+  href: api/OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.html#OpenDDSharp_OpenDDS_DCPS_RtpsUdpInst_SetMulticastGroupAddress_
+  commentId: Overload:OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.SetMulticastGroupAddress
+  isSpec: "True"
+  fullName: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.SetMulticastGroupAddress
+  nameWithType: RtpsUdpInst.SetMulticastGroupAddress
 - uid: OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.Ttl
   name: Ttl
   href: api/OpenDDSharp.OpenDDS.DCPS.RtpsUdpInst.html#OpenDDSharp_OpenDDS_DCPS_RtpsUdpInst_Ttl
@@ -14029,19 +14225,6 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.D1
   nameWithType: RtpsDiscovery.D1
-- uid: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DefaultMulticastGroup
-  name: DefaultMulticastGroup
-  href: api/OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.html#OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DefaultMulticastGroup
-  commentId: P:OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DefaultMulticastGroup
-  fullName: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DefaultMulticastGroup
-  nameWithType: RtpsDiscovery.DefaultMulticastGroup
-- uid: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DefaultMulticastGroup*
-  name: DefaultMulticastGroup
-  href: api/OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.html#OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DefaultMulticastGroup_
-  commentId: Overload:OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DefaultMulticastGroup
-  isSpec: "True"
-  fullName: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DefaultMulticastGroup
-  nameWithType: RtpsDiscovery.DefaultMulticastGroup
 - uid: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DG
   name: DG
   href: api/OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.html#OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_DG
@@ -14068,6 +14251,19 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.DX
   nameWithType: RtpsDiscovery.DX
+- uid: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.GetDefaultMulticastGroup(System.Int32)
+  name: GetDefaultMulticastGroup(Int32)
+  href: api/OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.html#OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_GetDefaultMulticastGroup_System_Int32_
+  commentId: M:OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.GetDefaultMulticastGroup(System.Int32)
+  fullName: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.GetDefaultMulticastGroup(System.Int32)
+  nameWithType: RtpsDiscovery.GetDefaultMulticastGroup(Int32)
+- uid: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.GetDefaultMulticastGroup*
+  name: GetDefaultMulticastGroup
+  href: api/OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.html#OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_GetDefaultMulticastGroup_
+  commentId: Overload:OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.GetDefaultMulticastGroup
+  isSpec: "True"
+  fullName: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.GetDefaultMulticastGroup
+  nameWithType: RtpsDiscovery.GetDefaultMulticastGroup
 - uid: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.GuidInterface
   name: GuidInterface
   href: api/OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.html#OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_GuidInterface
@@ -14159,6 +14355,19 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SedpMulticast
   nameWithType: RtpsDiscovery.SedpMulticast
+- uid: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SetDefaultMulticastGroup(System.String)
+  name: SetDefaultMulticastGroup(String)
+  href: api/OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.html#OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SetDefaultMulticastGroup_System_String_
+  commentId: M:OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SetDefaultMulticastGroup(System.String)
+  fullName: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SetDefaultMulticastGroup(System.String)
+  nameWithType: RtpsDiscovery.SetDefaultMulticastGroup(String)
+- uid: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SetDefaultMulticastGroup*
+  name: SetDefaultMulticastGroup
+  href: api/OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.html#OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SetDefaultMulticastGroup_
+  commentId: Overload:OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SetDefaultMulticastGroup
+  isSpec: "True"
+  fullName: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SetDefaultMulticastGroup
+  nameWithType: RtpsDiscovery.SetDefaultMulticastGroup
 - uid: OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.SpdpLocalAddress
   name: SpdpLocalAddress
   href: api/OpenDDSharp.OpenDDS.RTPS.RtpsDiscovery.html#OpenDDSharp_OpenDDS_RTPS_RtpsDiscovery_SpdpLocalAddress
@@ -14223,6 +14432,22 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.Timestamp.Equals
   nameWithType: Timestamp.Equals
+- uid: OpenDDSharp.Timestamp.FromCDR(Span{System.Byte})
+  name: FromCDR(Span<Byte>)
+  href: api/OpenDDSharp.Timestamp.html#OpenDDSharp_Timestamp_FromCDR_Span_System_Byte__
+  commentId: M:OpenDDSharp.Timestamp.FromCDR(Span{System.Byte})
+  name.vb: FromCDR(Span(Of Byte))
+  fullName: OpenDDSharp.Timestamp.FromCDR(Span<System.Byte>)
+  fullName.vb: OpenDDSharp.Timestamp.FromCDR(Span(Of System.Byte))
+  nameWithType: Timestamp.FromCDR(Span<Byte>)
+  nameWithType.vb: Timestamp.FromCDR(Span(Of Byte))
+- uid: OpenDDSharp.Timestamp.FromCDR*
+  name: FromCDR
+  href: api/OpenDDSharp.Timestamp.html#OpenDDSharp_Timestamp_FromCDR_
+  commentId: Overload:OpenDDSharp.Timestamp.FromCDR
+  isSpec: "True"
+  fullName: OpenDDSharp.Timestamp.FromCDR
+  nameWithType: Timestamp.FromCDR
 - uid: OpenDDSharp.Timestamp.GetHashCode
   name: GetHashCode()
   href: api/OpenDDSharp.Timestamp.html#OpenDDSharp_Timestamp_GetHashCode
@@ -14288,6 +14513,19 @@ references:
   isSpec: "True"
   fullName: OpenDDSharp.Timestamp.Seconds
   nameWithType: Timestamp.Seconds
+- uid: OpenDDSharp.Timestamp.ToCDR
+  name: ToCDR()
+  href: api/OpenDDSharp.Timestamp.html#OpenDDSharp_Timestamp_ToCDR
+  commentId: M:OpenDDSharp.Timestamp.ToCDR
+  fullName: OpenDDSharp.Timestamp.ToCDR()
+  nameWithType: Timestamp.ToCDR()
+- uid: OpenDDSharp.Timestamp.ToCDR*
+  name: ToCDR
+  href: api/OpenDDSharp.Timestamp.html#OpenDDSharp_Timestamp_ToCDR_
+  commentId: Overload:OpenDDSharp.Timestamp.ToCDR
+  isSpec: "True"
+  fullName: OpenDDSharp.Timestamp.ToCDR
+  nameWithType: Timestamp.ToCDR
 - uid: OpenDDSharp.TimeValue
   name: TimeValue
   href: api/OpenDDSharp.TimeValue.html

@@ -80,8 +80,9 @@
   
   <h1 id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy" class="text-break">Class TimeBasedFilterQosPolicy
   </h1>
-  <div class="markdown level0 summary"><p>This policy allows a <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> to indicate that it does not necessarily want to see all values of each instance published under
-the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>. Rather, it wants to see at most one change every <a class="xref" href="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.html#OpenDDSharp_DDS_TimeBasedFilterQosPolicy_MinimumSeparation">MinimumSeparation</a> period.</p>
+  <div class="markdown level0 summary"><p>This policy allows a <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> to indicate that it does not necessarily want to see all values of
+each instance published under the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a>. Rather, it wants to see at most one change every
+<a class="xref" href="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.html#OpenDDSharp_DDS_TimeBasedFilterQosPolicy_MinimumSeparation">MinimumSeparation</a> period.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -106,12 +107,13 @@ It only affects which samples are made available via the <a class="xref" href="O
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TimeBasedFilterQosPolicy_MinimumSeparation.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TimeBasedFilterQosPolicy.MinimumSeparation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L40">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L42">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy_MinimumSeparation_" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.MinimumSeparation*"></a>
   <h4 id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy_MinimumSeparation" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.MinimumSeparation">MinimumSeparation</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the interval that defines a minimum delay between instance value changes; this permits the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> to throttle
-changes without affecting the state of the associated <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>. By default, MinimumSeparation is zero, which indicates that no data is filtered.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the interval that defines a minimum delay between instance value changes; this permits the
+<a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> to throttle changes without affecting the state of the associated
+<a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>. By default, MinimumSeparation is zero, which indicates that no data is filtered.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -140,7 +142,7 @@ changes without affecting the state of the associated <a class="xref" href="Open
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TimeBasedFilterQosPolicy_Equals_OpenDDSharp_DDS_TimeBasedFilterQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TimeBasedFilterQosPolicy.Equals(OpenDDSharp.DDS.TimeBasedFilterQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L60">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L65">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy_Equals_" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.Equals*"></a>
   <h4 id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy_Equals_OpenDDSharp_DDS_TimeBasedFilterQosPolicy_" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.Equals(OpenDDSharp.DDS.TimeBasedFilterQosPolicy)">Equals(TimeBasedFilterQosPolicy)</h4>
@@ -180,7 +182,8 @@ changes without affecting the state of the associated <a class="xref" href="Open
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the current object is equal to the other parameter; otherwise, <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the current object is equal to the other parameter;
+otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -190,7 +193,7 @@ changes without affecting the state of the associated <a class="xref" href="Open
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TimeBasedFilterQosPolicy_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TimeBasedFilterQosPolicy.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L75">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L83">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy_Equals_" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.Equals*"></a>
   <h4 id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy_Equals_System_Object_" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.Equals(System.Object)">Equals(Object)</h4>
@@ -230,7 +233,8 @@ changes without affecting the state of the associated <a class="xref" href="Open
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the specified object is equal to the current object; otherwise, <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the specified object is equal to the current object;
+otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -240,7 +244,7 @@ changes without affecting the state of the associated <a class="xref" href="Open
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TimeBasedFilterQosPolicy_GetHashCode.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TimeBasedFilterQosPolicy.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L84">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L92">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy_GetHashCode_" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.GetHashCode*"></a>
   <h4 id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy_GetHashCode" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.GetHashCode">GetHashCode()</h4>
@@ -274,7 +278,7 @@ changes without affecting the state of the associated <a class="xref" href="Open
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TimeBasedFilterQosPolicy_op_Equality_OpenDDSharp_DDS_TimeBasedFilterQosPolicy_OpenDDSharp_DDS_TimeBasedFilterQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TimeBasedFilterQosPolicy.op_Equality(OpenDDSharp.DDS.TimeBasedFilterQosPolicy%2COpenDDSharp.DDS.TimeBasedFilterQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L99">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L109">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy_op_Equality_" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.op_Equality*"></a>
   <h4 id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy_op_Equality_OpenDDSharp_DDS_TimeBasedFilterQosPolicy_OpenDDSharp_DDS_TimeBasedFilterQosPolicy_" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.op_Equality(OpenDDSharp.DDS.TimeBasedFilterQosPolicy,OpenDDSharp.DDS.TimeBasedFilterQosPolicy)">Equality(TimeBasedFilterQosPolicy, TimeBasedFilterQosPolicy)</h4>
@@ -330,7 +334,7 @@ changes without affecting the state of the associated <a class="xref" href="Open
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TimeBasedFilterQosPolicy_op_Inequality_OpenDDSharp_DDS_TimeBasedFilterQosPolicy_OpenDDSharp_DDS_TimeBasedFilterQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TimeBasedFilterQosPolicy.op_Inequality(OpenDDSharp.DDS.TimeBasedFilterQosPolicy%2COpenDDSharp.DDS.TimeBasedFilterQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L120">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L130">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy_op_Inequality_" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.op_Inequality*"></a>
   <h4 id="OpenDDSharp_DDS_TimeBasedFilterQosPolicy_op_Inequality_OpenDDSharp_DDS_TimeBasedFilterQosPolicy_OpenDDSharp_DDS_TimeBasedFilterQosPolicy_" data-uid="OpenDDSharp.DDS.TimeBasedFilterQosPolicy.op_Inequality(OpenDDSharp.DDS.TimeBasedFilterQosPolicy,OpenDDSharp.DDS.TimeBasedFilterQosPolicy)">Inequality(TimeBasedFilterQosPolicy, TimeBasedFilterQosPolicy)</h4>
@@ -392,7 +396,7 @@ changes without affecting the state of the associated <a class="xref" href="Open
                     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_TimeBasedFilterQosPolicy.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.TimeBasedFilterQosPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L33" class="contribution-link">View Source</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/TimeBasedFilterQosPolicy.cs/#L34" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

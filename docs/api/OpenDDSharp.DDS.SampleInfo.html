@@ -95,10 +95,69 @@
     <pre><code class="lang-csharp hljs">public sealed class SampleInfo : IEquatable&lt;SampleInfo&gt;</code></pre>
   </div>
   <h5 id="OpenDDSharp_DDS_SampleInfo_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The SampleInfo structure contains information associated with each Sample. The <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> read and take operations return two vectors.
-One vector contains Sample(s) and the other contains SampleInfo(s). There is a one-to-one correspondence between items in these two vectors.
-Each Sample is described by the corresponding SampleInfo instance.</p>
+  <div class="markdown level0 remarks"><p>The SampleInfo structure contains information associated with each Sample. The <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> read
+and take operations return two vectors. One vector contains Sample(s) and the other contains SampleInfo(s).
+There is a one-to-one correspondence between items in these two vectors. Each Sample is described by the
+corresponding SampleInfo instance.</p>
 </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo__ctor.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L114">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SampleInfo__ctor_" data-uid="OpenDDSharp.DDS.SampleInfo.#ctor*"></a>
+  <h4 id="OpenDDSharp_DDS_SampleInfo__ctor" data-uid="OpenDDSharp.DDS.SampleInfo.#ctor">SampleInfo()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SampleInfo()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo__ctor_OpenDDSharp_Marshaller_Cdr_CdrReader_Span_System_Byte__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.%23ctor(OpenDDSharp.Marshaller.Cdr.CdrReader%2CSpan%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L123">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SampleInfo__ctor_" data-uid="OpenDDSharp.DDS.SampleInfo.#ctor*"></a>
+  <h4 id="OpenDDSharp_DDS_SampleInfo__ctor_OpenDDSharp_Marshaller_Cdr_CdrReader_Span_System_Byte__" data-uid="OpenDDSharp.DDS.SampleInfo.#ctor(OpenDDSharp.Marshaller.Cdr.CdrReader,Span{System.Byte})">SampleInfo(CdrReader, Span&lt;Byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenDDSharp.DDS.SampleInfo.html">SampleInfo</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SampleInfo(CdrReader reader, Span&lt;byte&gt; span)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OpenDDSharp.Marshaller.Cdr.CdrReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>The <span class="xref">OpenDDSharp.Marshaller.Cdr.CdrReader</span> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Span</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">span</span></td>
+        <td><p>The memory span where to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -106,13 +165,13 @@ Each Sample is described by the corresponding SampleInfo instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_AbsoluteGenerationRank.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.AbsoluteGenerationRank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L100">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L107">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_AbsoluteGenerationRank_" data-uid="OpenDDSharp.DDS.SampleInfo.AbsoluteGenerationRank*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_AbsoluteGenerationRank" data-uid="OpenDDSharp.DDS.SampleInfo.AbsoluteGenerationRank">AbsoluteGenerationRank</h4>
-  <div class="markdown level1 summary"><p>Gets the generation difference between this sample and the most recent sample. The AbsoluteGenerationRank indicates the generation difference
-(ie, the number of times the instance was disposed and became alive again) between this sample, and the most recent sample
-(possibly not in the returned collection) of this instance.</p>
+  <div class="markdown level1 summary"><p>Gets the generation difference between this sample and the most recent sample. The AbsoluteGenerationRank
+indicates the generation difference (ie, the number of times the instance was disposed and became alive again)
+between this sample, and the most recent sample (possibly not in the returned collection) of this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -139,7 +198,7 @@ Each Sample is described by the corresponding SampleInfo instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_DisposedGenerationCount.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.DisposedGenerationCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L77">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L81">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_DisposedGenerationCount_" data-uid="OpenDDSharp.DDS.SampleInfo.DisposedGenerationCount*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_DisposedGenerationCount" data-uid="OpenDDSharp.DDS.SampleInfo.DisposedGenerationCount">DisposedGenerationCount</h4>
@@ -170,12 +229,13 @@ Each Sample is described by the corresponding SampleInfo instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_GenerationRank.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.GenerationRank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L93">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L100">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_GenerationRank_" data-uid="OpenDDSharp.DDS.SampleInfo.GenerationRank*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_GenerationRank" data-uid="OpenDDSharp.DDS.SampleInfo.GenerationRank">GenerationRank</h4>
-  <div class="markdown level1 summary"><p>Gets the generation difference of this sample and the most recent sample in the collection. GenerationRank indicates the generation difference
-(ie, the number of times the instance was disposed and became alive again) between this sample, and the most recent sample in the collection related to this instance.</p>
+  <div class="markdown level1 summary"><p>Gets the generation difference of this sample and the most recent sample in the collection. GenerationRank
+indicates the generation difference (ie, the number of times the instance was disposed and became alive again)
+between this sample, and the most recent sample in the collection related to this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -202,7 +262,7 @@ Each Sample is described by the corresponding SampleInfo instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_InstanceHandle.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.InstanceHandle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L67">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L71">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_InstanceHandle_" data-uid="OpenDDSharp.DDS.SampleInfo.InstanceHandle*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_InstanceHandle" data-uid="OpenDDSharp.DDS.SampleInfo.InstanceHandle">InstanceHandle</h4>
@@ -233,7 +293,7 @@ Each Sample is described by the corresponding SampleInfo instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_InstanceState.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.InstanceState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L57">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L61">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_InstanceState_" data-uid="OpenDDSharp.DDS.SampleInfo.InstanceState*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_InstanceState" data-uid="OpenDDSharp.DDS.SampleInfo.InstanceState">InstanceState</h4>
@@ -264,11 +324,12 @@ Each Sample is described by the corresponding SampleInfo instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_NoWritersGenerationCount.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.NoWritersGenerationCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L82">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L87">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_NoWritersGenerationCount_" data-uid="OpenDDSharp.DDS.SampleInfo.NoWritersGenerationCount*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_NoWritersGenerationCount" data-uid="OpenDDSharp.DDS.SampleInfo.NoWritersGenerationCount">NoWritersGenerationCount</h4>
-  <div class="markdown level1 summary"><p>Gets the number of times the instance has become 'Alive' after being automatically disposed due to no active writers.</p>
+  <div class="markdown level1 summary"><p>Gets the number of times the instance has become 'Alive' after being automatically disposed due
+to no active writers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -295,7 +356,7 @@ Each Sample is described by the corresponding SampleInfo instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_PublicationHandle.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.PublicationHandle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L72">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L76">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_PublicationHandle_" data-uid="OpenDDSharp.DDS.SampleInfo.PublicationHandle*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_PublicationHandle" data-uid="OpenDDSharp.DDS.SampleInfo.PublicationHandle">PublicationHandle</h4>
@@ -326,11 +387,12 @@ Each Sample is described by the corresponding SampleInfo instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_SampleRank.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.SampleRank%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L87">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L93">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_SampleRank_" data-uid="OpenDDSharp.DDS.SampleInfo.SampleRank*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_SampleRank" data-uid="OpenDDSharp.DDS.SampleInfo.SampleRank">SampleRank</h4>
-  <div class="markdown level1 summary"><p>Gets number of samples related to this instances that follow in the collection returned by the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> read or take operations.</p>
+  <div class="markdown level1 summary"><p>Gets number of samples related to this instances that follow in the collection returned by the
+<a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> read or take operations.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -357,7 +419,7 @@ Each Sample is described by the corresponding SampleInfo instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_SampleState.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.SampleState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L46">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L49">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_SampleState_" data-uid="OpenDDSharp.DDS.SampleInfo.SampleState*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_SampleState" data-uid="OpenDDSharp.DDS.SampleInfo.SampleState">SampleState</h4>
@@ -388,7 +450,7 @@ Each Sample is described by the corresponding SampleInfo instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_SourceTimestamp.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.SourceTimestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L62">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L66">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_SourceTimestamp_" data-uid="OpenDDSharp.DDS.SampleInfo.SourceTimestamp*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_SourceTimestamp" data-uid="OpenDDSharp.DDS.SampleInfo.SourceTimestamp">SourceTimestamp</h4>
@@ -419,12 +481,13 @@ Each Sample is described by the corresponding SampleInfo instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_ValidData.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.ValidData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L41">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L44">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_ValidData_" data-uid="OpenDDSharp.DDS.SampleInfo.ValidData*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_ValidData" data-uid="OpenDDSharp.DDS.SampleInfo.ValidData">ValidData</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether the associated DataSample contains data.
-The associated DataSample may not contain data if it this sample indicates a change in sample state (for example Alive -&gt; Disposed).</p>
+The associated DataSample may not contain data if it this sample indicates a change in sample state
+(for example Alive -&gt; Disposed).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -451,12 +514,13 @@ The associated DataSample may not contain data if it this sample indicates a cha
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_ViewState.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.ViewState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L52">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L56">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_ViewState_" data-uid="OpenDDSharp.DDS.SampleInfo.ViewState*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_ViewState" data-uid="OpenDDSharp.DDS.SampleInfo.ViewState">ViewState</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether  the associated instance has/has not been seen before. ViewState indicates whether the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> has already seen
-samples for the most current generation of the related instance.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether  the associated instance has/has not been seen before. ViewState indicates
+whether the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> has already seen samples for the most current generation
+of the related instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -485,7 +549,7 @@ samples for the most current generation of the related instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_Equals_OpenDDSharp_DDS_SampleInfo_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.Equals(OpenDDSharp.DDS.SampleInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L151">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L254">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_Equals_" data-uid="OpenDDSharp.DDS.SampleInfo.Equals*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_Equals_OpenDDSharp_DDS_SampleInfo_" data-uid="OpenDDSharp.DDS.SampleInfo.Equals(OpenDDSharp.DDS.SampleInfo)">Equals(SampleInfo)</h4>
@@ -525,7 +589,8 @@ samples for the most current generation of the related instance.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the current object is equal to the other parameter; otherwise, <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the current object is equal to the other parameter;
+otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -535,7 +600,7 @@ samples for the most current generation of the related instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L177">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L283">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_Equals_" data-uid="OpenDDSharp.DDS.SampleInfo.Equals*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_Equals_System_Object_" data-uid="OpenDDSharp.DDS.SampleInfo.Equals(System.Object)">Equals(Object)</h4>
@@ -575,7 +640,82 @@ samples for the most current generation of the related instance.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the specified object is equal to the current object; otherwise, <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the specified object is equal to the current object;
+otherwise, <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_FromCDR_OpenDDSharp_Marshaller_Cdr_CdrReader_Span_System_Byte__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.FromCDR(OpenDDSharp.Marshaller.Cdr.CdrReader%2CSpan%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L224">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SampleInfo_FromCDR_" data-uid="OpenDDSharp.DDS.SampleInfo.FromCDR*"></a>
+  <h4 id="OpenDDSharp_DDS_SampleInfo_FromCDR_OpenDDSharp_Marshaller_Cdr_CdrReader_Span_System_Byte__" data-uid="OpenDDSharp.DDS.SampleInfo.FromCDR(OpenDDSharp.Marshaller.Cdr.CdrReader,Span{System.Byte})">FromCDR(CdrReader, Span&lt;Byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates the time value from a CDR representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FromCDR(CdrReader reader, Span&lt;byte&gt; span)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OpenDDSharp.Marshaller.Cdr.CdrReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>The current <span class="xref">OpenDDSharp.Marshaller.Cdr.CdrReader</span> object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Span</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">span</span></td>
+        <td><p>The byte span serialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_FromCDR_Span_System_Byte__.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.FromCDR(Span%7BSystem.Byte%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L197">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SampleInfo_FromCDR_" data-uid="OpenDDSharp.DDS.SampleInfo.FromCDR*"></a>
+  <h4 id="OpenDDSharp_DDS_SampleInfo_FromCDR_Span_System_Byte__" data-uid="OpenDDSharp.DDS.SampleInfo.FromCDR(Span{System.Byte})">FromCDR(Span&lt;Byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates the time value from a CDR representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FromCDR(Span&lt;byte&gt; span)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Span</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">span</span></td>
+        <td><p>The byte span serialized.</p>
 </td>
       </tr>
     </tbody>
@@ -585,7 +725,7 @@ samples for the most current generation of the related instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_FromNative_OpenDDSharp_DDS_SampleInfoWrapper_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.FromNative(OpenDDSharp.DDS.SampleInfoWrapper)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L127">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L153">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_FromNative_" data-uid="OpenDDSharp.DDS.SampleInfo.FromNative*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_FromNative_OpenDDSharp_DDS_SampleInfoWrapper_" data-uid="OpenDDSharp.DDS.SampleInfo.FromNative(OpenDDSharp.DDS.SampleInfoWrapper)">FromNative(SampleInfoWrapper)</h4>
@@ -619,7 +759,7 @@ samples for the most current generation of the related instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_GetHashCode.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L186">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L292">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_GetHashCode_" data-uid="OpenDDSharp.DDS.SampleInfo.GetHashCode*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_GetHashCode" data-uid="OpenDDSharp.DDS.SampleInfo.GetHashCode">GetHashCode()</h4>
@@ -646,6 +786,38 @@ samples for the most current generation of the related instance.</p>
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_ToCDR.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.ToCDR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L174">View Source</a>
+  </span>
+  <a id="OpenDDSharp_DDS_SampleInfo_ToCDR_" data-uid="OpenDDSharp.DDS.SampleInfo.ToCDR*"></a>
+  <h4 id="OpenDDSharp_DDS_SampleInfo_ToCDR" data-uid="OpenDDSharp.DDS.SampleInfo.ToCDR">ToCDR()</h4>
+  <div class="markdown level1 summary"><p>Converts the time value to a CDR representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlySpan&lt;byte&gt; ToCDR()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ReadOnlySpan</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><p>The byte span serialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="operators">Operators
   </h3>
   <span class="small pull-right mobile-hide">
@@ -653,7 +825,7 @@ samples for the most current generation of the related instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_op_Equality_OpenDDSharp_DDS_SampleInfo_OpenDDSharp_DDS_SampleInfo_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.op_Equality(OpenDDSharp.DDS.SampleInfo%2COpenDDSharp.DDS.SampleInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L211">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L319">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_op_Equality_" data-uid="OpenDDSharp.DDS.SampleInfo.op_Equality*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_op_Equality_OpenDDSharp_DDS_SampleInfo_OpenDDSharp_DDS_SampleInfo_" data-uid="OpenDDSharp.DDS.SampleInfo.op_Equality(OpenDDSharp.DDS.SampleInfo,OpenDDSharp.DDS.SampleInfo)">Equality(SampleInfo, SampleInfo)</h4>
@@ -709,7 +881,7 @@ samples for the most current generation of the related instance.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo_op_Inequality_OpenDDSharp_DDS_SampleInfo_OpenDDSharp_DDS_SampleInfo_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo.op_Inequality(OpenDDSharp.DDS.SampleInfo%2COpenDDSharp.DDS.SampleInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L232">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L342">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_SampleInfo_op_Inequality_" data-uid="OpenDDSharp.DDS.SampleInfo.op_Inequality*"></a>
   <h4 id="OpenDDSharp_DDS_SampleInfo_op_Inequality_OpenDDSharp_DDS_SampleInfo_OpenDDSharp_DDS_SampleInfo_" data-uid="OpenDDSharp.DDS.SampleInfo.op_Inequality(OpenDDSharp.DDS.SampleInfo,OpenDDSharp.DDS.SampleInfo)">Inequality(SampleInfo, SampleInfo)</h4>
@@ -771,7 +943,7 @@ samples for the most current generation of the related instance.</p>
                     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_SampleInfo.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.SampleInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L34" class="contribution-link">View Source</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/SampleInfo.cs/#L36" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

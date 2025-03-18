@@ -80,8 +80,9 @@
   
   <h1 id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy" class="text-break">Class WriterDataLifecycleQosPolicy
   </h1>
-  <div class="markdown level0 summary"><p>This policy controls the behavior of the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> with regards to the lifecycle of the data-instances it manages, that is, the
-data-instances that have been either explicitly registered with the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> using the register operations or implicitly by directly writing the data.</p>
+  <div class="markdown level0 summary"><p>This policy controls the behavior of the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> with regards to the lifecycle of the
+data-instances it manages, that is, the data-instances that have been either explicitly registered with the
+<a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> using the register operations or implicitly by directly writing the data.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -102,16 +103,18 @@ data-instances that have been either explicitly registered with the <a class="xr
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_AutodisposeUnregisteredInstances.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.AutodisposeUnregisteredInstances%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L46">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L51">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_AutodisposeUnregisteredInstances_" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.AutodisposeUnregisteredInstances*"></a>
   <h4 id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_AutodisposeUnregisteredInstances" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.AutodisposeUnregisteredInstances">AutodisposeUnregisteredInstances</h4>
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether auto-dispo the unregistered instances or not.
-Controls the behavior when the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> unregisters an instance by means of the unregister operations.
-If the value of this property is equals <span class="xref">true</span>, causes the DataWriter to dispose the instance each time it
-is unregistered. The behavior is identical to explicitly calling one of the dispose operations on the instance prior to calling the unregister operation.
-Otherwise, if the value of this property is equals <span class="xref">false</span>, will not cause this automatic disposition upon
-unregistering. The application can still call one of the dispose operations prior to unregistering the instance and accomplish the same effect.</p>
+Controls the behavior when the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> unregisters an instance by means of the unregister
+operations. If the value of this property is equals <span class="xref">true</span>, causes the DataWriter to dispose
+the instance each time it is unregistered. The behavior is identical to explicitly calling one of the dispose
+operations on the instance prior to calling the unregister operation. Otherwise, if the value of this property
+is equals <span class="xref">false</span>, will not cause this automatic disposition upon unregistering.
+The application can still call one of the dispose operations prior to unregistering the instance and
+accomplish the same effect.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -134,10 +137,12 @@ unregistering. The application can still call one of the dispose operations prio
     </tbody>
   </table>
   <h5 id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_AutodisposeUnregisteredInstances_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Note that the deletion of a <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> automatically unregisters all data-instances it manages. Therefore the
-setting of the AutodisposeUnregisteredInstances flag will determine whether instances are ultimately disposed when the
-<a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> is deleted either directly by means of the <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a> DeleteDataWriter operation or indirectly as a consequence of
-calling DeleteContainedEntities on the <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a> or the <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> that contains the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>.</p>
+  <div class="markdown level1 remarks"><p>Note that the deletion of a <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> automatically unregisters all data-instances it manages.
+Therefore the setting of the AutodisposeUnregisteredInstances flag will determine whether instances are
+ultimately disposed when the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> is deleted either directly by means of the
+<a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a> DeleteDataWriter operation or indirectly as a consequence of calling
+DeleteContainedEntities on the <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a> or the <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>
+that contains the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>.</p>
 </div>
   <h3 id="methods">Methods
   </h3>
@@ -146,7 +151,7 @@ calling DeleteContainedEntities on the <a class="xref" href="OpenDDSharp.DDS.Pub
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_Equals_OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.Equals(OpenDDSharp.DDS.WriterDataLifecycleQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L62">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L70">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_Equals_" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.Equals*"></a>
   <h4 id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_Equals_OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.Equals(OpenDDSharp.DDS.WriterDataLifecycleQosPolicy)">Equals(WriterDataLifecycleQosPolicy)</h4>
@@ -186,7 +191,8 @@ calling DeleteContainedEntities on the <a class="xref" href="OpenDDSharp.DDS.Pub
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the current object is equal to the other parameter; otherwise, <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the current object is equal to the other parameter;
+otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -196,7 +202,7 @@ calling DeleteContainedEntities on the <a class="xref" href="OpenDDSharp.DDS.Pub
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L77">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L88">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_Equals_" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.Equals*"></a>
   <h4 id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_Equals_System_Object_" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.Equals(System.Object)">Equals(Object)</h4>
@@ -236,7 +242,8 @@ calling DeleteContainedEntities on the <a class="xref" href="OpenDDSharp.DDS.Pub
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the specified object is equal to the current object; otherwise, <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the specified object is equal to the current object;
+otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -246,7 +253,7 @@ calling DeleteContainedEntities on the <a class="xref" href="OpenDDSharp.DDS.Pub
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_GetHashCode.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L86">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L97">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_GetHashCode_" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.GetHashCode*"></a>
   <h4 id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_GetHashCode" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.GetHashCode">GetHashCode()</h4>
@@ -280,7 +287,7 @@ calling DeleteContainedEntities on the <a class="xref" href="OpenDDSharp.DDS.Pub
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_op_Equality_OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.op_Equality(OpenDDSharp.DDS.WriterDataLifecycleQosPolicy%2COpenDDSharp.DDS.WriterDataLifecycleQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L101">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L114">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_op_Equality_" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.op_Equality*"></a>
   <h4 id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_op_Equality_OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.op_Equality(OpenDDSharp.DDS.WriterDataLifecycleQosPolicy,OpenDDSharp.DDS.WriterDataLifecycleQosPolicy)">Equality(WriterDataLifecycleQosPolicy, WriterDataLifecycleQosPolicy)</h4>
@@ -336,7 +343,7 @@ calling DeleteContainedEntities on the <a class="xref" href="OpenDDSharp.DDS.Pub
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_op_Inequality_OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.op_Inequality(OpenDDSharp.DDS.WriterDataLifecycleQosPolicy%2COpenDDSharp.DDS.WriterDataLifecycleQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L122">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L137">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_op_Inequality_" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.op_Inequality*"></a>
   <h4 id="OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_op_Inequality_OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_OpenDDSharp_DDS_WriterDataLifecycleQosPolicy_" data-uid="OpenDDSharp.DDS.WriterDataLifecycleQosPolicy.op_Inequality(OpenDDSharp.DDS.WriterDataLifecycleQosPolicy,OpenDDSharp.DDS.WriterDataLifecycleQosPolicy)">Inequality(WriterDataLifecycleQosPolicy, WriterDataLifecycleQosPolicy)</h4>
@@ -398,7 +405,7 @@ calling DeleteContainedEntities on the <a class="xref" href="OpenDDSharp.DDS.Pub
                     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_WriterDataLifecycleQosPolicy.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.WriterDataLifecycleQosPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/WriterDataLifecycleQosPolicy.cs/#L30" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

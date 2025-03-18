@@ -81,9 +81,9 @@
   <h1 id="OpenDDSharp_DDS_LifespanQosPolicy" data-uid="OpenDDSharp.DDS.LifespanQosPolicy" class="text-break">Class LifespanQosPolicy
   </h1>
   <div class="markdown level0 summary"><p>The purpose of this QoS is to avoid delivering &quot;stale&quot; data to the application.</p>
-<p>Each data sample written by the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> has an associated &apos;expiration time&apos; beyond which the data should not be delivered
-to any application. Once the sample expires, the data will be removed from the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> caches as well as from the
-transient and persistent information caches.</p>
+<p>Each data sample written by the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> has an associated &apos;expiration time&apos; beyond which
+the data should not be delivered to any application. Once the sample expires, the data will be removed from the
+<a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> caches as well as from the transient and persistent information caches.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -98,11 +98,19 @@ transient and persistent information caches.</p>
     <pre><code class="lang-csharp hljs">public sealed class LifespanQosPolicy : IEquatable&lt;LifespanQosPolicy&gt;</code></pre>
   </div>
   <h5 id="OpenDDSharp_DDS_LifespanQosPolicy_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The value of this policy may be changed at any time. Changes to this policy affect only data written after the change.</p>
-<p>The &apos;expiration time&apos; of each sample is computed by adding the duration specified by the Lifespan QoS to the source timestamp.</p>
-<p>This QoS relies on the sender and receiving applications having their clocks sufficiently synchronized. If this is not the case
-and DDS can detect it, the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> is allowed to use the reception timestamp instead of the source timestamp in its
-computation of the &apos;expiration time&apos;.</p>
+  <div class="markdown level0 remarks"><p>
+The value of this policy may be changed at any time. Changes to this policy affect only data written after
+the change.
+</p>
+<p>
+The &apos;expiration time&apos; of each sample is computed by adding the duration specified by the Lifespan QoS to
+the source timestamp.
+</p>
+<p>
+This QoS relies on the sender and receiving applications having their clocks sufficiently synchronized.
+If this is not the case and DDS can detect it, the <a class="xref" href="OpenDDSharp.DDS.DataReader.html">DataReader</a> is allowed to use the reception
+timestamp instead of the source timestamp in its computation of the &apos;expiration time&apos;.
+</p>
 </div>
   <h3 id="properties">Properties
   </h3>
@@ -111,7 +119,7 @@ computation of the &apos;expiration time&apos;.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_LifespanQosPolicy_Duration.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.LifespanQosPolicy.Duration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L44">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L52">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_LifespanQosPolicy_Duration_" data-uid="OpenDDSharp.DDS.LifespanQosPolicy.Duration*"></a>
   <h4 id="OpenDDSharp_DDS_LifespanQosPolicy_Duration" data-uid="OpenDDSharp.DDS.LifespanQosPolicy.Duration">Duration</h4>
@@ -144,7 +152,7 @@ computation of the &apos;expiration time&apos;.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_LifespanQosPolicy_Equals_OpenDDSharp_DDS_LifespanQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.LifespanQosPolicy.Equals(OpenDDSharp.DDS.LifespanQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L64">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L72">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_LifespanQosPolicy_Equals_" data-uid="OpenDDSharp.DDS.LifespanQosPolicy.Equals*"></a>
   <h4 id="OpenDDSharp_DDS_LifespanQosPolicy_Equals_OpenDDSharp_DDS_LifespanQosPolicy_" data-uid="OpenDDSharp.DDS.LifespanQosPolicy.Equals(OpenDDSharp.DDS.LifespanQosPolicy)">Equals(LifespanQosPolicy)</h4>
@@ -194,7 +202,7 @@ computation of the &apos;expiration time&apos;.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_LifespanQosPolicy_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.LifespanQosPolicy.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L79">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L90">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_LifespanQosPolicy_Equals_" data-uid="OpenDDSharp.DDS.LifespanQosPolicy.Equals*"></a>
   <h4 id="OpenDDSharp_DDS_LifespanQosPolicy_Equals_System_Object_" data-uid="OpenDDSharp.DDS.LifespanQosPolicy.Equals(System.Object)">Equals(Object)</h4>
@@ -234,7 +242,8 @@ computation of the &apos;expiration time&apos;.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the specified object is equal to the current object; otherwise, <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the specified object is equal to the current object;
+otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -244,7 +253,7 @@ computation of the &apos;expiration time&apos;.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_LifespanQosPolicy_GetHashCode.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.LifespanQosPolicy.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L88">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L99">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_LifespanQosPolicy_GetHashCode_" data-uid="OpenDDSharp.DDS.LifespanQosPolicy.GetHashCode*"></a>
   <h4 id="OpenDDSharp_DDS_LifespanQosPolicy_GetHashCode" data-uid="OpenDDSharp.DDS.LifespanQosPolicy.GetHashCode">GetHashCode()</h4>
@@ -278,7 +287,7 @@ computation of the &apos;expiration time&apos;.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_LifespanQosPolicy_op_Equality_OpenDDSharp_DDS_LifespanQosPolicy_OpenDDSharp_DDS_LifespanQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.LifespanQosPolicy.op_Equality(OpenDDSharp.DDS.LifespanQosPolicy%2COpenDDSharp.DDS.LifespanQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L101">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L112">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_LifespanQosPolicy_op_Equality_" data-uid="OpenDDSharp.DDS.LifespanQosPolicy.op_Equality*"></a>
   <h4 id="OpenDDSharp_DDS_LifespanQosPolicy_op_Equality_OpenDDSharp_DDS_LifespanQosPolicy_OpenDDSharp_DDS_LifespanQosPolicy_" data-uid="OpenDDSharp.DDS.LifespanQosPolicy.op_Equality(OpenDDSharp.DDS.LifespanQosPolicy,OpenDDSharp.DDS.LifespanQosPolicy)">Equality(LifespanQosPolicy, LifespanQosPolicy)</h4>
@@ -334,7 +343,7 @@ computation of the &apos;expiration time&apos;.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_LifespanQosPolicy_op_Inequality_OpenDDSharp_DDS_LifespanQosPolicy_OpenDDSharp_DDS_LifespanQosPolicy_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.LifespanQosPolicy.op_Inequality(OpenDDSharp.DDS.LifespanQosPolicy%2COpenDDSharp.DDS.LifespanQosPolicy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L122">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L135">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_LifespanQosPolicy_op_Inequality_" data-uid="OpenDDSharp.DDS.LifespanQosPolicy.op_Inequality*"></a>
   <h4 id="OpenDDSharp_DDS_LifespanQosPolicy_op_Inequality_OpenDDSharp_DDS_LifespanQosPolicy_OpenDDSharp_DDS_LifespanQosPolicy_" data-uid="OpenDDSharp.DDS.LifespanQosPolicy.op_Inequality(OpenDDSharp.DDS.LifespanQosPolicy,OpenDDSharp.DDS.LifespanQosPolicy)">Inequality(LifespanQosPolicy, LifespanQosPolicy)</h4>
@@ -396,7 +405,7 @@ computation of the &apos;expiration time&apos;.</p>
                     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_LifespanQosPolicy.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.LifespanQosPolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L38" class="contribution-link">View Source</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/LifespanQosPolicy.cs/#L46" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

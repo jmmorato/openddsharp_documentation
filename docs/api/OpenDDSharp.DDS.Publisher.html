@@ -111,12 +111,18 @@
     <pre><code class="lang-csharp hljs">public class Publisher : Entity</code></pre>
   </div>
   <h5 id="OpenDDSharp_DDS_Publisher_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The Publisher acts on the behalf of one or several <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> objects that belong to it. When it is informed of a change to the
-data associated with one of its <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> objects, it decides when it is appropriate to actually send the data-update message.
-In making this decision, it considers any extra information that goes with the data(timestamp, writer, etc.) as well as the QoS
-of the Publisher and the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>.</p>
-<p>All operations except for the operations SetQos, GetQos, SetListener, GetListener, Enable, GetStatusCondition,
-CreateDataWriter, and DeleteDataWriter return the value <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_NotEnabled">NotEnabled</a> if the Publisher has not been enabled yet.</p>
+  <div class="markdown level0 remarks"><p>
+The Publisher acts on the behalf of one or several <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> objects that belong to it.
+When it is informed of a change to the data associated with one of its <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> objects,
+it decides when it is appropriate to actually send the data-update message. In making this decision, it considers
+any extra information that goes with the data (timestamp, writer, etc.) as well as the QoS of the Publisher and
+the <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a>.
+</p>
+<p>
+All operations except for the operations SetQos, GetQos, SetListener, GetListener, Enable, GetStatusCondition,
+CreateDataWriter, and DeleteDataWriter return the value <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_ReturnCode_NotEnabled">NotEnabled</a> if the Publisher
+has not been enabled yet.
+</p>
 </div>
   <h3 id="properties">Properties
   </h3>
@@ -125,7 +131,7 @@ CreateDataWriter, and DeleteDataWriter return the value <a class="xref" href="Op
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_Listener.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.Listener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L49">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L59">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_Listener_" data-uid="OpenDDSharp.DDS.Publisher.Listener*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_Listener" data-uid="OpenDDSharp.DDS.Publisher.Listener">Listener</h4>
@@ -156,7 +162,7 @@ CreateDataWriter, and DeleteDataWriter return the value <a class="xref" href="Op
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_Participant.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.Participant%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L55">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L65">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_Participant_" data-uid="OpenDDSharp.DDS.Publisher.Participant*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_Participant" data-uid="OpenDDSharp.DDS.Publisher.Participant">Participant</h4>
@@ -189,7 +195,7 @@ CreateDataWriter, and DeleteDataWriter return the value <a class="xref" href="Op
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_BeginCoherentChanges.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.BeginCoherentChanges%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L409">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L431">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_BeginCoherentChanges_" data-uid="OpenDDSharp.DDS.Publisher.BeginCoherentChanges*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_BeginCoherentChanges" data-uid="OpenDDSharp.DDS.Publisher.BeginCoherentChanges">BeginCoherentChanges()</h4>
@@ -237,7 +243,7 @@ otherwise, it may e.g., erroneously interpret that the aircraft is on a collisio
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_CreateDataWriter_OpenDDSharp_DDS_Topic_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.CreateDataWriter(OpenDDSharp.DDS.Topic)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L77">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L93">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_CreateDataWriter_" data-uid="OpenDDSharp.DDS.Publisher.CreateDataWriter*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_CreateDataWriter_OpenDDSharp_DDS_Topic_" data-uid="OpenDDSharp.DDS.Publisher.CreateDataWriter(OpenDDSharp.DDS.Topic)">CreateDataWriter(Topic)</h4>
@@ -283,17 +289,23 @@ otherwise, it may e.g., erroneously interpret that the aircraft is on a collisio
     </tbody>
   </table>
   <h5 id="OpenDDSharp_DDS_Publisher_CreateDataWriter_OpenDDSharp_DDS_Topic__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The created <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> will be attached and belongs to the <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a> that is its factory.</p>
-<p>The <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> passed to this operation must have been created from the same <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> that was used to create this
-<a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a>. If the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> was created from a different <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>, 
-the operation will fail and return a <span class="xref">null</span> result.</p>
+  <div class="markdown level1 remarks"><p>
+The created <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> will be attached and belongs to the <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a>
+that is its factory.
+</p>
+<p>
+The <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> passed to this operation must have been created from the same
+<a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> that was used to create this <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a>.
+If the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> was created from a different <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>,
+the operation will fail and return a <span class="xref">null</span> result.
+</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_CreateDataWriter_OpenDDSharp_DDS_Topic_OpenDDSharp_DDS_DataWriterQos_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.CreateDataWriter(OpenDDSharp.DDS.Topic%2COpenDDSharp.DDS.DataWriterQos)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L94">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L115">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_CreateDataWriter_" data-uid="OpenDDSharp.DDS.Publisher.CreateDataWriter*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_CreateDataWriter_OpenDDSharp_DDS_Topic_OpenDDSharp_DDS_DataWriterQos_" data-uid="OpenDDSharp.DDS.Publisher.CreateDataWriter(OpenDDSharp.DDS.Topic,OpenDDSharp.DDS.DataWriterQos)">CreateDataWriter(Topic, DataWriterQos)</h4>
@@ -345,22 +357,28 @@ the operation will fail and return a <span class="xref">null</span> result.</p>
     </tbody>
   </table>
   <h5 id="OpenDDSharp_DDS_Publisher_CreateDataWriter_OpenDDSharp_DDS_Topic_OpenDDSharp_DDS_DataWriterQos__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The created <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> will be attached and belongs to the <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a> that is its factory.</p>
-<p>The <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> passed to this operation must have been created from the same <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> that was used to create this
-<a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a>. If the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> was created from a different <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>, 
-the operation will fail and return a <span class="xref">null</span> result.</p>
+  <div class="markdown level1 remarks"><p>
+The created <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> will be attached and belongs to the <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a>
+that is its factory.
+</p>
+<p>The <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> passed to this operation must have been created from the same
+<a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a> that was used to create this <a class="xref" href="OpenDDSharp.DDS.Publisher.html">Publisher</a>.
+If the <a class="xref" href="OpenDDSharp.DDS.Topic.html">Topic</a> was created from a different <a class="xref" href="OpenDDSharp.DDS.DomainParticipant.html">DomainParticipant</a>,
+the operation will fail and return a <span class="xref">null</span> result.
+</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_CreateDataWriter_OpenDDSharp_DDS_Topic_OpenDDSharp_DDS_DataWriterQos_OpenDDSharp_DDS_DataWriterListener_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.CreateDataWriter(OpenDDSharp.DDS.Topic%2COpenDDSharp.DDS.DataWriterQos%2COpenDDSharp.DDS.DataWriterListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L113">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L135">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_CreateDataWriter_" data-uid="OpenDDSharp.DDS.Publisher.CreateDataWriter*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_CreateDataWriter_OpenDDSharp_DDS_Topic_OpenDDSharp_DDS_DataWriterQos_OpenDDSharp_DDS_DataWriterListener_" data-uid="OpenDDSharp.DDS.Publisher.CreateDataWriter(OpenDDSharp.DDS.Topic,OpenDDSharp.DDS.DataWriterQos,OpenDDSharp.DDS.DataWriterListener)">CreateDataWriter(Topic, DataWriterQos, DataWriterListener)</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> with the desired QoS policies and attaches to it the specified <a class="xref" href="OpenDDSharp.DDS.DataWriterListener.html">DataWriterListener</a>.
-The specified <a class="xref" href="OpenDDSharp.DDS.DataWriterListener.html">DataWriterListener</a> will be attached with the default <a class="xref" href="OpenDDSharp.DDS.StatusMask.html">StatusMask</a>.</p>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> with the desired QoS policies and attaches to it the specified
+<a class="xref" href="OpenDDSharp.DDS.DataWriterListener.html">DataWriterListener</a>. The specified <a class="xref" href="OpenDDSharp.DDS.DataWriterListener.html">DataWriterListener</a> will be attached with the
+default <a class="xref" href="OpenDDSharp.DDS.StatusMask.html">StatusMask</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -424,7 +442,7 @@ the operation will fail and return a <span class="xref">null</span> result.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_CreateDataWriter_OpenDDSharp_DDS_Topic_OpenDDSharp_DDS_DataWriterQos_OpenDDSharp_DDS_DataWriterListener_OpenDDSharp_DDS_StatusMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.CreateDataWriter(OpenDDSharp.DDS.Topic%2COpenDDSharp.DDS.DataWriterQos%2COpenDDSharp.DDS.DataWriterListener%2COpenDDSharp.DDS.StatusMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L132">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L154">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_CreateDataWriter_" data-uid="OpenDDSharp.DDS.Publisher.CreateDataWriter*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_CreateDataWriter_OpenDDSharp_DDS_Topic_OpenDDSharp_DDS_DataWriterQos_OpenDDSharp_DDS_DataWriterListener_OpenDDSharp_DDS_StatusMask_" data-uid="OpenDDSharp.DDS.Publisher.CreateDataWriter(OpenDDSharp.DDS.Topic,OpenDDSharp.DDS.DataWriterQos,OpenDDSharp.DDS.DataWriterListener,OpenDDSharp.DDS.StatusMask)">CreateDataWriter(Topic, DataWriterQos, DataWriterListener, StatusMask)</h4>
@@ -498,7 +516,7 @@ the operation will fail and return a <span class="xref">null</span> result.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_DeleteContainedEntities.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.DeleteContainedEntities%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L259">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L281">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_DeleteContainedEntities_" data-uid="OpenDDSharp.DDS.Publisher.DeleteContainedEntities*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_DeleteContainedEntities" data-uid="OpenDDSharp.DDS.Publisher.DeleteContainedEntities">DeleteContainedEntities()</h4>
@@ -536,7 +554,7 @@ contained <a class="xref" href="OpenDDSharp.DDS.DataWriter.html">DataWriter</a> 
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_DeleteDataWriter_OpenDDSharp_DDS_DataWriter_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.DeleteDataWriter(OpenDDSharp.DDS.DataWriter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L192">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L214">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_DeleteDataWriter_" data-uid="OpenDDSharp.DDS.Publisher.DeleteDataWriter*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_DeleteDataWriter_OpenDDSharp_DDS_DataWriter_" data-uid="OpenDDSharp.DDS.Publisher.DeleteDataWriter(OpenDDSharp.DDS.DataWriter)">DeleteDataWriter(DataWriter)</h4>
@@ -593,7 +611,7 @@ DeleteDataWriter operation is called on a different <a class="xref" href="OpenDD
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_EndCoherentChanges.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.EndCoherentChanges%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L419">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L441">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_EndCoherentChanges_" data-uid="OpenDDSharp.DDS.Publisher.EndCoherentChanges*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_EndCoherentChanges" data-uid="OpenDDSharp.DDS.Publisher.EndCoherentChanges">EndCoherentChanges()</h4>
@@ -626,7 +644,7 @@ call to <a class="xref" href="OpenDDSharp.DDS.Publisher.html#OpenDDSharp_DDS_Pub
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_GetDefaultDataWriterQos_OpenDDSharp_DDS_DataWriterQos_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.GetDefaultDataWriterQos(OpenDDSharp.DDS.DataWriterQos)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L447">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L469">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_GetDefaultDataWriterQos_" data-uid="OpenDDSharp.DDS.Publisher.GetDefaultDataWriterQos*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_GetDefaultDataWriterQos_OpenDDSharp_DDS_DataWriterQos_" data-uid="OpenDDSharp.DDS.Publisher.GetDefaultDataWriterQos(OpenDDSharp.DDS.DataWriterQos)">GetDefaultDataWriterQos(DataWriterQos)</h4>
@@ -681,7 +699,7 @@ call to <a class="xref" href="OpenDDSharp.DDS.Publisher.html#OpenDDSharp_DDS_Pub
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_GetListener.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.GetListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L325">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L347">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_GetListener_" data-uid="OpenDDSharp.DDS.Publisher.GetListener*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_GetListener" data-uid="OpenDDSharp.DDS.Publisher.GetListener">GetListener()</h4>
@@ -713,7 +731,7 @@ call to <a class="xref" href="OpenDDSharp.DDS.Publisher.html#OpenDDSharp_DDS_Pub
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_GetQos_OpenDDSharp_DDS_PublisherQos_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.GetQos(OpenDDSharp.DDS.PublisherQos)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L280">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L302">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_GetQos_" data-uid="OpenDDSharp.DDS.Publisher.GetQos*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_GetQos_OpenDDSharp_DDS_PublisherQos_" data-uid="OpenDDSharp.DDS.Publisher.GetQos(OpenDDSharp.DDS.PublisherQos)">GetQos(PublisherQos)</h4>
@@ -763,7 +781,7 @@ call to <a class="xref" href="OpenDDSharp.DDS.Publisher.html#OpenDDSharp_DDS_Pub
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_LookupDataWriter_System_String_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.LookupDataWriter(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L221">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L243">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_LookupDataWriter_" data-uid="OpenDDSharp.DDS.Publisher.LookupDataWriter*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_LookupDataWriter_System_String_" data-uid="OpenDDSharp.DDS.Publisher.LookupDataWriter(System.String)">LookupDataWriter(String)</h4>
@@ -818,7 +836,7 @@ specified which one.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_ResumePublications.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.ResumePublications%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L384">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L406">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_ResumePublications_" data-uid="OpenDDSharp.DDS.Publisher.ResumePublications*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_ResumePublications" data-uid="OpenDDSharp.DDS.Publisher.ResumePublications">ResumePublications()</h4>
@@ -854,7 +872,7 @@ Otherwise the operation will return the error <a class="xref" href="OpenDDSharp.
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_SetDefaultDataWriterQos_OpenDDSharp_DDS_DataWriterQos_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.SetDefaultDataWriterQos(OpenDDSharp.DDS.DataWriterQos)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L477">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L499">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_SetDefaultDataWriterQos_" data-uid="OpenDDSharp.DDS.Publisher.SetDefaultDataWriterQos*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_SetDefaultDataWriterQos_OpenDDSharp_DDS_DataWriterQos_" data-uid="OpenDDSharp.DDS.Publisher.SetDefaultDataWriterQos(OpenDDSharp.DDS.DataWriterQos)">SetDefaultDataWriterQos(DataWriterQos)</h4>
@@ -909,7 +927,7 @@ return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_Ret
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_SetListener_OpenDDSharp_DDS_PublisherListener_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.SetListener(OpenDDSharp.DDS.PublisherListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L337">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L359">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_SetListener_" data-uid="OpenDDSharp.DDS.Publisher.SetListener*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_SetListener_OpenDDSharp_DDS_PublisherListener_" data-uid="OpenDDSharp.DDS.Publisher.SetListener(OpenDDSharp.DDS.PublisherListener)">SetListener(PublisherListener)</h4>
@@ -959,7 +977,7 @@ return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_Ret
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_SetListener_OpenDDSharp_DDS_PublisherListener_OpenDDSharp_DDS_StatusMask_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.SetListener(OpenDDSharp.DDS.PublisherListener%2COpenDDSharp.DDS.StatusMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L348">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L370">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_SetListener_" data-uid="OpenDDSharp.DDS.Publisher.SetListener*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_SetListener_OpenDDSharp_DDS_PublisherListener_OpenDDSharp_DDS_StatusMask_" data-uid="OpenDDSharp.DDS.Publisher.SetListener(OpenDDSharp.DDS.PublisherListener,OpenDDSharp.DDS.StatusMask)">SetListener(PublisherListener, StatusMask)</h4>
@@ -1015,7 +1033,7 @@ return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_Ret
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_SetQos_OpenDDSharp_DDS_PublisherQos_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.SetQos(OpenDDSharp.DDS.PublisherQos)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L305">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L327">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_SetQos_" data-uid="OpenDDSharp.DDS.Publisher.SetQos*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_SetQos_OpenDDSharp_DDS_PublisherQos_" data-uid="OpenDDSharp.DDS.Publisher.SetQos(OpenDDSharp.DDS.PublisherQos)">SetQos(PublisherQos)</h4>
@@ -1065,7 +1083,7 @@ return <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSharp_DDS_Ret
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_SuspendPublications.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.SuspendPublications%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L371">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L393">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_SuspendPublications_" data-uid="OpenDDSharp.DDS.Publisher.SuspendPublications*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_SuspendPublications" data-uid="OpenDDSharp.DDS.Publisher.SuspendPublications">SuspendPublications()</h4>
@@ -1104,7 +1122,7 @@ be published will be discarded.</p>
     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher_WaitForAcknowledgments_OpenDDSharp_DDS_Duration_.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher.WaitForAcknowledgments(OpenDDSharp.DDS.Duration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L432">View Source</a>
+    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L454">View Source</a>
   </span>
   <a id="OpenDDSharp_DDS_Publisher_WaitForAcknowledgments_" data-uid="OpenDDSharp.DDS.Publisher.WaitForAcknowledgments*"></a>
   <h4 id="OpenDDSharp_DDS_Publisher_WaitForAcknowledgments_OpenDDSharp_DDS_Duration_" data-uid="OpenDDSharp.DDS.Publisher.WaitForAcknowledgments(OpenDDSharp.DDS.Duration)">WaitForAcknowledgments(Duration)</h4>
@@ -1163,7 +1181,7 @@ a return value of <a class="xref" href="OpenDDSharp.DDS.ReturnCode.html#OpenDDSh
                     <a href="https://github.com/jmmorato/openddsharp/new/develop/apiSpec/new?filename=OpenDDSharp_DDS_Publisher.md&amp;value=---%0Auid%3A%20OpenDDSharp.DDS.Publisher%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L39" class="contribution-link">View Source</a>
+                    <a href="https://github.com/jmmorato/openddsharp/blob/develop/Sources/OpenDDSharp/DDS/Publisher.cs/#L49" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
